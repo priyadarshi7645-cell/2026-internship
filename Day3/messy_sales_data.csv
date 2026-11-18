@@ -1,0 +1,1001 @@
+order_id,customer_name,email,city,order_date,product,quantity,unit_price,payment_method,rating
+1038,Meena Raj,meena.raj@example.com, Coimbatore ,09-03-2024,Webcam,3,3000,Credit Card,3
+1727,Rahul Nair,rahul.nair@example.com,Madurai,2024-01-16,Headphones,,2500,,5
+1847,Anitha Nair,anitha.nair@example.com,Chennai,16/02/2025,Monitor,2,12000,Cash,3
+1296,Arun Menon,arun.menon@example.com,madurai,17/03/2025,Mouse,1,600,Cash,3
+1925,Rahul Iyer,rahul.iyer@example.com,Chennai,11-May-2025,Mouse,5,600,Credit Card,4
+1659,Naveen Sharma,naveen.sharma@example.com,Madurai,2025-01-10,Webcam,3,3000,Cash,4
+1683,Suresh Sharma,suresh.sharma@example.com,Hyderabad,25/11/2025,Keyboard,5,1500,UPI,4
+1287,Meena Iyer,meena.iyer@example.com,Kochi,02-18-2025,Webcam,2,3000,Cash,
+1881,Priya Das,priya.das@example.com,,25-Apr-2024,Headphones,4,2500,UPI,
+1273,Ravi Kumar,ravi.kumar@example.com,Madurai,2025-07-20,Keyboard,1,1500,Credit Card,1
+1138,Priya Singh,priya.singh@example.com,,30/06/2025,Keyboard,5,1500,UPI,4
+1955,Rahul Nair,rahul.nair@example.com,Madurai,2025-10-22,Mouse,4,600,Cash,
+1516,Priya Raj,priya.raj@example.com,Bangalore,09-28-2024,Monitor,2,12000,Credit Card,
+1789,Divya Pillai,divya.pillai@example.com,Bangalore,17/07/2025,Webcam,4,3000,UPI,5
+1861,Anitha Raj,, Madurai ,08-06-2025,Laptop,4,55000,Credit Card,4
+1641,Vikram Nair,vikram.nair@example.com,Coimbatore,02-16-2024,Headphones,2,2500,Credit Card,5
+1738,Lakshmi Kumar,lakshmi.kumar@example.com,Kochi,2025-08-28,Laptop,,55000,UPI,4
+1684,,kavya.reddy@example.com,Bangalore,09-May-2024,Headphones,2,2500,Credit Card,2
+1413,Karthik Das,karthik.das@example.com,Coimbatore,20-Aug-2024,Keyboard,1,1500,Credit Card,5
+1072,Priya Kumar,priya.kumar@example.com,Chennai,19/10/2024,Webcam,4,3000,Cash,4
+1214,Lakshmi Singh,lakshmi.singh@example.com,Bangalore,18-Jun-2025,Keyboard,2,1500,UPI,4
+1068,Kavya Reddy,kavya.reddy@example.com,BANGALORE,05-24-2025,Mouse,1,600,Debit Card,4
+1232,Ravi Iyer,ravi.iyer@example.com,Chennai,18-Mar-2025,Keyboard,1,1500,Debit Card,5
+1857,Rahul Nair,rahul.nair@example.com,Bangalore,06-24-2025,Mouse,1,600,UPI,
+1198,Naveen Nair,naveen.nair@example.com,KOCHI,2025-03-07,Laptop,2,55000,Cash,3
+1640,Priya Singh,priya.singh@example.com,Chennai,07/09/2024,Monitor,3,12000,Credit Card,3
+1377,Sneha Iyer,sneha.iyer@example.com,Hyderabad,2024-04-28,Webcam,,3000,Debit Card,3
+1193,Arun Sharma,arun.sharma@example.com,Bangalore,12-29-2024,Keyboard,3,1500,Cash,
+1100,Kavya Reddy,kavya.reddy@example.com,Kochi,2024-10-31,Keyboard,,1500,Credit Card,4
+1679,Vikram Sharma,vikram.sharma@example.com,Chennai,06-25-2024,Mouse,,600,Credit Card,1
+1651,Rahul Pillai,rahul.pillai@example.com,Kochi,14/10/2025,Mouse,1,600,,4
+1224,Naveen Sharma,,kochi,08-28-2025,Headphones,3,2500,Cash,5
+1206,Suresh Sharma,suresh.sharma@example.com,Bangalore,06/09/2025,Webcam,3,3000,Cash,4
+1749,Vikram Sharma,vikram.sharma@example.com,Bangalore,2025-09-27,Monitor,,12000,Credit Card,4
+1463,Divya Sharma,,Hyderabad,14-Dec-2024,Webcam,2,3000,UPI,5
+1147,Naveen Singh,naveen.singh@example.com,Madurai,22-Mar-2025,Webcam,2,3000,Credit Card,3
+1021,Kavya Sharma,kavya.sharma@example.com,Chennai,2024-06-14,Monitor,5,12000,Cash,3
+1898,Meena Pillai,meena.pillai@example.com,MADURAI,06/04/2025,Mouse,3,600,Debit Card,4
+1547,Kavya Kumar,kavya.kumar@example.com,BANGALORE,2024-11-14,Mouse,5,600,UPI,4
+1647,Naveen Das,naveen.das@example.com,Kochi,2024-07-17,Keyboard,5,1500,Debit Card,5
+1688,Lakshmi Raj,lakshmi.raj@example.com,Kochi,12-Jun-2024,Laptop,1,55000,UPI,4
+1936,Rahul Reddy,rahul.reddy@example.com,Hyderabad,05/02/2024,Laptop,4,55000,Debit Card,5
+1822,,meena.raj@example.com,Chennai,05-22-2025,Monitor,3,12000,Credit Card,4
+1554,Divya Reddy,divya.reddy@example.com,Kochi,02-Jun-2025,Laptop,5,55000,Cash,2
+1590,Priya Reddy,priya.reddy@example.com,bangalore,2025-01-27,Webcam,4,3000,Cash,5
+1371,Karthik Singh,karthik.singh@example.com,Chennai,03/01/2024,Monitor,2,12000,Credit Card,
+1597,Ravi Singh,ravi.singh@example.com,Madurai,09-Oct-2024,Laptop,2,55000,Debit Card,1
+1887,Meena Reddy,meena.reddy@example.com,Coimbatore,13-Mar-2024,Laptop,,55000,Debit Card,
+1795,Divya Reddy,divya.reddy@example.com,MADURAI,16-Mar-2025,Mouse,3,600,Cash,1
+1914,Naveen Raj,naveen.raj@example.com,Coimbatore,2025-08-02,Headphones,2,2500,Debit Card,3
+1016,Karthik Singh,karthik.singh@example.com,Bangalore,2025-11-01,Headphones,5,2500,Debit Card,4
+1758,Rahul Sharma,rahul.sharma@example.com,Chennai,2024-02-23,Monitor,1,12000,Debit Card,3
+1445,Suresh Singh,suresh.singh@example.com,KOCHI,03-06-2025,Laptop,4,55000,Debit Card,5
+1331,Arun Menon,arun.menon@example.com,Hyderabad,12-Apr-2024,Keyboard,5,1500,Credit Card,1
+1872,Manoj Pillai,manoj.pillai@example.com,Madurai,2024-09-19,Headphones,3,2500,Cash,1
+1672,Rahul Pillai,rahul.pillai@example.com,Kochi,17-Apr-2024,Mouse,,600,Cash,
+1544,Suresh Pillai,suresh.pillai@example.com,MADURAI,05-May-2025,Webcam,1,3000,Cash,3
+1526,Karthik Menon,karthik.menon@example.com,Bangalore,09-13-2025,Keyboard,4,1500,UPI,5
+1165,Meena Das,meena.das@example.com,Madurai,31/08/2024,Webcam,,3000,UPI,3
+1864,Divya Iyer,divya.iyer@example.com,Coimbatore,15-Aug-2024,Mouse,3,600,Credit Card,1
+1183,Manoj Sharma,manoj.sharma@example.com,Hyderabad,2024-02-28,Monitor,2,12000,Cash,1
+1928,Arun Nair,arun.nair@example.com,,07-25-2024,Webcam,4,3000,Cash,
+1102,Karthik Kumar,karthik.kumar@example.com, Hyderabad ,06/11/2024,Webcam,3,3000,Debit Card,5
+1579,Manoj Nair,manoj.nair@example.com,Hyderabad,2024-01-18,Mouse,1,600,UPI,3
+1186,Ravi Sharma,ravi.sharma@example.com,HYDERABAD,21/05/2025,Mouse,4,600,Credit Card,3
+1069,Vikram Sharma,,Madurai,05-24-2024,Webcam,1,3000,Cash,1
+1616,Naveen Pillai,naveen.pillai@example.com,Bangalore,2024-09-22,Mouse,1,600,Credit Card,1
+1550,Rahul Reddy,,,2024-02-28,Webcam,2,3000,Cash,4
+1339,Anitha Menon,anitha.menon@example.com,Kochi,08/10/2025,Laptop,3,,,5
+1323,Rahul Iyer,rahul.iyer@example.com,madurai,03-27-2025,Headphones,2,2500,UPI,3
+1280,Arun Das,arun.das@example.com,Bangalore,04-Mar-2025,Keyboard,1,1500,UPI,4
+1289,Rahul Iyer,rahul.iyer@example.com,Chennai,14/09/2025,Monitor,1,12000,Credit Card,
+1252,,arun.sharma@example.com,kochi,08-Nov-2024,Laptop,1,55000,Cash,2
+1909,Divya Menon,divya.menon@example.com,Chennai,2024-03-18,Keyboard,1,1500,UPI,4
+1237,Divya Kumar,divya.kumar@example.com,Kochi,06-16-2025,Laptop,5,55000,Cash,5
+1509,Karthik Singh,karthik.singh@example.com,Chennai,24/04/2024,Webcam,4,3000,Credit Card,
+1717,Karthik Menon,karthik.menon@example.com,Chennai,06-24-2024,Headphones,2,2500,Credit Card,
+1932,Priya Iyer,priya.iyer@example.com, Chennai ,09-17-2024,Monitor,1,12000,UPI,4
+1231,Rahul Kumar,rahul.kumar@example.com,Hyderabad,15/11/2025,Webcam,3,3000,Credit Card,5
+1622,Manoj Nair,manoj.nair@example.com,Bangalore,04-26-2025,Mouse,,600,Cash,2
+1728,Kavya Menon,,,02-12-2025,Mouse,,600,Cash,2
+1233,Vikram Nair,vikram.nair@example.com,KOCHI,27/10/2024,Laptop,5,55000,Cash,3
+1833,Vikram Nair,vikram.nair@example.com, Kochi ,02-19-2024,Keyboard,5,1500,Cash,4
+1410,Naveen Sharma,naveen.sharma@example.com,Chennai,2025-11-01,Mouse,2,,Debit Card,
+1798,Vikram Menon,vikram.menon@example.com,Bangalore,29/07/2025,Keyboard,2,1500,UPI,5
+1144,Rahul Sharma,rahul.sharma@example.com,Kochi,2024-11-03,Laptop,5,55000,Credit Card,4
+1907,Anitha Iyer,anitha.iyer@example.com,Hyderabad,2024-05-19,Monitor,1,12000,Credit Card,5
+1600,Sneha Iyer,sneha.iyer@example.com,BANGALORE,05-23-2025,Laptop,2,55000,UPI,5
+1200,Lakshmi Singh,lakshmi.singh@example.com,Hyderabad,05-01-2024,Laptop,4,55000,Debit Card,2
+1066,Priya Singh,priya.singh@example.com,Chennai,10-02-2024,Monitor,2,12000,Credit Card,2
+1180,Meena Pillai,meena.pillai@example.com,,28/10/2024,Monitor,2,12000,Cash,
+1281,Naveen Menon,naveen.menon@example.com,Bangalore,27-Feb-2025,Mouse,4,600,Credit Card,
+1831,Ravi Nair,ravi.nair@example.com,Chennai,09-25-2024,Keyboard,2,1500,UPI,
+1743,Divya Nair,divya.nair@example.com,Chennai,19-May-2025,Mouse,4,600,Debit Card,1
+1464,Sneha Menon,sneha.menon@example.com,CHENNAI,01/02/2024,Headphones,5,2500,Cash,4
+1159,Anitha Raj,anitha.raj@example.com,Hyderabad,07-07-2024,Monitor,5,12000,Cash,3
+1716,Naveen Das,naveen.das@example.com,Bangalore,26/07/2024,Keyboard,5,1500,Cash,5
+1882,Anitha Nair,anitha.nair@example.com,Chennai,01-24-2025,Keyboard,1,1500,Debit Card,3
+1825,Meena Menon,meena.menon@example.com,Coimbatore,15/04/2025,Webcam,2,3000,Credit Card,4
+1519,Naveen Kumar,naveen.kumar@example.com,Bangalore,25/10/2025,Headphones,2,2500,Cash,3
+1654,Meena Reddy,meena.reddy@example.com,Hyderabad,26/07/2025,Headphones,5,2500,UPI,3
+1259,Vikram Das,vikram.das@example.com,Kochi,21/04/2024,Keyboard,2,1500,Debit Card,5
+1952,Arun Reddy,arun.reddy@example.com,HYDERABAD,2024-07-21,Keyboard,5,1500,Debit Card,5
+1397,Sneha Kumar,sneha.kumar@example.com, Madurai ,29-May-2024,Webcam,1,3000,UPI,3
+1558,Anitha Menon,anitha.menon@example.com,Kochi,2024-11-03,Laptop,4,55000,Credit Card,3
+1835,Karthik Reddy,karthik.reddy@example.com,Coimbatore,10-Jul-2025,Webcam,4,3000,UPI,2
+1433,Priya Iyer,priya.iyer@example.com,Kochi,19-Nov-2025,Webcam,4,3000,Cash,
+1427,Manoj Iyer,manoj.iyer@example.com,Coimbatore,2024-12-05,Webcam,4,3000,Credit Card,4
+1523,Anitha Iyer,anitha.iyer@example.com,Hyderabad,03-May-2025,Laptop,4,55000,UPI,
+1505,Ravi Reddy,ravi.reddy@example.com,HYDERABAD,09-Dec-2024,Webcam,2,3000,Credit Card,2
+1733,Naveen Nair,naveen.nair@example.com,Hyderabad,31/03/2024,Mouse,4,600,Cash,2
+1699,Karthik Raj,karthik.raj@example.com,Chennai,14/08/2025,Mouse,5,600,UPI,4
+1008,Suresh Menon,suresh.menon@example.com,Chennai,04-30-2024,Laptop,2,55000,Debit Card,4
+1913,,,CHENNAI,2024-11-22,Webcam,5,3000,Credit Card,1
+1581,Ravi Kumar,ravi.kumar@example.com,Hyderabad,19-May-2024,Monitor,4,12000,UPI,3
+1194,Naveen Das,naveen.das@example.com,Madurai,04/12/2024,Laptop,2,55000,Credit Card,1
+1692,Priya Iyer,priya.iyer@example.com,Hyderabad,01-12-2025,Monitor,,12000,Credit Card,5
+1557,Ravi Das,ravi.das@example.com,CHENNAI,14-Oct-2025,Laptop,5,55000,,2
+1686,Arun Kumar,arun.kumar@example.com,Coimbatore,08-23-2024,Headphones,4,2500,UPI,3
+1841,Suresh Menon,suresh.menon@example.com,Coimbatore,2024-08-27,Laptop,3,55000,UPI,4
+1412,Anitha Reddy,anitha.reddy@example.com,Chennai,2025-05-23,Laptop,3,55000,Credit Card,4
+1466,Naveen Kumar,naveen.kumar@example.com,Kochi,28-Jun-2025,Keyboard,1,1500,Debit Card,3
+1711,Vikram Das,vikram.das@example.com,MADURAI,28/11/2024,Webcam,1,3000,Credit Card,5
+1665,Arun Pillai,arun.pillai@example.com,Coimbatore,07-09-2024,Monitor,1,12000,Cash,5
+1268,Arun Raj,arun.raj@example.com,Bangalore,2024-08-22,Headphones,4,2500,UPI,4
+1213,Ravi Pillai,ravi.pillai@example.com,Hyderabad,2025-07-07,Monitor,,12000,UPI,4
+1888,Vikram Raj,vikram.raj@example.com,CHENNAI,02-07-2024,Headphones,5,2500,UPI,4
+1424,Priya Menon,priya.menon@example.com,Chennai,2024-04-10,Keyboard,2,1500,Cash,5
+1294,Arun Reddy,arun.reddy@example.com,BANGALORE,10-Nov-2025,Webcam,4,,UPI,4
+1828,Anitha Menon,anitha.menon@example.com,Kochi,14-Jun-2025,Mouse,,600,Credit Card,
+1816,Karthik Kumar,karthik.kumar@example.com,Kochi,05-04-2025,Laptop,2,55000,Debit Card,5
+1813,Anitha Das,anitha.das@example.com,Chennai,05-28-2024,Mouse,4,600,Cash,5
+1613,Naveen Reddy,naveen.reddy@example.com,Kochi,02-06-2024,Laptop,1,55000,Cash,5
+1870,Kavya Reddy,kavya.reddy@example.com,,2025-05-28,Mouse,4,600,Cash,5
+1653,Sneha Menon,sneha.menon@example.com,Madurai,21/10/2025,Monitor,4,12000,Cash,3
+1090,Kavya Singh,kavya.singh@example.com,Chennai,07-29-2024,Laptop,2,55000,UPI,
+1142,Manoj Kumar,manoj.kumar@example.com, Bangalore ,,Laptop,2,55000,Credit Card,2
+1419,Priya Nair,priya.nair@example.com,Madurai,2024-10-03,Monitor,2,12000,Credit Card,3
+1311,Priya Nair,priya.nair@example.com,Bangalore,2024-01-29,Webcam,3,3000,Cash,
+1734,Rahul Nair,rahul.nair@example.com,Madurai,18/07/2025,Mouse,3,600,Cash,2
+1482,Anitha Kumar,anitha.kumar@example.com,KOCHI,03/09/2024,Monitor,5,12000,Debit Card,5
+1240,Manoj Das,manoj.das@example.com,Madurai,2024-03-14,Headphones,3,2500,Debit Card,1
+1071,Priya Pillai,priya.pillai@example.com,Madurai,2025-08-26,Monitor,3,12000,Credit Card,5
+1376,Ravi Nair,ravi.nair@example.com,,06/01/2024,Webcam,3,3000,,4
+1313,Karthik Reddy,karthik.reddy@example.com,Chennai,23-Aug-2024,Keyboard,3,1500,Cash,4
+1399,Manoj Pillai,manoj.pillai@example.com, Madurai ,22-Feb-2024,Webcam,4,,Debit Card,3
+1456,Kavya Singh,kavya.singh@example.com, Chennai ,16-Nov-2025,Monitor,1,12000,Debit Card,2
+1364,Suresh Das,,Bangalore,06/08/2025,Mouse,3,600,UPI,5
+1829,Suresh Pillai,suresh.pillai@example.com,Coimbatore,28-Jun-2024,Headphones,3,2500,UPI,3
+1849,Lakshmi Raj,lakshmi.raj@example.com,BANGALORE,02-Dec-2024,Mouse,1,600,Credit Card,3
+1615,Vikram Das,vikram.das@example.com,Kochi,17/02/2024,Laptop,,55000,UPI,5
+1930,Lakshmi Kumar,lakshmi.kumar@example.com,Chennai,13/10/2025,Keyboard,5,1500,Debit Card,3
+1398,,suresh.singh@example.com, Bangalore ,29-Mar-2024,Keyboard,,1500,Debit Card,3
+1446,Kavya Sharma,kavya.sharma@example.com,Coimbatore,06-14-2024,Keyboard,3,1500,UPI,4
+1415,Meena Reddy,meena.reddy@example.com,Coimbatore,22-Apr-2024,Mouse,4,600,Credit Card,3
+1380,Vikram Singh,vikram.singh@example.com,Coimbatore,,Keyboard,5,1500,UPI,
+1292,Manoj Reddy,,Coimbatore,31/10/2024,Headphones,1,2500,UPI,
+1075,Anitha Pillai,anitha.pillai@example.com,Madurai,15-Oct-2024,Keyboard,3,1500,Debit Card,4
+1227,Priya Pillai,priya.pillai@example.com,Bangalore,2025-10-05,Laptop,3,55000,,4
+1487,Karthik Singh,karthik.singh@example.com,Kochi,2024-08-01,Monitor,2,,Debit Card,2
+1334,Sneha Nair,sneha.nair@example.com,BANGALORE,13-Sep-2024,Headphones,3,2500,UPI,4
+1085,Rahul Pillai,rahul.pillai@example.com,Coimbatore,2024-04-24,Webcam,5,3000,UPI,4
+1481,Lakshmi Iyer,lakshmi.iyer@example.com,CHENNAI,2025-10-25,Webcam,2,3000,Credit Card,1
+1695,Lakshmi Raj,lakshmi.raj@example.com,kochi,09-Oct-2024,Keyboard,,1500,Debit Card,4
+1285,Arun Sharma,arun.sharma@example.com, Chennai ,26-Jan-2024,Webcam,2,3000,Credit Card,4
+1210,Suresh Kumar,suresh.kumar@example.com,bangalore,26-Sep-2024,Keyboard,1,1500,Cash,3
+1143,Arun Menon,arun.menon@example.com,Chennai,03/11/2025,Headphones,5,2500,Debit Card,3
+1251,Naveen Singh,naveen.singh@example.com,madurai,2025-09-28,Laptop,1,55000,Debit Card,4
+1926,Anitha Raj,anitha.raj@example.com,coimbatore,01-Jun-2025,Monitor,1,12000,Cash,4
+1356,Ravi Sharma,ravi.sharma@example.com,Hyderabad,07-16-2025,Webcam,5,3000,Cash,3
+1577,Meena Pillai,meena.pillai@example.com, Bangalore ,2025-01-24,Mouse,3,600,Cash,3
+1389,Vikram Sharma,vikram.sharma@example.com,Kochi,2025-01-15,Headphones,,2500,Credit Card,5
+1536,Kavya Reddy,kavya.reddy@example.com,madurai,11-10-2025,Monitor,2,12000,UPI,5
+1830,,sneha.sharma@example.com,Hyderabad,25/09/2025,Headphones,5,2500,Cash,4
+1465,Meena Raj,meena.raj@example.com,hyderabad,2024-10-07,Webcam,4,3000,Debit Card,
+1002,Manoj Singh,manoj.singh@example.com,Bangalore,2024-02-08,Mouse,2,600,Credit Card,3
+1184,,naveen.kumar@example.com,Madurai,14-Mar-2024,Mouse,5,600,UPI,
+1110,Manoj Reddy,,COIMBATORE,27/10/2024,Laptop,5,55000,UPI,2
+1161,Ravi Raj,,Coimbatore,30-Nov-2024,Webcam,4,3000,Credit Card,4
+1938,Lakshmi Singh,lakshmi.singh@example.com,Coimbatore,06-Dec-2024,Laptop,4,55000,UPI,4
+1812,Kavya Kumar,kavya.kumar@example.com,Hyderabad,04-16-2024,Headphones,1,2500,Debit Card,3
+1432,Lakshmi Kumar,lakshmi.kumar@example.com,Kochi,11-10-2025,Monitor,3,12000,Debit Card,4
+1392,Vikram Singh,vikram.singh@example.com,Coimbatore,2025-05-23,Monitor,4,12000,Debit Card,4
+1902,Suresh Singh,suresh.singh@example.com,Chennai,01-Mar-2024,Monitor,4,12000,Cash,3
+1173,Lakshmi Pillai,lakshmi.pillai@example.com,Kochi,22/11/2025,Headphones,1,2500,Debit Card,4
+1129,Karthik Das,karthik.das@example.com,Coimbatore,18/06/2024,Keyboard,5,1500,Cash,3
+1803,Divya Menon,divya.menon@example.com,Bangalore,2025-04-26,Keyboard,4,1500,UPI,5
+1799,Lakshmi Raj,lakshmi.raj@example.com, Coimbatore ,10/09/2024,Mouse,,600,UPI,3
+1780,Sneha Nair,sneha.nair@example.com,Coimbatore,20-Dec-2024,Laptop,2,55000,Debit Card,
+1170,Kavya Iyer,kavya.iyer@example.com,Chennai,08-10-2025,Monitor,5,12000,UPI,3
+1485,Sneha Kumar,sneha.kumar@example.com,Hyderabad,2025-10-25,Headphones,5,2500,Credit Card,
+1452,Ravi Sharma,ravi.sharma@example.com,Bangalore,04-May-2024,Webcam,1,3000,,5
+1578,Kavya Nair,kavya.nair@example.com,Kochi,2025-07-13,Monitor,5,12000,Debit Card,3
+1078,Rahul Iyer,rahul.iyer@example.com,Madurai,02/04/2024,Mouse,3,600,UPI,5
+1576,Rahul Sharma,rahul.sharma@example.com,Chennai,2024-12-31,Headphones,5,2500,Credit Card,4
+1840,Ravi Singh,ravi.singh@example.com,Hyderabad,13/04/2024,Keyboard,3,1500,Cash,
+1811,Manoj Menon,manoj.menon@example.com,Bangalore,05-14-2024,Keyboard,1,1500,Debit Card,4
+1931,Anitha Kumar,anitha.kumar@example.com,Madurai,02-Aug-2024,Mouse,1,600,Cash,4
+1617,Divya Das,divya.das@example.com,Kochi,2025-04-25,Headphones,5,2500,UPI,3
+1810,Arun Sharma,arun.sharma@example.com,Kochi,17/04/2025,Mouse,2,600,UPI,
+1176,Meena Pillai,meena.pillai@example.com, Kochi ,12/04/2025,Webcam,5,3000,Credit Card,5
+1819,Naveen Sharma,naveen.sharma@example.com,Hyderabad,01-08-2024,Headphones,5,2500,Credit Card,3
+1678,Vikram Kumar,vikram.kumar@example.com,coimbatore,08-15-2024,Keyboard,2,1500,Debit Card,5
+1953,Manoj Iyer,manoj.iyer@example.com,Coimbatore,03-30-2024,Mouse,4,600,Credit Card,3
+1201,Arun Pillai,arun.pillai@example.com,Bangalore,29/08/2025,Headphones,5,2500,Credit Card,2
+1533,Meena Singh,meena.singh@example.com,Kochi,2025-11-24,Keyboard,5,1500,Debit Card,4
+1312,Naveen Singh,naveen.singh@example.com,Kochi,2024-06-21,Webcam,,3000,Cash,4
+1553,Priya Sharma,priya.sharma@example.com,,28/11/2024,Laptop,2,55000,Debit Card,1
+1527,Divya Singh,divya.singh@example.com,Chennai,10-07-2024,Laptop,5,55000,UPI,5
+1896,Ravi Kumar,ravi.kumar@example.com,chennai,29/06/2024,Laptop,3,55000,Debit Card,1
+1400,Suresh Sharma,,Chennai,2024-05-14,Mouse,3,600,Debit Card,4
+1706,Meena Kumar,meena.kumar@example.com,Kochi,02-01-2025,Keyboard,4,1500,UPI,5
+1310,Ravi Singh,ravi.singh@example.com,Coimbatore,09-Jan-2024,Keyboard,5,1500,Cash,4
+1153,Manoj Raj,manoj.raj@example.com, Chennai ,2025-01-28,Webcam,1,3000,Credit Card,1
+1834,Vikram Sharma,vikram.sharma@example.com,Kochi,11-May-2024,Mouse,5,600,UPI,3
+1274,Divya Nair,divya.nair@example.com,Kochi,20-Jul-2025,Monitor,5,12000,UPI,
+1820,Meena Pillai,meena.pillai@example.com, Bangalore ,2025-03-07,Webcam,5,3000,Cash,3
+1879,Ravi Kumar,ravi.kumar@example.com,COIMBATORE,08-Jan-2025,Headphones,3,2500,UPI,4
+1375,Vikram Pillai,vikram.pillai@example.com,Bangalore,07-06-2025,Keyboard,4,1500,Debit Card,4
+1092,Manoj Kumar,manoj.kumar@example.com, Coimbatore ,05-29-2024,Headphones,5,2500,UPI,4
+1958,Ravi Raj,ravi.raj@example.com,Madurai,08-18-2025,Laptop,1,55000,Cash,3
+1453,Lakshmi Reddy,lakshmi.reddy@example.com,HYDERABAD,2024-09-06,Keyboard,5,1500,Debit Card,2
+1934,Karthik Nair,karthik.nair@example.com,Hyderabad,2025-02-16,Keyboard,1,1500,,4
+1366,Lakshmi Kumar,lakshmi.kumar@example.com, Bangalore ,2025-01-04,Mouse,2,600,Cash,1
+1105,Lakshmi Raj,lakshmi.raj@example.com,Bangalore,04-08-2024,Mouse,4,600,UPI,4
+1319,Ravi Menon,ravi.menon@example.com,BANGALORE,22/12/2024,Webcam,3,3000,Debit Card,4
+1063,Meena Sharma,meena.sharma@example.com,Coimbatore,07/11/2024,Webcam,4,3000,Cash,2
+1019,Lakshmi Kumar,lakshmi.kumar@example.com,Chennai,07-31-2024,Laptop,,55000,Cash,4
+1102,Karthik Kumar,karthik.kumar@example.com, Hyderabad ,06/11/2024,Webcam,3,3000,Debit Card,5
+1738,Lakshmi Kumar,lakshmi.kumar@example.com,Kochi,2025-08-28,Laptop,,55000,UPI,4
+1750,Priya Pillai,priya.pillai@example.com,Kochi,04-14-2024,Webcam,5,3000,Credit Card,2
+1745,Kavya Pillai,kavya.pillai@example.com,Chennai,03-29-2024,Headphones,1,2500,Debit Card,4
+1348,Naveen Sharma,naveen.sharma@example.com,Coimbatore,21/01/2024,Mouse,2,600,Cash,3
+1618,Naveen Raj,naveen.raj@example.com,madurai,09-Jul-2024,Webcam,2,3000,Debit Card,4
+1676,Meena Reddy,meena.reddy@example.com,Madurai,21-Sep-2025,Headphones,5,2500,Cash,2
+1023,Meena Iyer,meena.iyer@example.com, Kochi ,08-Jul-2025,Headphones,2,2500,UPI,
+1661,Anitha Raj,anitha.raj@example.com,BANGALORE,20-Jul-2024,Keyboard,2,1500,Cash,4
+1707,Vikram Raj,vikram.raj@example.com,Kochi,06-08-2025,Headphones,5,2500,Debit Card,5
+1511,Arun Raj,arun.raj@example.com,Chennai,21-Jan-2025,Webcam,4,3000,Debit Card,4
+1189,Sneha Reddy,sneha.reddy@example.com,Kochi,07-30-2025,Monitor,4,12000,Cash,4
+1236,,sneha.raj@example.com, Chennai ,22-May-2025,Headphones,5,2500,UPI,5
+1420,Suresh Reddy,suresh.reddy@example.com, Hyderabad ,10-17-2024,Mouse,2,600,UPI,3
+1740,Manoj Iyer,manoj.iyer@example.com,Coimbatore,03-Aug-2025,Keyboard,3,1500,Credit Card,
+1700,Naveen Singh,naveen.singh@example.com,Chennai,2024-04-11,Monitor,5,12000,Credit Card,3
+1543,Arun Raj,arun.raj@example.com,Chennai,31/03/2024,Laptop,1,,Cash,5
+1945,Lakshmi Das,lakshmi.das@example.com,Hyderabad,2024-06-02,Laptop,5,55000,Debit Card,4
+1316,Naveen Pillai,naveen.pillai@example.com, Bangalore ,02-10-2024,Laptop,3,55000,Credit Card,1
+1228,Priya Reddy,priya.reddy@example.com,KOCHI,05/12/2024,Mouse,4,600,UPI,4
+1242,Divya Raj,divya.raj@example.com,chennai,25/09/2025,Mouse,3,600,Credit Card,
+1491,Vikram Das,vikram.das@example.com,Kochi,17/09/2025,Monitor,1,12000,Credit Card,
+1674,Vikram Pillai,vikram.pillai@example.com,Kochi,11-Apr-2025,Headphones,3,2500,UPI,2
+1108,Divya Iyer,divya.iyer@example.com,MADURAI,15/10/2024,Mouse,3,600,UPI,3
+1899,Vikram Menon,vikram.menon@example.com,coimbatore,2024-03-19,Monitor,5,12000,Credit Card,4
+1442,Anitha Reddy,anitha.reddy@example.com,kochi,2024-01-19,Webcam,4,3000,Debit Card,5
+1440,Naveen Raj,naveen.raj@example.com,Chennai,06-10-2025,Headphones,3,2500,Debit Card,2
+1718,Arun Pillai,arun.pillai@example.com,Kochi,02-04-2024,Laptop,3,55000,Debit Card,2
+1437,Naveen Kumar,naveen.kumar@example.com,Madurai,07-07-2024,Monitor,2,12000,Cash,3
+1344,Karthik Nair,karthik.nair@example.com,Bangalore,01-08-2024,Mouse,5,600,,3
+1474,Manoj Iyer,manoj.iyer@example.com,Kochi,10-11-2024,Webcam,2,3000,Debit Card,3
+1081,Suresh Iyer,suresh.iyer@example.com,Bangalore,02-13-2025,Monitor,1,12000,UPI,1
+1697,Suresh Raj,suresh.raj@example.com,Bangalore,03-21-2025,Webcam,4,3000,UPI,2
+1095,Anitha Nair,anitha.nair@example.com,MADURAI,2024-01-03,Laptop,4,55000,Credit Card,3
+1947,Ravi Das,ravi.das@example.com,madurai,30-Dec-2024,Mouse,3,600,,4
+1031,Sneha Iyer,sneha.iyer@example.com,Chennai,29-Jan-2024,Mouse,2,600,Cash,5
+1011,Kavya Pillai,kavya.pillai@example.com,Bangalore,2024-12-21,Webcam,5,3000,Credit Card,4
+1891,Ravi Pillai,ravi.pillai@example.com,Madurai,03-07-2025,Headphones,1,2500,Debit Card,3
+1525,Karthik Reddy,,Hyderabad,2025-11-15,Monitor,2,12000,UPI,1
+1796,Rahul Sharma,rahul.sharma@example.com,Coimbatore,05-Aug-2024,Mouse,3,600,Credit Card,3
+1158,Lakshmi Sharma,lakshmi.sharma@example.com, Hyderabad ,2025-03-22,Mouse,1,600,Credit Card,
+1347,Kavya Raj,kavya.raj@example.com,Madurai,22/11/2024,Monitor,5,12000,Credit Card,
+1753,Suresh Singh,suresh.singh@example.com,Hyderabad,08-03-2025,Mouse,1,600,Debit Card,4
+1258,Suresh Kumar,suresh.kumar@example.com,Hyderabad,2024-06-11,Laptop,4,55000,Credit Card,
+1318,Priya Das,priya.das@example.com,kochi,13/11/2025,Laptop,3,55000,Credit Card,4
+1497,Meena Raj,meena.raj@example.com, Chennai ,05-04-2024,Headphones,1,2500,UPI,4
+1005,Sneha Nair,sneha.nair@example.com,MADURAI,,Laptop,1,55000,Credit Card,4
+1711,Vikram Das,vikram.das@example.com,MADURAI,28/11/2024,Webcam,1,3000,Credit Card,5
+1199,Kavya Sharma,kavya.sharma@example.com,Coimbatore,07-08-2024,Keyboard,4,1500,Credit Card,
+1117,Kavya Pillai,kavya.pillai@example.com,Chennai,01-07-2024,Mouse,1,600,Debit Card,5
+1205,Manoj Kumar,manoj.kumar@example.com,COIMBATORE,2024-02-02,Webcam,5,3000,Credit Card,4
+1693,Vikram Iyer,vikram.iyer@example.com,Kochi,12-21-2024,Mouse,4,600,UPI,3
+1175,Sneha Menon,sneha.menon@example.com,Kochi,08/07/2025,Monitor,1,12000,Cash,3
+1702,Anitha Raj,anitha.raj@example.com, Chennai ,10-Jun-2024,Webcam,1,3000,Credit Card,1
+1203,Sneha Raj,sneha.raj@example.com,Madurai,2025-04-28,Mouse,2,600,Debit Card,3
+1757,Rahul Pillai,rahul.pillai@example.com,Chennai,06-06-2024,Keyboard,3,1500,Cash,1
+1921,Priya Reddy,priya.reddy@example.com,Madurai,02-Jun-2024,Keyboard,4,,Debit Card,1
+1120,Vikram Das,vikram.das@example.com,Coimbatore,04/11/2024,Mouse,,600,Cash,1
+1178,Naveen Reddy,,Chennai,2024-09-28,Headphones,4,2500,UPI,4
+1276,Priya Nair,priya.nair@example.com,Hyderabad,05-17-2025,Headphones,1,,Credit Card,5
+1863,Sneha Pillai,sneha.pillai@example.com,Hyderabad,2025-02-27,Laptop,2,55000,Debit Card,4
+1014,Naveen Pillai,naveen.pillai@example.com,chennai,2024-06-03,Mouse,2,600,Credit Card,4
+1249,Meena Raj,meena.raj@example.com,Madurai,2024-07-10,Headphones,5,2500,Credit Card,4
+1910,Suresh Iyer,suresh.iyer@example.com,Kochi,2025-02-18,Keyboard,3,1500,Debit Card,4
+1346,Manoj Iyer,manoj.iyer@example.com,Madurai,22/03/2024,Headphones,4,2500,Cash,
+1942,Priya Iyer,priya.iyer@example.com,Coimbatore,2025-10-30,Mouse,3,600,Cash,4
+1385,Anitha Raj,anitha.raj@example.com,Kochi,10-11-2025,Monitor,5,12000,UPI,1
+1895,Sneha Iyer,sneha.iyer@example.com,Kochi,2024-11-28,Laptop,4,55000,UPI,
+1541,Divya Kumar,divya.kumar@example.com,Kochi,07-01-2025,Headphones,1,2500,,1
+1568,Rahul Reddy,, Chennai ,23-Mar-2025,Monitor,,12000,Credit Card,5
+1642,Rahul Kumar,rahul.kumar@example.com,Hyderabad,2024-02-18,Keyboard,2,1500,Debit Card,3
+1130,Meena Menon,meena.menon@example.com,Madurai,12/04/2025,Keyboard,4,1500,UPI,5
+1091,Divya Sharma,divya.sharma@example.com, Hyderabad ,04-21-2024,Keyboard,2,1500,Debit Card,
+1306,Naveen Nair,naveen.nair@example.com,chennai,04-17-2025,Headphones,3,2500,Credit Card,5
+1127,Vikram Reddy,vikram.reddy@example.com,Coimbatore,2025-03-28,Laptop,1,55000,Cash,3
+1387,Arun Singh,arun.singh@example.com,Coimbatore,01-Jan-2024,Mouse,3,600,Cash,5
+1164,Naveen Singh,naveen.singh@example.com,Bangalore,27/11/2024,Webcam,3,3000,UPI,3
+1112,Arun Reddy,arun.reddy@example.com,Chennai,2024-05-24,Keyboard,,1500,UPI,
+1703,,divya.iyer@example.com,Madurai,,Mouse,3,600,Debit Card,3
+1860,Meena Das,meena.das@example.com,Hyderabad,11-Feb-2025,Webcam,4,3000,,2
+1869,Sneha Sharma,sneha.sharma@example.com,Hyderabad,2024-06-29,Mouse,1,600,Debit Card,3
+1454,Manoj Sharma,manoj.sharma@example.com,Kochi,22/10/2025,Mouse,1,600,Debit Card,4
+1720,Arun Nair,arun.nair@example.com,Coimbatore,2024-08-15,Headphones,5,2500,Credit Card,3
+1729,Karthik Das,karthik.das@example.com,Coimbatore,10-27-2025,Webcam,4,3000,Debit Card,4
+1328,Ravi Menon,ravi.menon@example.com,Coimbatore,18/02/2025,Laptop,1,,UPI,
+1503,Karthik Raj,karthik.raj@example.com,Bangalore,11-06-2024,Keyboard,2,1500,Debit Card,2
+1073,Ravi Reddy,ravi.reddy@example.com,,01-30-2024,Monitor,1,12000,Credit Card,4
+1003,Vikram Kumar,vikram.kumar@example.com,Kochi,06/05/2024,Headphones,,2500,Debit Card,1
+1574,Anitha Pillai,anitha.pillai@example.com, Chennai ,12/11/2025,Laptop,5,55000,Cash,
+1826,Naveen Menon,naveen.menon@example.com,Coimbatore,23/09/2025,Monitor,1,12000,Debit Card,4
+1621,Naveen Das,naveen.das@example.com,madurai,26/06/2025,Monitor,1,12000,,4
+1013,Anitha Pillai,anitha.pillai@example.com,Bangalore,11/10/2024,Headphones,3,2500,Debit Card,5
+1804,Arun Das,,Hyderabad,24/07/2024,Monitor,1,12000,Debit Card,
+1884,Anitha Das,, Bangalore ,05-20-2024,Monitor,4,12000,Cash,3
+1689,Lakshmi Sharma,lakshmi.sharma@example.com,Kochi,2024-01-06,Headphones,3,2500,Credit Card,3
+1428,Rahul Reddy,rahul.reddy@example.com,Chennai,2025-09-09,Laptop,1,55000,Cash,4
+1109,Rahul Iyer,rahul.iyer@example.com,coimbatore,04-12-2024,Webcam,4,3000,UPI,4
+1741,Meena Sharma,meena.sharma@example.com,Kochi,23-Oct-2025,Webcam,4,3000,Debit Card,4
+1079,Suresh Menon,suresh.menon@example.com,Bangalore,01-21-2024,Mouse,5,600,UPI,4
+1182,Naveen Sharma,naveen.sharma@example.com,Bangalore,05-06-2025,Keyboard,1,1500,Cash,3
+1924,Meena Pillai,meena.pillai@example.com,Bangalore,16-May-2025,Webcam,3,3000,UPI,5
+1949,Suresh Sharma,suresh.sharma@example.com,Chennai,22-Jan-2025,Mouse,4,600,Credit Card,2
+1336,Karthik Das,karthik.das@example.com,Madurai,2024-08-22,Monitor,2,12000,Cash,3
+1309,Anitha Das,anitha.das@example.com,Coimbatore,05-Dec-2024,Laptop,4,55000,Debit Card,4
+1754,Manoj Singh,manoj.singh@example.com,Hyderabad,17/08/2025,Webcam,3,3000,Credit Card,5
+1305,Manoj Nair,manoj.nair@example.com,Madurai,30/07/2025,Headphones,1,2500,Debit Card,3
+1782,Vikram Nair,vikram.nair@example.com,coimbatore,05-Nov-2024,Headphones,3,2500,Debit Card,4
+1531,Priya Singh,priya.singh@example.com, Bangalore ,2024-11-03,Monitor,5,12000,Cash,3
+1043,Suresh Kumar,suresh.kumar@example.com,Bangalore,03/10/2024,Mouse,3,600,Debit Card,3
+1357,Suresh Kumar,suresh.kumar@example.com,Kochi,2025-05-02,Headphones,3,2500,UPI,4
+1634,Kavya Reddy,kavya.reddy@example.com, Madurai ,16-May-2024,Headphones,2,2500,UPI,3
+1792,Arun Raj,arun.raj@example.com,hyderabad,22/12/2024,Keyboard,4,1500,Cash,2
+1438,Divya Reddy,divya.reddy@example.com,Bangalore,07-Feb-2025,Headphones,,2500,,3
+1772,Arun Das,arun.das@example.com,kochi,12-17-2024,Monitor,1,12000,Debit Card,3
+1472,Priya Nair,priya.nair@example.com,Coimbatore,04-27-2025,Keyboard,3,1500,,3
+1295,Meena Raj,meena.raj@example.com,Madurai,2024-10-25,Mouse,2,600,Credit Card,4
+1601,Arun Raj,arun.raj@example.com,COIMBATORE,2024-06-13,Laptop,2,55000,Credit Card,4
+1868,Arun Menon,arun.menon@example.com,Hyderabad,12-23-2024,Keyboard,3,1500,Cash,
+1559,Vikram Raj,vikram.raj@example.com,Madurai,2024-02-22,Webcam,2,3000,Credit Card,2
+1855,Manoj Singh,manoj.singh@example.com,Chennai,2025-02-24,Mouse,1,600,UPI,4
+1594,Suresh Raj,suresh.raj@example.com,Bangalore,28-Jan-2024,Mouse,3,600,Cash,3
+1778,Ravi Pillai,ravi.pillai@example.com,kochi,12-25-2024,Webcam,5,3000,Debit Card,5
+1439,Vikram Singh,vikram.singh@example.com,Coimbatore,01/01/2024,Laptop,4,55000,Cash,5
+1341,Ravi Pillai,ravi.pillai@example.com,Madurai,2025-08-08,Webcam,2,3000,UPI,2
+1056,Lakshmi Kumar,lakshmi.kumar@example.com,Madurai,24-Jan-2024,Monitor,,12000,,4
+1787,Anitha Iyer,anitha.iyer@example.com,,13-Aug-2024,Headphones,3,2500,Debit Card,5
+1875,Ravi Iyer,ravi.iyer@example.com,Hyderabad,29-Jun-2025,Mouse,4,600,Cash,4
+1345,Lakshmi Raj,lakshmi.raj@example.com,Madurai,04-Nov-2024,Mouse,5,600,Cash,2
+1217,Lakshmi Kumar,lakshmi.kumar@example.com,COIMBATORE,2024-10-14,Keyboard,5,1500,Debit Card,4
+1461,Kavya Singh,kavya.singh@example.com,CHENNAI,04-May-2024,Laptop,2,55000,Debit Card,5
+1041,Kavya Reddy,kavya.reddy@example.com,Bangalore,12-12-2024,Laptop,4,55000,Cash,3
+1643,Divya Iyer,divya.iyer@example.com, Coimbatore ,09-22-2024,Monitor,4,,Credit Card,
+1572,Naveen Pillai,naveen.pillai@example.com,Madurai,05-03-2025,Keyboard,5,1500,Debit Card,5
+1900,Arun Raj,arun.raj@example.com,,,Webcam,,3000,UPI,4
+1712,Arun Sharma,arun.sharma@example.com,COIMBATORE,12/07/2025,Keyboard,1,1500,Cash,1
+1179,Anitha Iyer,anitha.iyer@example.com, Kochi ,2024-05-12,Mouse,5,600,UPI,3
+1177,Naveen Kumar,naveen.kumar@example.com,BANGALORE,10-07-2024,Keyboard,1,1500,Debit Card,4
+1493,Anitha Sharma,anitha.sharma@example.com,Madurai,17-May-2024,Webcam,1,3000,Cash,4
+1059,Priya Kumar,priya.kumar@example.com,Coimbatore,16-May-2024,Laptop,4,55000,Credit Card,1
+1458,Karthik Iyer,karthik.iyer@example.com,Madurai,2024-09-01,Webcam,4,3000,Cash,3
+1477,Arun Iyer,arun.iyer@example.com,COIMBATORE,12-29-2024,Mouse,2,600,UPI,4
+1017,Vikram Pillai,vikram.pillai@example.com, Coimbatore ,05-08-2025,Laptop,2,55000,Debit Card,3
+1459,Naveen Pillai,naveen.pillai@example.com,Hyderabad,2024-10-08,Headphones,5,2500,Cash,4
+1701,Vikram Iyer,vikram.iyer@example.com,hyderabad,07/10/2025,Keyboard,3,1500,Cash,2
+1441,Rahul Menon,rahul.menon@example.com,Madurai,30-Mar-2025,Keyboard,4,1500,Credit Card,4
+1687,Divya Reddy,,Chennai,2024-12-12,Webcam,1,3000,Credit Card,1
+1890,Ravi Kumar,ravi.kumar@example.com,Coimbatore,2024-11-24,Mouse,1,600,Credit Card,1
+1460,Manoj Iyer,manoj.iyer@example.com,Kochi,06-Apr-2024,Keyboard,1,1500,Cash,1
+1823,Lakshmi Kumar,lakshmi.kumar@example.com,Bangalore,22-Feb-2024,Mouse,1,600,UPI,4
+1878,Arun Raj,, Chennai ,,Webcam,5,3000,UPI,1
+1638,Meena Das,meena.das@example.com,Bangalore,2024-08-15,Laptop,2,55000,Credit Card,3
+1660,Arun Pillai,arun.pillai@example.com,Chennai,21-Jun-2025,Headphones,4,2500,Credit Card,3
+1520,Vikram Reddy,vikram.reddy@example.com,Kochi,12-Feb-2024,Webcam,2,3000,UPI,1
+1418,,naveen.raj@example.com,madurai,01-06-2024,Keyboard,1,1500,Credit Card,4
+1030,Karthik Singh,karthik.singh@example.com,Coimbatore,2024-05-14,Headphones,1,2500,UPI,4
+1956,Karthik Menon,karthik.menon@example.com,,2025-01-02,Webcam,5,3000,Debit Card,2
+1401,Kavya Menon,kavya.menon@example.com,Chennai,09-Jan-2025,Mouse,5,600,Credit Card,5
+1670,Divya Reddy,divya.reddy@example.com,KOCHI,09-03-2024,Headphones,5,2500,Cash,5
+1784,Anitha Iyer,anitha.iyer@example.com,chennai,07-09-2024,Keyboard,4,,Cash,3
+1430,Sneha Sharma,,Bangalore,22/04/2025,Laptop,,55000,Cash,3
+1489,Meena Sharma,meena.sharma@example.com,Chennai,12-Nov-2024,Keyboard,5,1500,Cash,4
+1204,Manoj Kumar,manoj.kumar@example.com,Madurai,2024-05-28,Keyboard,4,1500,Debit Card,5
+1372,Meena Das,meena.das@example.com,Chennai,23/12/2024,Laptop,3,55000,UPI,1
+1033,Karthik Singh,karthik.singh@example.com,Bangalore,2025-06-20,Mouse,5,600,Credit Card,3
+1514,Anitha Iyer,anitha.iyer@example.com,Coimbatore,2025-07-22,Keyboard,4,1500,UPI,4
+1307,Anitha Iyer,anitha.iyer@example.com, Madurai ,02-Mar-2024,Laptop,3,55000,Debit Card,2
+1268,Arun Raj,arun.raj@example.com,Bangalore,2024-08-22,Headphones,4,2500,UPI,4
+1157,Vikram Singh,vikram.singh@example.com,KOCHI,12-21-2024,Laptop,5,55000,UPI,2
+1573,Manoj Reddy,manoj.reddy@example.com,,15-Nov-2024,Webcam,5,3000,Credit Card,4
+1827,Divya Singh,divya.singh@example.com,Bangalore,04/05/2024,Webcam,5,,Cash,2
+1335,Rahul Das,rahul.das@example.com,Chennai,2024-02-06,Laptop,5,55000,Debit Card,4
+1383,Karthik Kumar,karthik.kumar@example.com,bangalore,25-Jan-2025,Keyboard,2,1500,Cash,4
+1530,Vikram Raj,vikram.raj@example.com,Madurai,2024-10-23,Laptop,2,55000,UPI,4
+1373,Suresh Sharma,suresh.sharma@example.com,HYDERABAD,14/02/2024,Laptop,5,55000,Cash,
+1892,Lakshmi Kumar,lakshmi.kumar@example.com,Madurai,11-20-2025,Mouse,5,600,Debit Card,1
+1580,Arun Singh,arun.singh@example.com,Chennai,08-08-2024,Webcam,2,3000,UPI,
+1602,Karthik Raj,karthik.raj@example.com,Kochi,21-Jul-2024,Mouse,2,600,Cash,
+1004,Divya Kumar,divya.kumar@example.com,bangalore,16-May-2024,Headphones,1,,Cash,3
+1664,Divya Nair,divya.nair@example.com,Coimbatore,2025-06-05,Keyboard,4,1500,Debit Card,5
+1748,Sneha Pillai,sneha.pillai@example.com,Coimbatore,19-May-2025,Monitor,5,12000,Cash,1
+1131,Lakshmi Singh,lakshmi.singh@example.com, Coimbatore ,22-Nov-2024,Mouse,4,600,UPI,5
+1627,Kavya Iyer,kavya.iyer@example.com,,2025-08-23,Webcam,5,3000,Credit Card,4
+1625,Meena Iyer,meena.iyer@example.com,Bangalore,06-May-2024,Monitor,5,12000,Cash,4
+1343,Kavya Reddy,kavya.reddy@example.com,Hyderabad,11-26-2024,Webcam,2,,UPI,5
+1836,Suresh Raj,suresh.raj@example.com,Hyderabad,21-Apr-2024,Mouse,5,600,,5
+1042,Lakshmi Sharma,lakshmi.sharma@example.com,Chennai,2024-03-06,Headphones,1,2500,Credit Card,5
+1322,Divya Das,divya.das@example.com,Kochi,28/03/2024,Webcam,5,3000,Debit Card,5
+1223,Suresh Singh,suresh.singh@example.com,coimbatore,10-24-2025,Webcam,3,3000,Credit Card,4
+1329,Suresh Raj,suresh.raj@example.com,Coimbatore,05-18-2024,Webcam,2,3000,Credit Card,5
+1917,Kavya Raj,,Kochi,03-13-2025,Monitor,3,12000,Debit Card,
+1512,Priya Raj,priya.raj@example.com,Coimbatore,07-22-2025,Monitor,4,12000,Debit Card,3
+1114,Ravi Das,ravi.das@example.com,bangalore,2025-05-10,Headphones,4,2500,UPI,3
+1049,Arun Kumar,arun.kumar@example.com,Hyderabad,01/06/2025,Webcam,4,3000,Credit Card,4
+1290,Sneha Sharma,sneha.sharma@example.com,Kochi,2025-01-29,Webcam,2,3000,Cash,1
+1077,Rahul Das,rahul.das@example.com,Madurai,08-13-2024,Headphones,4,2500,Debit Card,3
+1207,Anitha Nair,anitha.nair@example.com,kochi,29-Apr-2024,Mouse,4,600,Debit Card,4
+1568,Rahul Reddy,, Chennai ,23-Mar-2025,Monitor,,12000,Credit Card,5
+1448,Ravi Reddy,ravi.reddy@example.com,Madurai,10-Jul-2024,Webcam,4,3000,UPI,
+1286,Suresh Singh,suresh.singh@example.com,Bangalore,07-22-2025,Mouse,2,600,UPI,5
+1937,Priya Reddy,priya.reddy@example.com,bangalore,2024-03-29,Webcam,1,3000,,
+1387,Arun Singh,arun.singh@example.com,Coimbatore,01-Jan-2024,Mouse,3,600,Cash,5
+1226,Kavya Iyer,kavya.iyer@example.com,Coimbatore,09/06/2024,Laptop,3,55000,UPI,
+1708,Karthik Pillai,karthik.pillai@example.com, Hyderabad ,2024-08-04,Monitor,5,12000,UPI,3
+1121,Lakshmi Pillai,lakshmi.pillai@example.com,Kochi,27/09/2025,Laptop,2,55000,Debit Card,4
+1367,Ravi Raj,ravi.raj@example.com,madurai,10/01/2024,Mouse,3,600,Credit Card,3
+1513,Manoj Iyer,manoj.iyer@example.com, Coimbatore ,2025-03-26,Monitor,3,12000,Cash,4
+1457,Rahul Kumar,rahul.kumar@example.com,Hyderabad,14/11/2025,Headphones,2,2500,Cash,3
+1388,Suresh Iyer,suresh.iyer@example.com,Hyderabad,2025-03-24,Keyboard,1,,UPI,3
+1596,Vikram Menon,vikram.menon@example.com,Coimbatore,01-Aug-2025,Headphones,4,2500,Credit Card,5
+1222,Kavya Iyer,kavya.iyer@example.com,MADURAI,09-Feb-2024,Mouse,5,600,Credit Card,1
+1269,Vikram Das,vikram.das@example.com,Kochi,26-Mar-2025,Monitor,1,12000,,
+1172,Ravi Pillai,ravi.pillai@example.com,Madurai,06/10/2025,Webcam,4,3000,Debit Card,
+1774,Lakshmi Menon,lakshmi.menon@example.com,Kochi,26-Jun-2024,Mouse,1,600,Debit Card,1
+1769,Suresh Pillai,suresh.pillai@example.com,Chennai,2024-10-25,Keyboard,4,1500,Cash,
+1685,Priya Menon,priya.menon@example.com,Madurai,,Headphones,1,2500,UPI,3
+1545,Suresh Raj,suresh.raj@example.com,,2025-10-01,Laptop,2,55000,Cash,5
+1885,Priya Menon,priya.menon@example.com, Madurai ,12-Jun-2024,Headphones,2,2500,UPI,4
+1865,Rahul Pillai,rahul.pillai@example.com,Hyderabad,11-20-2025,Keyboard,5,1500,UPI,
+1766,Karthik Iyer,karthik.iyer@example.com,Kochi,2024-01-07,Laptop,2,55000,UPI,4
+1124,Vikram Menon,vikram.menon@example.com,Kochi,17-Jul-2025,Monitor,5,12000,UPI,4
+1916,Ravi Iyer,ravi.iyer@example.com,,06-17-2024,Mouse,,600,Debit Card,4
+1181,Naveen Sharma,naveen.sharma@example.com,BANGALORE,26/11/2025,Monitor,3,12000,,4
+1162,Manoj Kumar,,Madurai,30-Jul-2024,Keyboard,5,1500,UPI,4
+1705,Sneha Kumar,sneha.kumar@example.com,,2024-12-03,Laptop,1,55000,UPI,4
+1266,Manoj Kumar,manoj.kumar@example.com,Hyderabad,18-Feb-2024,Laptop,3,55000,Cash,
+1735,Suresh Iyer,suresh.iyer@example.com,Chennai,01-13-2024,Monitor,1,12000,Debit Card,4
+1118,Anitha Nair,anitha.nair@example.com,hyderabad,2024-01-16,Mouse,4,600,Credit Card,5
+1845,Sneha Nair,,chennai,2025-09-08,Laptop,3,55000,Credit Card,3
+1437,Naveen Kumar,naveen.kumar@example.com,Madurai,07-07-2024,Monitor,2,12000,Cash,3
+1764,Kavya Kumar,kavya.kumar@example.com,Madurai,04/05/2024,Webcam,3,3000,Cash,2
+1522,Sneha Iyer,sneha.iyer@example.com,Coimbatore,17/11/2024,Keyboard,2,1500,Credit Card,5
+1673,Sneha Iyer,sneha.iyer@example.com,Coimbatore,2024-01-03,Webcam,,3000,Cash,1
+1234,Karthik Das,karthik.das@example.com,Chennai,23-Jun-2025,Laptop,1,55000,,4
+1469,Rahul Sharma,rahul.sharma@example.com,Coimbatore,2024-01-24,Webcam,4,3000,Credit Card,3
+1598,Priya Iyer,priya.iyer@example.com,Chennai,01/03/2024,Mouse,2,600,Credit Card,
+1241,Suresh Raj,suresh.raj@example.com,HYDERABAD,05-21-2025,Webcam,5,3000,UPI,1
+1135,Lakshmi Kumar,lakshmi.kumar@example.com,Madurai,12-Jun-2025,Keyboard,5,1500,Cash,1
+1156,Manoj Reddy,,Madurai,05-30-2025,Headphones,1,2500,Debit Card,1
+1354,Arun Nair,arun.nair@example.com,Madurai,2024-05-26,Mouse,4,600,Cash,3
+1140,Priya Raj,,Bangalore,28-May-2024,Webcam,1,3000,Credit Card,3
+1933,Rahul Iyer,rahul.iyer@example.com,Madurai,2024-06-20,Monitor,5,12000,Debit Card,3
+1312,Naveen Singh,naveen.singh@example.com,Kochi,2024-06-21,Webcam,,3000,Cash,4
+1061,Priya Das,priya.das@example.com,Chennai,17-Mar-2024,Keyboard,2,1500,UPI,4
+1353,Sneha Kumar,sneha.kumar@example.com,,20-Nov-2024,Laptop,3,55000,UPI,2
+1644,Naveen Pillai,naveen.pillai@example.com,Coimbatore,07-22-2024,Laptop,3,55000,Cash,
+1166,Divya Reddy,divya.reddy@example.com, Chennai ,18-Jun-2025,Headphones,2,2500,Cash,2
+1242,Divya Raj,divya.raj@example.com,chennai,25/09/2025,Mouse,3,600,Credit Card,
+1880,Lakshmi Raj,lakshmi.raj@example.com,Kochi,2024-08-02,Monitor,1,12000,UPI,4
+1301,Vikram Singh,vikram.singh@example.com,Coimbatore,16/05/2025,Mouse,5,600,Cash,3
+1215,Divya Raj,divya.raj@example.com,Hyderabad,23-Oct-2024,Mouse,4,600,UPI,4
+1408,Sneha Das,sneha.das@example.com,Kochi,26-Aug-2024,Keyboard,2,1500,Cash,5
+1883,Manoj Das,manoj.das@example.com,Kochi,16/03/2024,Laptop,2,55000,Credit Card,4
+1298,Priya Sharma,priya.sharma@example.com,Chennai,2025-08-22,Laptop,1,55000,Cash,4
+1395,Priya Raj,priya.raj@example.com,Coimbatore,2024-03-19,Mouse,2,600,Debit Card,1
+1132,Naveen Reddy,naveen.reddy@example.com,Coimbatore,21-Jun-2024,Monitor,1,12000,Cash,
+1315,Kavya Nair,kavya.nair@example.com,Chennai,2025-09-09,Keyboard,2,1500,UPI,4
+1912,Ravi Iyer,ravi.iyer@example.com, Chennai ,01/07/2025,Monitor,2,12000,Debit Card,2
+1739,Karthik Singh,karthik.singh@example.com,bangalore,29-Sep-2024,Monitor,1,12000,Cash,4
+1732,Karthik Reddy,karthik.reddy@example.com,Madurai,04-15-2025,Keyboard,3,1500,UPI,3
+1417,Naveen Nair,naveen.nair@example.com,Coimbatore,14-Aug-2025,Monitor,2,12000,Cash,3
+1566,Suresh Reddy,suresh.reddy@example.com,Bangalore,12-27-2024,Headphones,2,2500,Credit Card,4
+1039,Kavya Reddy,kavya.reddy@example.com, Bangalore ,16/09/2024,Mouse,1,600,Debit Card,4
+1471,Arun Nair,,Coimbatore,12-29-2024,Webcam,4,3000,Credit Card,5
+1250,Karthik Pillai,karthik.pillai@example.com,COIMBATORE,2025-04-09,Monitor,5,,Cash,5
+1506,Karthik Menon,karthik.menon@example.com,CHENNAI,08-Nov-2025,Keyboard,4,1500,Credit Card,1
+1403,Kavya Iyer,kavya.iyer@example.com,Bangalore,09-17-2025,Headphones,4,2500,UPI,4
+1054,Arun Sharma,arun.sharma@example.com,Coimbatore,31/12/2024,Mouse,1,600,Debit Card,5
+1195,,vikram.singh@example.com,Bangalore,2025-07-12,Monitor,1,12000,Credit Card,4
+1137,Karthik Das,karthik.das@example.com,COIMBATORE,2025-09-19,Mouse,5,600,Cash,
+1582,,naveen.das@example.com,Madurai,2024-04-04,Laptop,2,55000,UPI,
+1663,Suresh Kumar,suresh.kumar@example.com,Coimbatore,08-Sep-2024,Webcam,1,,Debit Card,4
+1672,Rahul Pillai,rahul.pillai@example.com,Kochi,17-Apr-2024,Mouse,,600,Cash,
+1282,Priya Nair,priya.nair@example.com,CHENNAI,01-01-2025,Mouse,3,600,Debit Card,3
+1036,Arun Raj,arun.raj@example.com,Kochi,29/11/2024,Monitor,5,12000,Debit Card,3
+1036,Arun Raj,arun.raj@example.com,Kochi,29/11/2024,Monitor,5,12000,Debit Card,3
+1814,Priya Iyer,priya.iyer@example.com,HYDERABAD,15-Apr-2025,Laptop,5,55000,UPI,3
+1744,Naveen Nair,naveen.nair@example.com,COIMBATORE,06-27-2024,Laptop,1,55000,Credit Card,4
+1379,Rahul Reddy,rahul.reddy@example.com,Chennai,07-13-2025,Headphones,4,2500,Cash,2
+1645,Divya Sharma,divya.sharma@example.com,CHENNAI,17-Nov-2025,Webcam,4,3000,Debit Card,2
+1067,Karthik Singh,,Hyderabad,03/01/2025,Keyboard,5,1500,Cash,
+1572,Naveen Pillai,naveen.pillai@example.com,Madurai,05-03-2025,Keyboard,5,1500,Debit Card,5
+1682,Naveen Singh,naveen.singh@example.com,Kochi,,Keyboard,5,1500,Credit Card,3
+1537,Priya Kumar,priya.kumar@example.com,Hyderabad,05-19-2024,Headphones,1,2500,Debit Card,4
+1053,Karthik Nair,karthik.nair@example.com,Madurai,2025-04-01,Keyboard,3,,Cash,4
+1378,Meena Das,meena.das@example.com,Bangalore,15-Nov-2025,Headphones,1,2500,Debit Card,4
+1713,Ravi Reddy,ravi.reddy@example.com,Kochi,07-02-2024,Webcam,4,3000,Credit Card,2
+1852,Meena Singh,meena.singh@example.com,Madurai,2024-11-18,Laptop,5,55000,Debit Card,5
+1960,Lakshmi Sharma,lakshmi.sharma@example.com,chennai,10/11/2024,Monitor,4,12000,Cash,4
+1247,Arun Reddy,arun.reddy@example.com,Madurai,14/02/2025,Keyboard,5,1500,Cash,4
+1941,Lakshmi Kumar,lakshmi.kumar@example.com,Hyderabad,13/09/2025,Mouse,5,600,Credit Card,2
+1426,Priya Iyer,,Chennai,07/06/2025,Mouse,2,600,UPI,4
+1667,Priya Iyer,priya.iyer@example.com,Bangalore,03/09/2024,Webcam,5,3000,Cash,2
+1029,Karthik Kumar,karthik.kumar@example.com,kochi,08-27-2025,Mouse,5,600,Debit Card,5
+1908,Karthik Menon,karthik.menon@example.com,Kochi,20/11/2025,Headphones,4,2500,Credit Card,1
+1245,Priya Raj,priya.raj@example.com,chennai,20/05/2024,Monitor,5,12000,Debit Card,4
+1104,,naveen.kumar@example.com,Chennai,19-Jul-2025,Monitor,1,12000,Credit Card,5
+1277,Karthik Iyer,karthik.iyer@example.com,,09/10/2024,Keyboard,1,1500,Credit Card,5
+1394,Kavya Iyer,kavya.iyer@example.com,Kochi,2025-07-08,Monitor,3,12000,Debit Card,
+1111,Meena Singh,meena.singh@example.com,Kochi,04-Apr-2025,Mouse,1,600,Cash,4
+1160,Suresh Iyer,suresh.iyer@example.com,chennai,08-25-2024,Webcam,1,3000,Debit Card,3
+1113,Sneha Reddy,sneha.reddy@example.com,Chennai,25-Nov-2025,Monitor,1,12000,UPI,1
+1569,Manoj Nair,manoj.nair@example.com,Hyderabad,2024-05-22,Keyboard,3,1500,Debit Card,4
+1552,Arun Iyer,arun.iyer@example.com,Bangalore,13-Dec-2024,Monitor,3,12000,Credit Card,5
+1330,Karthik Reddy,karthik.reddy@example.com,madurai,2024-12-15,Webcam,3,3000,Cash,4
+1263,Suresh Reddy,suresh.reddy@example.com,Hyderabad,12-27-2024,Keyboard,4,,Cash,1
+1859,Lakshmi Menon,lakshmi.menon@example.com,KOCHI,25-Jun-2025,Webcam,4,3000,UPI,1
+1655,Arun Pillai,arun.pillai@example.com,Coimbatore,11/11/2025,Monitor,3,12000,Credit Card,4
+1168,Divya Raj,divya.raj@example.com,Chennai,19-Apr-2024,Webcam,4,3000,Credit Card,1
+1906,Karthik Kumar,karthik.kumar@example.com,KOCHI,,Headphones,2,2500,Credit Card,4
+1155,Meena Reddy,meena.reddy@example.com, Madurai ,2024-09-24,Monitor,3,12000,Credit Card,5
+1950,Divya Singh,divya.singh@example.com,Kochi,02-Feb-2024,Keyboard,4,,Debit Card,3
+1025,Suresh Iyer,suresh.iyer@example.com,Bangalore,11-Sep-2025,Webcam,3,3000,Cash,2
+1858,Suresh Singh,suresh.singh@example.com,Madurai,2025-05-13,Webcam,2,3000,Debit Card,3
+1444,Manoj Sharma,manoj.sharma@example.com,bangalore,2024-07-11,Mouse,,600,Cash,
+1151,Arun Kumar,arun.kumar@example.com,Madurai,19/04/2024,Laptop,1,55000,Credit Card,1
+1095,Anitha Nair,anitha.nair@example.com,MADURAI,2024-01-03,Laptop,4,55000,Credit Card,3
+1218,Suresh Sharma,suresh.sharma@example.com,Hyderabad,04-09-2024,Monitor,2,12000,Cash,1
+1382,Meena Singh,meena.singh@example.com, Madurai ,24/06/2025,Mouse,2,600,UPI,4
+1024,Kavya Iyer,kavya.iyer@example.com,Madurai,06-14-2025,Mouse,1,600,Cash,4
+1293,Karthik Pillai,karthik.pillai@example.com,Bangalore,12-30-2024,Keyboard,2,1500,Cash,3
+1174,Manoj Raj,manoj.raj@example.com,Chennai,14/09/2024,Laptop,2,55000,Cash,2
+1101,Priya Das,priya.das@example.com,Madurai,04-21-2025,Webcam,4,3000,UPI,4
+1026,Divya Raj,divya.raj@example.com, Madurai ,26/04/2025,Mouse,5,600,Credit Card,
+1756,Kavya Pillai,kavya.pillai@example.com,Hyderabad,25-Jun-2025,Mouse,1,600,UPI,4
+1637,Manoj Kumar,manoj.kumar@example.com,Coimbatore,31/12/2024,Mouse,5,600,Debit Card,4
+1490,Arun Raj,arun.raj@example.com,Kochi,2024-02-14,Laptop,5,55000,UPI,3
+1866,Anitha Das,anitha.das@example.com,Coimbatore,2025-02-14,Keyboard,5,1500,Cash,3
+1355,Naveen Menon,naveen.menon@example.com,Chennai,06-Jun-2024,Headphones,3,2500,Debit Card,1
+1646,Karthik Raj,karthik.raj@example.com,Madurai,28/02/2024,Laptop,1,55000,Debit Card,3
+1243,Priya Iyer,priya.iyer@example.com, Hyderabad ,01-19-2024,Keyboard,4,1500,Credit Card,5
+1505,Ravi Reddy,ravi.reddy@example.com,HYDERABAD,09-Dec-2024,Webcam,2,3000,Credit Card,2
+1074,Anitha Menon,anitha.menon@example.com,BANGALORE,21-Oct-2025,Mouse,5,600,UPI,3
+1560,Meena Nair,meena.nair@example.com, Chennai ,09-10-2025,Headphones,4,2500,Debit Card,5
+1346,Manoj Iyer,manoj.iyer@example.com,Madurai,22/03/2024,Headphones,4,2500,Cash,
+1119,Kavya Singh,kavya.singh@example.com,madurai,29-May-2024,Mouse,2,600,Credit Card,2
+1115,Priya Nair,priya.nair@example.com,Madurai,10-04-2024,Monitor,4,12000,Credit Card,5
+1521,Lakshmi Das,lakshmi.das@example.com,Chennai,03-24-2024,Webcam,3,3000,Debit Card,3
+1006,Anitha Singh,anitha.singh@example.com,Hyderabad,11-17-2024,Monitor,3,12000,Cash,4
+1476,Divya Menon,divya.menon@example.com,Madurai,13-Mar-2024,Headphones,4,2500,Debit Card,4
+1657,Suresh Sharma,suresh.sharma@example.com,Bangalore,02-Feb-2024,Monitor,2,12000,Debit Card,5
+1249,Meena Raj,meena.raj@example.com,Madurai,2024-07-10,Headphones,5,2500,Credit Card,4
+1070,Meena Reddy,meena.reddy@example.com,KOCHI,02/05/2024,Monitor,3,12000,Cash,5
+1015,Sneha Menon,sneha.menon@example.com,coimbatore,26-Sep-2024,Mouse,5,600,Cash,5
+1239,Lakshmi Reddy,lakshmi.reddy@example.com,Hyderabad,16-Jun-2024,Laptop,,55000,Cash,3
+1619,Suresh Sharma,suresh.sharma@example.com,Hyderabad,14/08/2024,Laptop,1,55000,Debit Card,3
+1370,Kavya Raj,kavya.raj@example.com,MADURAI,2024-01-21,Webcam,1,3000,Credit Card,4
+1079,Suresh Menon,suresh.menon@example.com,Bangalore,01-21-2024,Mouse,5,600,UPI,4
+1480,Manoj Das,manoj.das@example.com, Kochi ,2025-01-25,Headphones,,2500,Credit Card,4
+1725,Meena Raj,meena.raj@example.com,Kochi,04-Jun-2025,Keyboard,2,1500,Debit Card,3
+1055,Rahul Iyer,rahul.iyer@example.com,Coimbatore,2025-05-31,Mouse,1,600,UPI,4
+1468,Karthik Sharma,karthik.sharma@example.com,Bangalore,2024-03-19,Mouse,2,600,Cash,4
+1267,Lakshmi Pillai,,Bangalore,06-13-2025,Headphones,1,2500,Cash,
+1788,Sneha Pillai,sneha.pillai@example.com,Hyderabad,2024-01-11,Laptop,4,55000,Cash,4
+1515,Priya Kumar,priya.kumar@example.com,Chennai,2025-06-21,Monitor,5,12000,Cash,4
+1538,Meena Menon,meena.menon@example.com,Kochi,30-Dec-2024,Headphones,3,2500,UPI,4
+1873,Meena Kumar,meena.kumar@example.com,Hyderabad,01/03/2024,Headphones,,2500,Credit Card,5
+1504,Sneha Das,sneha.das@example.com,Coimbatore,,Keyboard,2,1500,Credit Card,4
+1607,Rahul Singh,rahul.singh@example.com,Kochi,01-05-2025,Laptop,5,55000,Debit Card,4
+1167,Karthik Raj,karthik.raj@example.com,Chennai,28/01/2025,Mouse,3,600,Debit Card,
+1691,Divya Sharma,divya.sharma@example.com,Chennai,06/06/2025,Keyboard,4,1500,Credit Card,4
+1332,Manoj Iyer,manoj.iyer@example.com,Kochi,,Keyboard,5,1500,Debit Card,2
+1877,Ravi Das,ravi.das@example.com,Bangalore,07-08-2024,Keyboard,3,1500,Debit Card,4
+1248,Sneha Singh,sneha.singh@example.com,Kochi,28/11/2024,Laptop,2,55000,Debit Card,1
+1374,Arun Reddy,arun.reddy@example.com,Hyderabad,02-12-2024,Webcam,3,3000,Debit Card,5
+1633,Meena Kumar,meena.kumar@example.com,Hyderabad,02-25-2024,Laptop,4,55000,UPI,5
+1473,Sneha Raj,sneha.raj@example.com,Hyderabad,30-Jul-2025,Headphones,3,2500,Cash,1
+1500,Meena Sharma,meena.sharma@example.com, Kochi ,03/04/2024,Laptop,5,55000,UPI,
+1639,Divya Raj,divya.raj@example.com,Coimbatore,25-Mar-2024,Keyboard,1,1500,Debit Card,5
+1609,Ravi Menon,ravi.menon@example.com,Madurai,16-Aug-2025,Laptop,5,55000,Cash,5
+1564,Karthik Reddy,karthik.reddy@example.com,Coimbatore,07-11-2024,Webcam,2,3000,Cash,1
+1790,Anitha Kumar,anitha.kumar@example.com,Kochi,22-Sep-2024,Webcam,2,3000,Debit Card,4
+1308,Karthik Reddy,karthik.reddy@example.com,madurai,24-Apr-2025,Monitor,1,12000,,1
+1794,Manoj Sharma,manoj.sharma@example.com,Madurai,25-Nov-2025,Webcam,1,3000,UPI,5
+1800,Rahul Das,rahul.das@example.com,KOCHI,25-May-2025,Keyboard,2,1500,Debit Card,3
+1567,Ravi Menon,ravi.menon@example.com,kochi,2025-10-21,Mouse,2,600,Cash,5
+1502,Meena Raj,meena.raj@example.com,Kochi,2025-07-24,Mouse,5,600,Cash,4
+1235,Suresh Menon,suresh.menon@example.com,Hyderabad,21/05/2024,Mouse,2,600,UPI,2
+1776,Kavya Raj,kavya.raj@example.com,Madurai,14/10/2025,Laptop,4,55000,Cash,4
+1431,Naveen Raj,naveen.raj@example.com, Chennai ,15/09/2024,Laptop,4,55000,UPI,4
+1630,Meena Menon,meena.menon@example.com,Madurai,01-10-2024,Webcam,5,3000,UPI,1
+1192,Priya Reddy,priya.reddy@example.com,,30/04/2025,Keyboard,4,1500,Cash,3
+1152,Karthik Kumar,karthik.kumar@example.com,,2024-03-10,Webcam,3,3000,UPI,3
+1436,Meena Raj,meena.raj@example.com,Bangalore,07-10-2024,Keyboard,2,1500,Credit Card,4
+1257,Manoj Reddy,manoj.reddy@example.com,Hyderabad,01-Sep-2024,Mouse,3,600,,4
+1911,Priya Pillai,priya.pillai@example.com,,07/07/2024,Headphones,2,2500,UPI,3
+1668,Arun Menon,arun.menon@example.com,Hyderabad,2025-06-12,Keyboard,2,1500,UPI,4
+1779,Suresh Pillai,suresh.pillai@example.com,Coimbatore,05-20-2025,Keyboard,5,1500,UPI,1
+1542,Sneha Nair,sneha.nair@example.com, Chennai ,2024-09-11,Laptop,3,55000,UPI,1
+1570,Ravi Iyer,ravi.iyer@example.com,CHENNAI,14-Dec-2024,Webcam,1,,Cash,1
+1583,Suresh Iyer,suresh.iyer@example.com,hyderabad,28/06/2024,Headphones,2,2500,Credit Card,4
+1384,Priya Reddy,priya.reddy@example.com,Bangalore,09-Nov-2025,Keyboard,3,1500,Debit Card,
+1146,Suresh Iyer,,Madurai,2024-02-09,Webcam,3,3000,Credit Card,5
+1851,Meena Reddy,meena.reddy@example.com,Bangalore,06-06-2024,Webcam,1,3000,Cash,5
+1929,Arun Raj,arun.raj@example.com,Hyderabad,26/09/2024,Monitor,3,12000,Credit Card,5
+1534,Naveen Reddy,naveen.reddy@example.com,Madurai,03-31-2025,Laptop,2,55000,Debit Card,5
+1216,Arun Das,arun.das@example.com,Kochi,18-Apr-2024,Keyboard,1,1500,UPI,5
+1843,Lakshmi Raj,lakshmi.raj@example.com,Chennai,2024-06-27,Headphones,5,,Debit Card,3
+1901,Vikram Iyer,vikram.iyer@example.com,Kochi,19/12/2024,Keyboard,4,1500,UPI,4
+1666,Karthik Kumar,karthik.kumar@example.com,Coimbatore,11/07/2024,Headphones,5,2500,UPI,5
+1197,Naveen Menon,naveen.menon@example.com,Coimbatore,25/03/2024,Webcam,4,3000,UPI,2
+1844,Rahul Pillai,rahul.pillai@example.com,Coimbatore,24/04/2025,Headphones,1,,Credit Card,5
+1496,Ravi Iyer,ravi.iyer@example.com,COIMBATORE,22/03/2024,Keyboard,3,1500,Debit Card,5
+1592,Rahul Pillai,rahul.pillai@example.com,,26-Sep-2025,Monitor,1,12000,,5
+1018,Priya Reddy,priya.reddy@example.com,Coimbatore,2024-02-23,Headphones,5,2500,Credit Card,5
+1777,Naveen Pillai,naveen.pillai@example.com,CHENNAI,2025-02-02,Keyboard,5,1500,Credit Card,4
+1028,Vikram Reddy,vikram.reddy@example.com,Bangalore,02-09-2025,Laptop,1,55000,,3
+1278,Divya Das,divya.das@example.com, Coimbatore ,2025-01-29,Headphones,4,2500,Credit Card,
+1632,Vikram Kumar,vikram.kumar@example.com,Coimbatore,09-02-2025,Laptop,,55000,UPI,4
+1396,Sneha Iyer,sneha.iyer@example.com,Coimbatore,12-09-2024,Webcam,4,3000,UPI,
+1229,Sneha Nair,sneha.nair@example.com,chennai,03-04-2025,Keyboard,3,1500,Cash,5
+1321,Meena Das,,Madurai,24/10/2025,Webcam,5,3000,Credit Card,4
+1148,Arun Nair,arun.nair@example.com,Chennai,29/08/2024,Keyboard,3,1500,UPI,4
+1722,Naveen Pillai,naveen.pillai@example.com,coimbatore,2025-09-03,Keyboard,1,1500,UPI,5
+1951,Kavya Pillai,kavya.pillai@example.com,MADURAI,19-Jan-2024,Monitor,1,12000,Debit Card,4
+1495,Arun Pillai,arun.pillai@example.com,Chennai,22-Jan-2024,Headphones,3,2500,Cash,1
+1599,Suresh Raj,suresh.raj@example.com,,19/04/2024,Webcam,1,3000,UPI,4
+1450,Priya Iyer,priya.iyer@example.com,kochi,04-06-2025,Headphones,3,2500,Credit Card,3
+1714,Rahul Das,,bangalore,05-13-2025,Keyboard,2,,,4
+1107,Suresh Menon,,Kochi,16-Jan-2025,Keyboard,4,1500,UPI,3
+1351,Divya Reddy,divya.reddy@example.com,Bangalore,01-28-2024,Keyboard,3,1500,UPI,1
+1524,Divya Das,divya.das@example.com, Madurai ,11-13-2024,Mouse,3,600,Credit Card,4
+1390,Vikram Pillai,vikram.pillai@example.com, Madurai ,14-Sep-2025,Webcam,5,3000,UPI,
+1449,Manoj Das,manoj.das@example.com,Madurai,21-Apr-2024,Monitor,,12000,Debit Card,5
+1094,Meena Iyer,meena.iyer@example.com,Coimbatore,10-30-2025,Mouse,4,600,Cash,5
+1260,Naveen Reddy,naveen.reddy@example.com,Hyderabad,22/11/2025,Mouse,3,600,Credit Card,4
+1555,Priya Raj,,BANGALORE,01-31-2025,Headphones,5,2500,UPI,
+1889,Ravi Reddy,ravi.reddy@example.com,Madurai,29/11/2024,Monitor,2,12000,Cash,4
+1171,Naveen Raj,naveen.raj@example.com,Madurai,18-Mar-2025,Monitor,1,12000,Debit Card,4
+1255,Divya Singh,divya.singh@example.com,Hyderabad,01-10-2025,Webcam,4,3000,Debit Card,5
+1603,Sneha Pillai,sneha.pillai@example.com,Madurai,02-04-2025,Keyboard,,1500,Credit Card,3
+1253,Anitha Menon,anitha.menon@example.com,Coimbatore,05-31-2024,Headphones,,2500,Debit Card,5
+1307,Anitha Iyer,anitha.iyer@example.com, Madurai ,02-Mar-2024,Laptop,3,55000,Debit Card,2
+1548,Ravi Das,,Kochi,2024-08-24,Monitor,4,12000,UPI,1
+1797,Karthik Pillai,karthik.pillai@example.com,Bangalore,03-29-2024,Keyboard,5,1500,Credit Card,5
+1954,Arun Kumar,arun.kumar@example.com,hyderabad,2025-04-07,Monitor,3,12000,Credit Card,
+1429,Priya Reddy,priya.reddy@example.com,Kochi,06-15-2024,Headphones,4,2500,UPI,5
+1187,Priya Sharma,priya.sharma@example.com,Bangalore,27/08/2024,Monitor,1,12000,Debit Card,4
+1270,Meena Reddy,meena.reddy@example.com,Coimbatore,14/11/2024,Laptop,3,55000,Cash,3
+1631,Lakshmi Iyer,lakshmi.iyer@example.com,Chennai,,Mouse,3,600,Cash,4
+1163,Manoj Iyer,manoj.iyer@example.com,Madurai,,Monitor,5,12000,UPI,4
+1414,Divya Nair,divya.nair@example.com,Chennai,2024-11-03,Webcam,4,3000,Debit Card,4
+1775,Suresh Singh,suresh.singh@example.com,Bangalore,18/01/2025,Monitor,4,12000,Debit Card,4
+1790,Anitha Kumar,anitha.kumar@example.com,Kochi,22-Sep-2024,Webcam,2,3000,Debit Card,4
+1099,Kavya Raj,kavya.raj@example.com,Madurai,13-Dec-2024,Headphones,5,2500,Credit Card,5
+1007,Ravi Nair,ravi.nair@example.com,Hyderabad,2024-09-06,Webcam,4,3000,Cash,4
+1802,Rahul Singh,rahul.singh@example.com,Hyderabad,2025-10-08,Mouse,,600,UPI,5
+1853,Ravi Singh,ravi.singh@example.com,Bangalore,27-Aug-2025,Headphones,1,2500,Cash,2
+1612,Priya Pillai,priya.pillai@example.com,Bangalore,04-26-2024,Keyboard,3,1500,Credit Card,
+1230,Ravi Nair,ravi.nair@example.com,Madurai,2025-05-17,Keyboard,,1500,Credit Card,3
+1265,Lakshmi Iyer,lakshmi.iyer@example.com,Hyderabad,04-Dec-2024,Laptop,3,55000,UPI,4
+1369,Lakshmi Iyer,lakshmi.iyer@example.com,coimbatore,2025-10-04,Mouse,5,600,UPI,4
+1696,Meena Pillai,,Chennai,05-Nov-2024,Laptop,5,55000,UPI,3
+1862,Manoj Singh,manoj.singh@example.com,Hyderabad,31-Mar-2025,Headphones,3,2500,Debit Card,4
+1846,,naveen.nair@example.com,Hyderabad,26/10/2025,Monitor,3,12000,UPI,3
+1897,Meena Pillai,meena.pillai@example.com,Chennai,05-11-2024,Webcam,5,3000,Credit Card,4
+1404,Arun Nair,,coimbatore,2025-10-16,Monitor,1,12000,Debit Card,3
+1948,Suresh Raj,suresh.raj@example.com,Coimbatore,2025-10-08,Headphones,3,2500,Cash,4
+1611,Ravi Raj,ravi.raj@example.com,Hyderabad,28-Feb-2025,Headphones,1,2500,Credit Card,3
+1190,Vikram Raj,vikram.raj@example.com,Kochi,14-Oct-2025,Mouse,1,600,Credit Card,5
+1333,Ravi Kumar,ravi.kumar@example.com, Madurai ,2024-04-23,Monitor,5,,Cash,
+1304,Kavya Iyer,kavya.iyer@example.com,Chennai,06-11-2025,Laptop,3,55000,Cash,3
+1261,Suresh Nair,suresh.nair@example.com,,2024-04-15,Monitor,5,12000,Credit Card,
+1145,Sneha Pillai,sneha.pillai@example.com,Kochi,2025-04-21,Webcam,2,3000,UPI,
+1628,Rahul Singh,rahul.singh@example.com,kochi,30/04/2024,Webcam,3,3000,Credit Card,4
+1284,Sneha Reddy,sneha.reddy@example.com,Chennai,09-07-2024,Headphones,3,2500,UPI,4
+1854,Kavya Iyer,kavya.iyer@example.com,Coimbatore,2025-03-16,Webcam,5,3000,Cash,
+1012,Arun Iyer,arun.iyer@example.com,Bangalore,12/05/2024,Keyboard,4,1500,Credit Card,3
+1815,Divya Nair,divya.nair@example.com,Chennai,04-Apr-2024,Laptop,1,55000,,4
+1595,Manoj Kumar,manoj.kumar@example.com,Kochi,16-Jul-2025,Keyboard,1,1500,Cash,5
+1694,Ravi Nair,ravi.nair@example.com, Hyderabad ,07-07-2024,Monitor,2,12000,,5
+1532,Rahul Iyer,,Hyderabad,18-Mar-2024,Monitor,3,12000,UPI,4
+1470,Suresh Singh,suresh.singh@example.com,Hyderabad,04/10/2025,Keyboard,3,1500,Cash,
+1128,Priya Kumar,priya.kumar@example.com,Coimbatore,21/01/2025,Headphones,5,2500,Credit Card,4
+1736,Ravi Kumar,ravi.kumar@example.com, Madurai ,08-21-2024,Laptop,5,,Credit Card,4
+1058,Naveen Pillai,naveen.pillai@example.com,Hyderabad,01/06/2025,Webcam,5,3000,Credit Card,4
+1034,Karthik Nair,karthik.nair@example.com,HYDERABAD,2025-09-25,Monitor,5,12000,Debit Card,2
+1238,Suresh Das,suresh.das@example.com,bangalore,01-16-2024,Laptop,3,55000,UPI,
+1922,Karthik Nair,karthik.nair@example.com,Bangalore,12/01/2025,Mouse,2,600,Debit Card,
+1283,Meena Raj,meena.raj@example.com,Madurai,06-30-2025,Keyboard,1,1500,,4
+1587,Suresh Sharma,suresh.sharma@example.com,BANGALORE,12/10/2025,Mouse,2,600,Cash,2
+1363,Arun Sharma,arun.sharma@example.com,Chennai,20/03/2025,Webcam,3,3000,Debit Card,5
+1244,Sneha Raj,sneha.raj@example.com,madurai,2024-07-02,Webcam,4,3000,Cash,2
+1604,Karthik Nair,karthik.nair@example.com,Bangalore,2024-12-25,Mouse,1,600,Debit Card,3
+1093,Arun Kumar,arun.kumar@example.com,Kochi,02-06-2025,Mouse,1,600,Credit Card,3
+1211,Ravi Menon,ravi.menon@example.com,Madurai,10-07-2024,Mouse,5,600,Debit Card,4
+1338,Manoj Reddy,manoj.reddy@example.com,Hyderabad,07-Jan-2024,Keyboard,2,1500,Credit Card,4
+1730,Divya Reddy,divya.reddy@example.com,Bangalore,29-Jul-2025,Webcam,4,3000,Debit Card,4
+1669,Suresh Pillai,suresh.pillai@example.com,Coimbatore,16/01/2024,Keyboard,4,1500,UPI,4
+1302,Rahul Nair,rahul.nair@example.com,Chennai,29-Aug-2024,Webcam,2,3000,Cash,5
+1086,Suresh Iyer,suresh.iyer@example.com,Hyderabad,2024-01-02,Headphones,4,2500,Cash,5
+1191,Ravi Raj,ravi.raj@example.com,CHENNAI,05-10-2025,Headphones,4,2500,,5
+1040,Karthik Iyer,karthik.iyer@example.com,Madurai,03-17-2025,Mouse,3,600,Cash,2
+1501,Lakshmi Raj,lakshmi.raj@example.com,COIMBATORE,04-Feb-2025,Webcam,,3000,Credit Card,2
+1624,Karthik Das,karthik.das@example.com,,16-Oct-2024,Headphones,2,2500,Cash,1
+1508,Manoj Reddy,manoj.reddy@example.com,Chennai,09/07/2025,Keyboard,3,1500,Cash,5
+1635,Karthik Nair,karthik.nair@example.com,Chennai,2025-08-25,Laptop,5,55000,,3
+1517,Naveen Reddy,naveen.reddy@example.com,Kochi,29-Jul-2024,Laptop,1,55000,,4
+1724,Rahul Sharma,rahul.sharma@example.com,Coimbatore,2025-10-19,Webcam,4,3000,Cash,
+1105,Lakshmi Raj,lakshmi.raj@example.com,Bangalore,04-08-2024,Mouse,4,600,UPI,4
+1807,Ravi Reddy,ravi.reddy@example.com,Chennai,2025-07-12,Keyboard,1,1500,UPI,5
+1234,Karthik Das,karthik.das@example.com,Chennai,23-Jun-2025,Laptop,1,55000,,4
+1677,Meena Singh,meena.singh@example.com,Madurai,01/12/2024,Webcam,1,3000,Cash,3
+1106,Karthik Pillai,karthik.pillai@example.com,Kochi,27/09/2025,Monitor,1,12000,Cash,5
+1342,Suresh Reddy,suresh.reddy@example.com,Madurai,06/01/2025,Webcam,4,3000,Cash,1
+1927,Sneha Iyer,sneha.iyer@example.com, Madurai ,03-21-2024,Monitor,2,12000,,3
+1254,Suresh Iyer,suresh.iyer@example.com,Bangalore,30-Mar-2024,Webcam,5,3000,UPI,4
+1409,Meena Singh,,Bangalore,04/06/2024,Mouse,3,600,Debit Card,3
+1423,Lakshmi Raj,lakshmi.raj@example.com, Chennai ,10/11/2025,Laptop,5,55000,Credit Card,4
+1209,Sneha Nair,sneha.nair@example.com,Chennai,11-12-2024,Headphones,4,2500,UPI,
+1229,Sneha Nair,sneha.nair@example.com,chennai,03-04-2025,Keyboard,3,1500,Cash,5
+1771,Suresh Das,suresh.das@example.com,Chennai,2025-02-08,Keyboard,2,1500,Debit Card,
+1083,Divya Raj,divya.raj@example.com,Hyderabad,07/06/2024,Mouse,1,600,Debit Card,2
+1498,Manoj Singh,manoj.singh@example.com, Kochi ,2025-10-08,Webcam,3,3000,Credit Card,
+1920,Meena Das,meena.das@example.com,Bangalore,10-Oct-2024,Headphones,4,2500,Credit Card,3
+1584,Kavya Menon,kavya.menon@example.com,Bangalore,09-Aug-2024,Webcam,1,3000,Debit Card,
+1781,Anitha Singh,anitha.singh@example.com,Coimbatore,2025-06-29,Monitor,2,12000,UPI,2
+1088,Arun Iyer,arun.iyer@example.com, Coimbatore ,11-21-2025,Monitor,4,12000,Cash,
+1065,Ravi Raj,ravi.raj@example.com,Coimbatore,23-Jul-2024,Headphones,1,2500,Cash,4
+1271,Manoj Pillai,manoj.pillai@example.com, Hyderabad ,09-Jun-2024,Webcam,2,,Debit Card,3
+1606,Karthik Kumar,karthik.kumar@example.com,bangalore,12/06/2025,Headphones,4,2500,UPI,
+1275,Vikram Menon,vikram.menon@example.com,,28/05/2024,Laptop,,55000,,2
+1681,Rahul Nair,rahul.nair@example.com, Kochi ,22/10/2025,Laptop,5,55000,UPI,
+1871,Suresh Singh,suresh.singh@example.com,Kochi,17-Mar-2024,Laptop,3,55000,Credit Card,3
+1793,Meena Menon,,Madurai,08-Apr-2024,Mouse,4,600,Cash,
+1894,Ravi Das,ravi.das@example.com,Coimbatore,03-May-2024,Laptop,5,55000,UPI,4
+1154,Sneha Raj,sneha.raj@example.com,BANGALORE,09-Oct-2025,Webcam,1,3000,UPI,5
+1614,Ravi Reddy,ravi.reddy@example.com,Hyderabad,06-04-2025,Mouse,3,600,Debit Card,5
+1783,Priya Kumar,priya.kumar@example.com,Coimbatore,13-May-2025,Laptop,4,55000,Cash,5
+1411,Naveen Pillai,naveen.pillai@example.com,Coimbatore,09-Feb-2024,Laptop,2,55000,Credit Card,5
+1867,Naveen Singh,naveen.singh@example.com,Chennai,15/05/2025,Laptop,5,55000,Credit Card,5
+1518,Anitha Sharma,anitha.sharma@example.com,Kochi,2025-06-05,Mouse,5,600,Credit Card,4
+1045,Suresh Kumar,suresh.kumar@example.com,Coimbatore,31-Mar-2024,Webcam,2,3000,Credit Card,5
+1626,Manoj Iyer,manoj.iyer@example.com, Madurai ,11/11/2025,Headphones,2,2500,Cash,5
+1391,Sneha Menon,sneha.menon@example.com,Madurai,05/03/2024,Keyboard,1,1500,Debit Card,4
+1221,Lakshmi Iyer,lakshmi.iyer@example.com,Chennai,04-01-2024,Webcam,2,3000,Cash,4
+1141,Manoj Reddy,manoj.reddy@example.com,Hyderabad,10-23-2025,Headphones,,2500,UPI,3
+1350,Kavya Nair,kavya.nair@example.com,Hyderabad,11-Jul-2024,Laptop,1,,Cash,1
+1358,Vikram Raj,vikram.raj@example.com,COIMBATORE,01/10/2025,Laptop,5,55000,UPI,3
+1723,Naveen Das,naveen.das@example.com,Coimbatore,07-10-2024,Keyboard,5,1500,,5
+1134,Vikram Reddy,vikram.reddy@example.com,Madurai,29-May-2024,Headphones,4,2500,UPI,3
+1262,,vikram.menon@example.com,Hyderabad,03-Mar-2025,Mouse,4,600,Debit Card,4
+1279,Arun Menon,arun.menon@example.com,coimbatore,12/09/2024,Mouse,5,600,UPI,5
+1080,Suresh Reddy,suresh.reddy@example.com,Hyderabad,25-May-2025,Laptop,2,55000,UPI,2
+1689,Lakshmi Sharma,lakshmi.sharma@example.com,Kochi,2024-01-06,Headphones,3,2500,Credit Card,3
+1116,Kavya Menon,kavya.menon@example.com,Coimbatore,02-28-2025,Keyboard,3,1500,UPI,4
+1817,Ravi Iyer,ravi.iyer@example.com,bangalore,07-22-2025,Mouse,3,600,UPI,5
+1837,Sneha Sharma,sneha.sharma@example.com,Kochi,2025-11-24,Keyboard,5,1500,Credit Card,1
+1719,Priya Raj,priya.raj@example.com,Bangalore,2024-11-04,Monitor,4,,Credit Card,1
+1381,Suresh Das,suresh.das@example.com, Hyderabad ,12-22-2024,Webcam,2,3000,,3
+1935,Manoj Nair,manoj.nair@example.com,CHENNAI,17/04/2024,Mouse,1,600,Credit Card,4
+1185,Karthik Das,karthik.das@example.com,Bangalore,05/06/2024,Keyboard,2,1500,,3
+1791,Suresh Singh,suresh.singh@example.com,Kochi,04/09/2025,Monitor,3,12000,,5
+1359,Ravi Nair,ravi.nair@example.com,kochi,12-Sep-2025,Keyboard,,,UPI,3
+1037,Divya Singh,divya.singh@example.com,bangalore,26/07/2025,Keyboard,1,1500,Debit Card,4
+1340,Priya Singh,priya.singh@example.com,KOCHI,31/12/2024,Keyboard,5,1500,Credit Card,4
+1838,Arun Nair,arun.nair@example.com,Kochi,2024-09-21,Headphones,4,2500,UPI,4
+1755,Naveen Kumar,naveen.kumar@example.com,CHENNAI,2024-11-24,Mouse,2,600,Cash,4
+1421,Rahul Iyer,rahul.iyer@example.com,Coimbatore,2024-01-16,Laptop,5,55000,UPI,4
+1150,Kavya Iyer,kavya.iyer@example.com,Bangalore,11/11/2024,Headphones,1,2500,UPI,3
+1010,Priya Raj,priya.raj@example.com,Coimbatore,2025-04-30,Keyboard,3,1500,Debit Card,5
+1046,Sneha Raj,sneha.raj@example.com,Hyderabad,12-Jan-2024,Monitor,3,12000,UPI,1
+1096,Ravi Iyer,ravi.iyer@example.com,BANGALORE,31-Dec-2024,Monitor,4,12000,UPI,5
+1903,Meena Kumar,meena.kumar@example.com,coimbatore,09/07/2025,Webcam,,3000,UPI,1
+1436,Meena Raj,meena.raj@example.com,Bangalore,07-10-2024,Keyboard,2,1500,Credit Card,4
+1549,Divya Menon,divya.menon@example.com,Chennai,04-20-2024,Mouse,5,600,Debit Card,3
+1561,Meena Raj,meena.raj@example.com, Coimbatore ,2025-04-14,Mouse,4,600,Debit Card,4
+1299,Ravi Reddy,ravi.reddy@example.com,Kochi,03-29-2024,Webcam,,3000,UPI,5
+1291,Vikram Raj,vikram.raj@example.com, Madurai ,30/06/2024,Webcam,1,3000,Credit Card,3
+1416,Priya Nair,priya.nair@example.com,COIMBATORE,02-06-2025,Headphones,,2500,Credit Card,4
+1314,Arun Kumar,arun.kumar@example.com,Coimbatore,08-03-2025,Laptop,4,55000,Debit Card,
+1422,Priya Nair,priya.nair@example.com,Bangalore,2024-09-27,Mouse,5,600,Credit Card,5
+1658,Kavya Sharma,kavya.sharma@example.com,Madurai,2025-01-03,Monitor,2,12000,UPI,4
+1123,Meena Raj,meena.raj@example.com,Coimbatore,09/09/2024,Mouse,1,600,Cash,2
+1842,,meena.sharma@example.com,Kochi,02/10/2025,Mouse,5,600,Cash,3
+1818,Manoj Raj,manoj.raj@example.com,coimbatore,08-03-2024,Webcam,3,3000,UPI,1
+1362,Divya Menon,divya.menon@example.com,Kochi,02-23-2025,Monitor,2,12000,Credit Card,5
+1337,Lakshmi Menon,lakshmi.menon@example.com,Madurai,04/08/2024,Laptop,3,55000,Debit Card,4
+1136,Kavya Kumar,kavya.kumar@example.com,,01-Jun-2024,Mouse,4,600,Cash,1
+1850,Kavya Pillai,kavya.pillai@example.com,Chennai,2024-11-20,Keyboard,3,1500,Credit Card,5
+1710,Anitha Nair,anitha.nair@example.com,Chennai,20/03/2025,Keyboard,1,1500,Cash,1
+1770,Sneha Das,sneha.das@example.com,Coimbatore,2025-01-23,Keyboard,5,,Debit Card,
+1652,Priya Iyer,priya.iyer@example.com,MADURAI,2024-06-05,Laptop,3,55000,Cash,
+1368,Anitha Pillai,anitha.pillai@example.com,Kochi,28-Feb-2025,Laptop,4,55000,Cash,1
+1852,Meena Singh,meena.singh@example.com,Madurai,2024-11-18,Laptop,5,55000,Debit Card,5
+1915,Meena Reddy,meena.reddy@example.com,Hyderabad,,Webcam,2,3000,Credit Card,5
+1620,Lakshmi Das,lakshmi.das@example.com,Bangalore,04-10-2024,Mouse,1,600,Debit Card,4
+1009,,arun.raj@example.com,Madurai,09-Aug-2025,Headphones,5,2500,Debit Card,4
+1098,Ravi Pillai,ravi.pillai@example.com,BANGALORE,2025-01-19,Laptop,1,55000,Cash,4
+1626,Manoj Iyer,manoj.iyer@example.com, Madurai ,11/11/2025,Headphones,2,2500,Cash,5
+1349,Naveen Raj,naveen.raj@example.com,Chennai,2024-09-04,Mouse,1,600,Credit Card,5
+1510,Naveen Iyer,naveen.iyer@example.com,Chennai,28-Jan-2025,Mouse,4,600,Cash,1
+1957,Lakshmi Menon,lakshmi.menon@example.com,Chennai,05-Jul-2024,Keyboard,1,1500,UPI,
+1704,Suresh Kumar,suresh.kumar@example.com, Madurai ,17/04/2025,Keyboard,4,1500,Credit Card,
+1747,Arun Menon,arun.menon@example.com,Madurai,26/07/2024,Monitor,1,12000,Credit Card,1
+1022,Kavya Singh,kavya.singh@example.com,Kochi,24-Jun-2025,Laptop,3,55000,Cash,3
+1483,Arun Nair,,Coimbatore,01-19-2024,Monitor,1,12000,UPI,3
+1875,Ravi Iyer,ravi.iyer@example.com,Hyderabad,29-Jun-2025,Mouse,4,600,Cash,4
+1406,Sneha Nair,sneha.nair@example.com,BANGALORE,2024-07-30,Mouse,1,600,Credit Card,4
+1785,Lakshmi Pillai,lakshmi.pillai@example.com,Madurai,07/03/2024,Headphones,3,2500,UPI,2
+1918,Kavya Das,kavya.das@example.com,Bangalore,02-14-2024,Webcam,1,3000,Debit Card,3
+1371,Karthik Singh,karthik.singh@example.com,Chennai,03/01/2024,Monitor,2,12000,Credit Card,
+1848,Divya Pillai,divya.pillai@example.com,Hyderabad,30-Mar-2024,Keyboard,1,1500,Credit Card,5
+1479,Vikram Iyer,vikram.iyer@example.com,Kochi,10-27-2025,Webcam,5,3000,UPI,2
+1591,Kavya Pillai,kavya.pillai@example.com,Hyderabad,06-04-2024,Webcam,1,3000,Debit Card,5
+1492,Kavya Kumar,kavya.kumar@example.com,Bangalore,28/11/2025,Webcam,1,3000,UPI,5
+1047,Rahul Iyer,rahul.iyer@example.com, Coimbatore ,14-Jun-2024,Laptop,3,55000,Cash,3
+1365,Suresh Raj,suresh.raj@example.com,chennai,01-05-2024,Keyboard,5,1500,Debit Card,4
+1297,Lakshmi Iyer,lakshmi.iyer@example.com,Bangalore,24-May-2025,Headphones,5,2500,Cash,1
+1050,Naveen Das,naveen.das@example.com,,06-Feb-2025,Headphones,2,2500,Cash,4
+1488,Lakshmi Raj,lakshmi.raj@example.com,KOCHI,16-Jun-2025,Headphones,,2500,Credit Card,2
+1225,Vikram Raj,vikram.raj@example.com,Chennai,05-07-2025,Keyboard,2,,Credit Card,4
+1751,Kavya Menon,kavya.menon@example.com,Hyderabad,2024-11-07,Monitor,5,12000,Cash,1
+1220,Anitha Raj,anitha.raj@example.com,Coimbatore,10-17-2025,Headphones,1,2500,Cash,
+1946,Manoj Raj,manoj.raj@example.com,Chennai,27-Apr-2024,Keyboard,5,1500,UPI,4
+1762,Manoj Nair,manoj.nair@example.com,kochi,11-30-2025,Keyboard,5,1500,Debit Card,5
+1035,Manoj Singh,manoj.singh@example.com,MADURAI,11/09/2024,Laptop,1,55000,Debit Card,3
+1648,Priya Menon,priya.menon@example.com,Coimbatore,09/05/2024,Monitor,2,,,3
+1202,Naveen Das,naveen.das@example.com,BANGALORE,2024-06-04,Mouse,1,600,Credit Card,4
+1563,Priya Singh,priya.singh@example.com,Madurai,2024-09-10,Keyboard,2,1500,Cash,5
+1623,Rahul Das,rahul.das@example.com,Madurai,02/12/2024,Headphones,3,2500,,2
+1042,Lakshmi Sharma,lakshmi.sharma@example.com,Chennai,2024-03-06,Headphones,1,2500,Credit Card,5
+1064,Kavya Iyer,kavya.iyer@example.com,Kochi,16-May-2025,Webcam,4,3000,Debit Card,4
+1805,Lakshmi Raj,lakshmi.raj@example.com,Chennai,2024-06-02,Keyboard,3,1500,Cash,2
+1605,Ravi Menon,ravi.menon@example.com,Coimbatore,04-07-2025,Laptop,3,55000,Debit Card,3
+1246,Karthik Kumar,karthik.kumar@example.com,Hyderabad,02-02-2025,Webcam,5,,Credit Card,4
+1443,Ravi Singh,ravi.singh@example.com,Coimbatore,09-13-2025,Mouse,4,600,UPI,1
+1348,Naveen Sharma,naveen.sharma@example.com,Coimbatore,21/01/2024,Mouse,2,600,Cash,3
+1575,Naveen Menon,naveen.menon@example.com,Coimbatore,04-17-2025,Laptop,4,55000,Credit Card,3
+1001,Meena Nair,meena.nair@example.com,Coimbatore,2025-10-28,Monitor,1,12000,Cash,1
+1540,Kavya Menon,kavya.menon@example.com, Kochi ,13-Jan-2025,Mouse,1,600,,1
+1768,Lakshmi Pillai,,Hyderabad,12-21-2024,Webcam,2,3000,Debit Card,2
+1763,Ravi Sharma,ravi.sharma@example.com,Chennai,09/07/2025,Headphones,3,2500,UPI,4
+1690,Anitha Menon,anitha.menon@example.com,Kochi,05-26-2024,Headphones,4,2500,Debit Card,4
+1188,Manoj Nair,manoj.nair@example.com,bangalore,18/05/2025,Webcam,5,3000,Credit Card,
+1407,Divya Sharma,divya.sharma@example.com,Chennai,03-29-2025,Webcam,2,3000,Credit Card,3
+1149,Meena Menon,meena.menon@example.com,,01-23-2025,Mouse,1,600,Credit Card,4
+1752,Sneha Das,sneha.das@example.com,bangalore,12-25-2024,Mouse,5,600,Credit Card,5
+1091,Divya Sharma,divya.sharma@example.com, Hyderabad ,04-21-2024,Keyboard,2,1500,Debit Card,
+1944,Meena Pillai,meena.pillai@example.com,Hyderabad,08-14-2025,Monitor,2,12000,Credit Card,
+1027,Manoj Reddy,manoj.reddy@example.com,Bangalore,2024-03-27,Webcam,2,3000,Debit Card,3
+1462,Rahul Kumar,rahul.kumar@example.com,,2025-08-27,Monitor,4,12000,Credit Card,4
+1671,Anitha Das,anitha.das@example.com,Kochi,2024-01-14,Monitor,2,12000,UPI,4
+1656,Ravi Reddy,ravi.reddy@example.com,Kochi,02/05/2025,Headphones,5,2500,Debit Card,3
+1786,Rahul Reddy,rahul.reddy@example.com,COIMBATORE,24-Aug-2024,Monitor,4,12000,Cash,5
+1060,Naveen Singh,naveen.singh@example.com,MADURAI,09-07-2024,Webcam,1,3000,Credit Card,3
+1715,Meena Das,meena.das@example.com,Hyderabad,01-22-2025,Webcam,3,3000,,1
+1327,Sneha Pillai,sneha.pillai@example.com,Hyderabad,24/06/2024,Headphones,1,2500,UPI,5
+1425,Priya Das,priya.das@example.com,Madurai,2024-07-06,Headphones,4,2500,Debit Card,1
+1721,Suresh Pillai,suresh.pillai@example.com,Madurai,14/09/2024,Monitor,1,12000,Credit Card,3
+1478,Anitha Menon,anitha.menon@example.com,Coimbatore,10-13-2025,Headphones,1,2500,Debit Card,3
+1044,Rahul Singh,rahul.singh@example.com,Coimbatore,21-May-2025,Headphones,2,2500,Debit Card,2
+1662,Sneha Das,sneha.das@example.com,madurai,07/03/2025,Keyboard,2,1500,UPI,5
+1636,Anitha Pillai,anitha.pillai@example.com,KOCHI,2025-07-10,Monitor,4,12000,UPI,
+1824,Anitha Sharma,anitha.sharma@example.com,bangalore,04-25-2025,Webcam,2,3000,Cash,2
+1529,Manoj Menon,manoj.menon@example.com,Kochi,16/08/2024,Webcam,4,3000,,1
+1737,Kavya Pillai,kavya.pillai@example.com,,2025-11-13,Headphones,2,2500,Credit Card,5
+1484,Ravi Singh,ravi.singh@example.com,Coimbatore,22-Sep-2025,Mouse,,600,Credit Card,2
+1219,Meena Iyer,meena.iyer@example.com,COIMBATORE,2025-01-22,Mouse,5,600,Cash,4
+1742,Anitha Das,anitha.das@example.com,Kochi,2024-11-21,Headphones,,2500,UPI,3
+1821,Vikram Nair,vikram.nair@example.com,Madurai,,Monitor,1,,Debit Card,1
+1018,Priya Reddy,priya.reddy@example.com,Coimbatore,2024-02-23,Headphones,5,2500,Credit Card,5
+1856,Naveen Menon,naveen.menon@example.com, Coimbatore ,02/01/2024,Webcam,2,3000,UPI,4
+1923,Arun Menon,,KOCHI,29-Aug-2024,Headphones,2,2500,Credit Card,5
+1610,Karthik Menon,karthik.menon@example.com,Coimbatore,15-May-2025,Headphones,1,2500,UPI,4
+1486,Naveen Singh,naveen.singh@example.com,Bangalore,10-24-2024,Headphones,5,2500,UPI,1
+1126,Divya Das,divya.das@example.com,Bangalore,14/04/2025,Headphones,1,2500,UPI,5
+1904,Karthik Das,karthik.das@example.com,Madurai,07-Jan-2024,Mouse,2,600,Debit Card,1
+1062,Anitha Pillai,anitha.pillai@example.com,Coimbatore,05-May-2025,Laptop,,55000,Credit Card,3
+1082,Vikram Das,vikram.das@example.com,Coimbatore,2025-05-16,Headphones,,2500,Debit Card,4
+1681,Rahul Nair,rahul.nair@example.com, Kochi ,22/10/2025,Laptop,5,55000,UPI,
+1325,Rahul Das,rahul.das@example.com,Kochi,2025-07-08,Mouse,5,600,Credit Card,4
+1386,Naveen Nair,naveen.nair@example.com,Hyderabad,15/05/2025,Keyboard,3,1500,,5
+1372,Meena Das,meena.das@example.com,Chennai,23/12/2024,Laptop,3,55000,UPI,1
+1057,Ravi Reddy,ravi.reddy@example.com,Madurai,21/05/2025,Webcam,2,3000,Credit Card,
+1020,Priya Raj,priya.raj@example.com,Bangalore,04-22-2025,Monitor,2,12000,Credit Card,5
+1959,Ravi Singh,ravi.singh@example.com,Hyderabad,05-26-2024,Webcam,3,3000,UPI,
+1087,Naveen Iyer,naveen.iyer@example.com, Hyderabad ,22/06/2025,Monitor,4,12000,Cash,1
+1839,Anitha Singh,anitha.singh@example.com, Madurai ,2025-04-10,Keyboard,1,1500,Debit Card,5
+1759,Naveen Raj,naveen.raj@example.com,Chennai,2024-12-03,Keyboard,3,1500,Credit Card,2
+1650,Karthik Reddy,karthik.reddy@example.com,Bangalore,10/10/2024,Monitor,1,12000,UPI,2
+1317,Sneha Menon,sneha.menon@example.com,MADURAI,11/03/2025,Headphones,1,2500,Debit Card,5
+1035,Manoj Singh,manoj.singh@example.com,MADURAI,11/09/2024,Laptop,1,55000,Debit Card,3
+1809,Rahul Das,rahul.das@example.com,Madurai,01-Sep-2025,Monitor,4,12000,Cash,3
+1139,Meena Menon,meena.menon@example.com,Coimbatore,11/06/2024,Monitor,2,12000,UPI,
+1767,Naveen Kumar,naveen.kumar@example.com,,10-02-2025,Monitor,3,12000,UPI,4
+1589,Suresh Das,suresh.das@example.com,Hyderabad,07-21-2024,Headphones,5,2500,UPI,4
+1905,Sneha Sharma,sneha.sharma@example.com,Chennai,06-Sep-2024,Webcam,3,3000,Cash,5
+1499,Vikram Raj,vikram.raj@example.com,Hyderabad,09-17-2025,Mouse,,600,Debit Card,4
+1539,Kavya Kumar,kavya.kumar@example.com,Bangalore,,Webcam,3,3000,UPI,4
+1801,Anitha Iyer,anitha.iyer@example.com,Coimbatore,2024-12-17,Laptop,1,55000,Debit Card,3
+1556,Meena Das,meena.das@example.com,Hyderabad,04-Mar-2025,Webcam,3,3000,Credit Card,2
+1097,Rahul Das,rahul.das@example.com,Kochi,27-Nov-2024,Mouse,1,600,Debit Card,4
+1084,Rahul Kumar,rahul.kumar@example.com,Hyderabad,08/05/2024,Laptop,3,55000,UPI,5
+1447,,rahul.kumar@example.com,Kochi,11/11/2024,Mouse,1,600,Cash,4
+1475,Karthik Kumar,karthik.kumar@example.com,COIMBATORE,08-07-2024,Laptop,1,55000,Debit Card,1
+1765,Kavya Sharma,kavya.sharma@example.com,,22/04/2025,Webcam,3,3000,Debit Card,3
+1367,Ravi Raj,ravi.raj@example.com,madurai,10/01/2024,Mouse,3,600,Credit Card,3
+1874,Priya Singh,priya.singh@example.com,coimbatore,17-Sep-2024,Webcam,1,3000,Debit Card,4
+1698,Karthik Pillai,karthik.pillai@example.com, Madurai ,05/06/2025,Mouse,4,600,,5
+1586,Meena Pillai,meena.pillai@example.com,chennai,08/09/2024,Webcam,4,3000,Cash,4
+1886,Kavya Pillai,kavya.pillai@example.com,Hyderabad,05-21-2025,Headphones,2,2500,UPI,4
+1192,Priya Reddy,priya.reddy@example.com,,30/04/2025,Keyboard,4,1500,Cash,3
+1761,,manoj.kumar@example.com,Chennai,2024-09-21,Laptop,5,55000,Cash,3
+1919,Rahul Sharma,rahul.sharma@example.com,BANGALORE,04-17-2024,Keyboard,2,1500,Debit Card,4
+1402,Arun Singh,arun.singh@example.com,Coimbatore,22-Feb-2025,Laptop,4,55000,Cash,4
+1760,Sneha Das,sneha.das@example.com, Coimbatore ,05-26-2024,Headphones,2,2500,Cash,4
+1393,Vikram Das,vikram.das@example.com,Bangalore,03-07-2024,Mouse,5,600,Credit Card,4
+1940,Karthik Sharma,karthik.sharma@example.com,COIMBATORE,27/09/2024,Headphones,3,,UPI,3
+1746,Meena Sharma,meena.sharma@example.com,BANGALORE,05-18-2025,Webcam,5,3000,Credit Card,
+1272,Arun Menon,arun.menon@example.com,Hyderabad,19-Apr-2024,Headphones,1,2500,Debit Card,1
+1507,Vikram Sharma,vikram.sharma@example.com,COIMBATORE,01/04/2024,Webcam,1,3000,Cash,
+1552,Arun Iyer,arun.iyer@example.com,Bangalore,13-Dec-2024,Monitor,3,12000,Credit Card,5
+1435,Karthik Reddy,karthik.reddy@example.com,Madurai,2024-08-06,Headphones,4,2500,Credit Card,5
+1649,Lakshmi Kumar,lakshmi.kumar@example.com, Madurai ,2024-03-17,Webcam,2,3000,Cash,5
+1943,Rahul Pillai,rahul.pillai@example.com,Hyderabad,2025-05-02,Keyboard,1,1500,Debit Card,1
+1808,Naveen Menon,naveen.menon@example.com,KOCHI,2024-07-11,Monitor,1,12000,UPI,1
+1562,Karthik Menon,karthik.menon@example.com, Kochi ,04-21-2025,Keyboard,2,1500,UPI,4
+1208,Ravi Das,,Madurai,03-Aug-2025,Keyboard,,1500,Cash,1
+1320,Rahul Nair,rahul.nair@example.com,Coimbatore,,Monitor,3,12000,Cash,4
+1389,Vikram Sharma,vikram.sharma@example.com,Kochi,2025-01-15,Headphones,,2500,Credit Card,5
+1133,Rahul Singh,rahul.singh@example.com,Hyderabad,17-Apr-2024,Headphones,4,2500,Cash,
+1051,Sneha Nair,sneha.nair@example.com,CHENNAI,2024-12-21,Monitor,3,12000,Debit Card,3
+1239,Lakshmi Reddy,lakshmi.reddy@example.com,Hyderabad,16-Jun-2024,Laptop,,55000,Cash,3
+1565,Ravi Sharma,ravi.sharma@example.com, Madurai ,2024-02-10,Headphones,3,2500,Cash,5
+1593,Naveen Pillai,naveen.pillai@example.com,Madurai,27/08/2025,Keyboard,2,1500,Debit Card,3
+1451,Suresh Singh,suresh.singh@example.com,Coimbatore,11-08-2025,Monitor,3,12000,Debit Card,3
+1032,Rahul Pillai,rahul.pillai@example.com,Bangalore,03-Mar-2024,Mouse,5,600,Debit Card,3
+1122,Sneha Das,sneha.das@example.com,Coimbatore,01/08/2025,Mouse,,600,UPI,4
+1212,Divya Iyer,divya.iyer@example.com,Kochi,2025-09-13,Keyboard,2,1500,Cash,1
+1352,Sneha Pillai,sneha.pillai@example.com,Bangalore,30-Mar-2024,Laptop,4,55000,,4
+1455,Sneha Reddy,sneha.reddy@example.com,Madurai,02-05-2025,Monitor,2,12000,UPI,3
+1303,Vikram Raj,vikram.raj@example.com,,13-Oct-2025,Mouse,4,600,Debit Card,
+1709,Rahul Raj,rahul.raj@example.com,COIMBATORE,01-12-2025,Laptop,4,55000,UPI,4
+1089,Anitha Kumar,anitha.kumar@example.com,Madurai,,Webcam,2,3000,Credit Card,5
+1326,Naveen Raj,naveen.raj@example.com,Kochi,2024-05-17,Monitor,5,12000,Credit Card,4
+1324,Kavya Raj,kavya.raj@example.com,Chennai,2024-09-16,Mouse,3,600,Debit Card,4
+1256,Arun Iyer,,Hyderabad,14/08/2024,Keyboard,5,1500,Debit Card,1
+1893,Suresh Reddy,suresh.reddy@example.com,Coimbatore,2024-01-19,Keyboard,1,1500,Debit Card,2
+1571,Manoj Kumar,manoj.kumar@example.com,HYDERABAD,2025-01-13,Mouse,1,600,UPI,
+1546,Rahul Das,rahul.das@example.com,Chennai,2024-07-11,Mouse,4,600,Debit Card,5
+1551,Naveen Das,naveen.das@example.com,Chennai,15/07/2024,Headphones,3,2500,UPI,3
+1360,Arun Reddy,, Bangalore ,09-05-2024,Webcam,3,3000,Debit Card,4
+1052,Arun Raj,arun.raj@example.com, Hyderabad ,25-Jan-2025,Webcam,3,3000,Credit Card,4
+1876,Lakshmi Singh,lakshmi.singh@example.com,Coimbatore,2024-07-22,Headphones,5,2500,Credit Card,3
+1939,Priya Iyer,priya.iyer@example.com,hyderabad,2024-05-12,Mouse,1,600,Credit Card,2
+1773,Suresh Pillai,suresh.pillai@example.com,Madurai,11-May-2024,Headphones,4,2500,Cash,4
+1103,Ravi Menon,,Bangalore,08/06/2025,Laptop,2,55000,Debit Card,
+1196,Sneha Das,sneha.das@example.com,Hyderabad,2025-11-04,Headphones,5,2500,,3
+1680,Vikram Iyer,vikram.iyer@example.com,KOCHI,11-29-2025,Keyboard,5,1500,Debit Card,4
+1806,Vikram Raj,vikram.raj@example.com,Kochi,14-Feb-2024,Headphones,4,2500,Debit Card,5
+1629,Naveen Menon,naveen.menon@example.com,MADURAI,2025-11-14,Webcam,4,3000,Credit Card,5
+1125,Vikram Reddy,vikram.reddy@example.com,CHENNAI,05-30-2025,Monitor,5,12000,Debit Card,4
+1405,Arun Singh,arun.singh@example.com,Chennai,06-17-2024,Webcam,3,3000,UPI,3
+1731,Vikram Nair,vikram.nair@example.com,Coimbatore,12-11-2024,Headphones,2,2500,Credit Card,3
+1288,Rahul Iyer,rahul.iyer@example.com,Kochi,08/04/2025,Mouse,,600,Debit Card,5
+1832,Karthik Iyer,karthik.iyer@example.com,Bangalore,06/12/2024,Webcam,,3000,Debit Card,4
+1048,Ravi Iyer,ravi.iyer@example.com,Madurai,01/04/2025,Keyboard,1,,,1
+1726,Suresh Menon,suresh.menon@example.com, Bangalore ,09-03-2024,Headphones,5,2500,UPI,3
+1588,Rahul Sharma,rahul.sharma@example.com,,03-03-2025,Mouse,5,600,Debit Card,4
+1608,Meena Das,meena.das@example.com,Madurai,21/09/2025,Headphones,2,2500,Cash,4
+1434,Suresh Das,suresh.das@example.com,Bangalore,2024-01-17,Headphones,5,2500,Cash,4
+1675,Rahul Singh,rahul.singh@example.com,,26-Apr-2024,Monitor,2,12000,UPI,4
+1264,Ravi Das,,Chennai,30-Mar-2025,Monitor,2,12000,Debit Card,
+1361,Divya Reddy,divya.reddy@example.com,Coimbatore,2024-04-20,Laptop,4,55000,Cash,1
+1076,Suresh Das,suresh.das@example.com,coimbatore,,Headphones,2,2500,Credit Card,4
+1467,Vikram Das,vikram.das@example.com,Chennai,09-24-2025,Webcam,2,3000,Credit Card,4
+1300,Rahul Raj,rahul.raj@example.com,Madurai,03-10-2025,Keyboard,4,1500,Credit Card,4
+1535,Ravi Iyer,ravi.iyer@example.com,Hyderabad,01/04/2024,Monitor,2,12000,UPI,5
+1585,Anitha Raj,anitha.raj@example.com,Chennai,07-26-2025,Laptop,2,55000,UPI,3
+1494,Priya Nair,priya.nair@example.com,Hyderabad,06-15-2024,Monitor,3,12000,Cash,4
+1528,Manoj Kumar,manoj.kumar@example.com,CHENNAI,08-27-2024,Mouse,4,,Debit Card,
+1169,Vikram Pillai,vikram.pillai@example.com,BANGALORE,15-Aug-2024,Webcam,3,3000,Debit Card,1
