@@ -1,0 +1,34 @@
+=PROPER()
+=TRIM()
+=LOWER()
+
+=IF(E2="IND","India",E2)-IND - India 
+
+=IF(E2="U.K.","UK",E2)- U.k - UK
+
+DATE-SHORT DATE
+
+
+=SUBSTITUTE(SUBSTITUTE(G2,"min","")," ","")- minutes
+
+=IF(ISNUMBER(SEARCH("/10",H2)),H2,H2&"/10") - Ratings /10
+
+=TEXT(I2,"#,##0") - comma 
+
+
+=VALUE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(LOWER(TRIM(J2)),"crore",""),"cr.",""),"cr","")," ","")) - values
+
+=PROPER(TRIM(L2))  -  Platform
+
+
+=IF(UPPER(TRIM(M2))="A","Adult",IF(OR(UPPER(TRIM(M2))="U",UPPER(TRIM(M2))="UA",UPPER(TRIM(M2))="U/A"),"U/A",PROPER(TRIM(M2))))    - Age rating
+
+
+=VALUE(SUBSTITUTE(I2,"/10","")) - remove /10
+
+
+=G2/1440  - convert mins to hours
+
+
+
+

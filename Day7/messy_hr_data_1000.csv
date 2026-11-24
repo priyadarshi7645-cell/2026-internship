@@ -1,0 +1,734 @@
+Emp ID,Name,Gender,Age,Department,Job Title,City,Join Date,Salary,Experience Years,Performance Rating,Status
+EMP1035,Vikram Iyer,Female,35,IT,IT Manager,Coimbatore,20-06-2019,102000,5,2,Active
+EMP1034,Rahul Raj,Male,48,Finance,Accountant,Chennai,05-07-2022,54000,3,2,
+EMP1479,Divya Kumar,Male,50,IT,Tester,Pune,12-01-2023,79000,12,3,Active
+EMP1237,Lakshmi Sharma,Female,53,Finance,Accountant,Coimbatore,10-05-2022,53000,10,5,Resigned
+EMP1576,Pooja Singh,Male,30,HR,Recruiter,Hyderabad,03-05-2016,32000,8,4,Resigned
+EMP1919,Arjun Iyer,Male,26,IT,Tester,N/A,02-10-2015,60000,4,1,Resigned
+EMP1489,Deepak Patel,Male,22,HR,Recruiter,Bengaluru,05-04-2020,34000,19,3,Active
+EMP1467,Manoj Patel,Male,43,Marketing,Content Writer,Bangalore,19-12-2016,60000,0,2,Resigned
+EMP1789,Arjun Das,Male,28,Sales,Sales Manager,Hyderabad,25-04-2016,25000,10,2,Active
+EMP1132,Rohan Gupta,Male,57,IT,Developer,Chennai,15-05-2015,43000,3,1,Active
+EMP1499,Aarav Raj,Male,UNKNOWN,Sales,Sales Executive,Bangalore,01-02-2021,48000,3,5,Active
+EMP1428,Pooja Gupta,Male,26,Sales,Sales Executive,Coimbatore,14-01-2023,71000,0,2,Resigned
+EMP1012,Pooja Menon,Female,47,IT,Tester,Pune,08-04-2019,69000,4,1,Active
+EMP1481,Aarav Reddy,Female,28,Sales,Sales Manager,Bengaluru,13-01-2023,55000,16,3,Active
+EMP1036,Pooja Menon,Female,42,Operations,Supervisor,Chennai,31-12-2018,45000,2,3,Active
+EMP1199,Rohan Kumar,Male,49,HR,Recruiter,Bangalore,25-03-2024,39000,15,1,Active
+EMP1464,Suresh Raj,Male,50,Sales,Sales Manager,Chennai,30-10-2019,30000,6,5,Resigned
+EMP1506,Arjun Menon,Female,24,Sales,Sales Executive,Coimbatore,01-01-2024,46000,5,2,Active
+EMP1794,Meera Iyer,Male,46,IT,Developer,Mumbai,05-12-2018,80000,20,1,Active
+EMP1725,Lakshmi Pillai,Female,53,IT,IT Manager,Hyderabad,27-04-2017,57000,5,N/A,Active
+EMP1107,Arjun Das,Male,57,marketing,Marketing Executive,Coimbatore,26-06-2019,63000,5,4,Active
+EMP1891,Aarav Pillai,Male,54,Marketing,Content Writer,Mumbai,10-07-2022,48000,16,5,Resigned
+EMP1616,Kavya Iyer,Female,48,IT,IT Manager,Pune,03-03-2023,66000,4,4,Active
+EMP1342,Arjun Patel,Male,26,HR,Recruiter,Mumbai,30-05-2019,58000,13,4,Active
+EMP1004,Sneha Gupta,Female,56,Marketing,Marketing Executive,Coimbatore,10-07-2021,66000,20,2,Active
+EMP1778,Meera Sharma,Female,59,Sales,Sales Executive,Pune,26-10-2020,51000,18,5,Active
+EMP1908,Priya Gupta,Female,48,Operations,Operations Executive,Pune,25-04-2018,56000,7,4,Resigned
+EMP1296,Kavya Patel,Male,22,Marketing,Marketing Executive,Mumbai,29-10-2021,32000,20,2,Active
+EMP1531,Karthik Sharma,Female,38,marketing,Marketing Executive,Hyderabad,19-11-2019,58000,8,1,Resigned
+EMP1204,Divya Kumar,Female,30,Sales,Sales Executive,Mumbai,19-01-2024,57000,10,5,Active
+EMP1588,Suresh Raj,Male,42,IT,Developer,coimbatore,03-04-2015,86000,7,4,Active
+EMP1330,Priya Singh,Female,49,Operations,Supervisor,chennai,24-06-2021,25000,15,4,Active
+EMP1362,Sanjay Gupta,Male,21,HR,Recruiter,Chennai,15-09-2016,44000,1,2,Active
+EMP1636,Suresh Nair,Female,UNKNOWN,Sales,Sales Executive,Chennai,29-12-2015,34000,18,5,Active
+EMP1332,Nisha Raj,Male,60,HR,Recruiter,Bangalore,06-06-2024,55000,11,5,Resigned
+EMP1645,Karthik Reddy,Male,34,Operations,Supervisor,Pune,01-10-2018,37000,10,4,Resigned
+EMP1575,Divya Pillai,Male,43,IT,Tester,Coimbatore,26-07-2022,71000,10,1,Active
+EMP1647,Rahul Singh,Male,29,Marketing,Marketing Executive,Hyderabad,10-08-2019,45000,10,3,Resigned
+EMP1457,Revathi Nair,Female,51,IT,IT Manager,Hyderabad,25-12-2022,89000,4,3,Active
+EMP1547,Pooja Patel,Male,21,Marketing ,Marketing Executive,Chennai,02-05-2024,-1000,3,2,Active
+EMP1328,Suresh Menon,Female,45,Sales,Sales Executive,Mumbai,14-07-2023,49000,13,2,Active
+EMP1798,Pooja Singh,Female,40,Sales,Sales Manager,Pune,16-12-2017,70000,15,1,active
+EMP1450,Arjun Nair,Female,25,HR,HR Executive,Pune,29-04-2020,55000,8,2,Active
+EMP1421,Meera Reddy,Male,56,Sales,Sales Manager,Bengaluru,19-06-2015,34000,14,1,Resigned
+EMP1733,Nisha Pillai,Female,58,IT,Tester,Chennai,21-06-2015,87000,2,1,Active
+EMP1294,Meera Gupta,Male,44,Sales,Sales Manager,Hyderabad,05-06-2017,44000,4,N/A,Active
+EMP1525,Karthik Patel,Male,49,IT,IT Manager,Hyderabad,20-08-2022,44000,14,5,resigned
+EMP1518,Vikram Singh,Female,22,Finance ,Analyst,Mumbai,03-10-2015,58000,20,5,Active
+EMP1643,Lakshmi Menon,Male,23,Marketing,Content Writer,Bangalore,03-12-2022,71000,8,3,Resigned
+EMP1061,Kavya Singh,Male,31,Sales,Sales Executive,coimbatore,23-08-2022,53000,12,3,Active
+EMP1930,Lakshmi Menon,Male,45,IT,Tester,Pune,17-05-2022,40000,2,4,Active
+EMP1448,Revathi Singh,Male,24,Marketing,Content Writer,Hyderabad,18-08-2015,45000,16,2,Active
+EMP1763,Arjun Kumar,Male,55,Sales,Sales Executive,N/A,12-11-2017,53000,18,2,Active
+EMP1796,Pooja Menon,Female,44,Marketing,Content Writer,Hyderabad,30-09-2019,65000,17,2,Active
+EMP1353,Manoj Reddy,Male,UNKNOWN,Operations,Operations Executive,Mumbai,03-03-2022,32000,45,2,active
+EMP1887,Arjun Patel,Male,41,IT,Developer,Bangalore,05-06-2021,86000,2,3,Active
+EMP1533,Deepak Menon,Female,57,Marketing,Content Writer,Mumbai,19-03-2022,50000,12,4,resigned
+EMP1892,Divya Das,Male,40,HR ,Recruiter,Pune,31-03-2016,50000,0,1,Active
+EMP1208,Lakshmi Patel,Female,52,Marketing,Marketing Executive,Coimbatore,05-08-2019,60000,4,3,Active
+EMP1953,Revathi Pillai,Male,48,IT,Developer,Coimbatore,05-07-2022,72000,6,5,Resigned
+EMP1301,Karthik Reddy,Male,50,IT,Tester,Mumbai,11-06-2019,112000,0,2,Active
+EMP1905,Ananya Das,Female,36,Finance,Accountant,Hyderabad,04-03-2015,73000,8,4,Active
+EMP1644,Manoj Das,Female,50,Marketing,Content Writer,coimbatore,21-09-2022,69000,5,1,Active
+EMP1393,Arjun Gupta,Female,53,HR,Recruiter,Pune,16-10-2016,45000,1,2,Active
+EMP1865,Nisha Das,Female,28,Operations,Supervisor,Bangalore,22-05-2019,60000,1,4,Active
+EMP1160,Ananya Singh,Male,26,IT,IT Manager,Bangalore,17-10-2023,57000,16,3,Active
+EMP1676,Vikram Singh,Female,52,Finance,Finance Manager,Mumbai,02-06-2015,66000,18,5,active
+EMP1711,Arjun Das,Male,28,OPERATIONS,Supervisor,Pune,31-10-2020,58000,18,5,Active
+EMP1806,Vikram Sharma,Male,27,Marketing,Content Writer,Mumbai,17-02-2024,-1000,15,1,Resigned
+EMP1666,Meera Gupta,Female,43,IT,Tester,Hyderabad,23-01-2019,-1000,12,N/A,Active
+EMP1396,Meera Sharma,Male,59,Finance,Finance Manager,Mumbai,10-05-2024,86000,3,3,Active
+EMP1280,Suresh Gupta,Female,57,HR,HR Manager,Mumbai,18-02-2019,55000,20,2,Active
+EMP1073,Aarav Iyer,Male,48,FINANCE,Finance Manager,Mumbai,02-08-2021,9999999,45,1,ACTIVE
+EMP1367,Kavya Nair,Male,41,IT,Tester,Chennai,02-11-2016,112000,17,1,Active
+EMP1537,Vikram Patel,Male,UNKNOWN,Marketing,Marketing Executive,Mumbai,24-10-2023,44000,8,3,Active
+EMP1401,Rohan Nair,Male,45,HR,HR Manager,Bangalore,26-12-2022,29000,19,5,Active
+EMP1505,Karthik Raj,Female,22,IT ,Tester,Chennai,02-10-2021,73000,19,3,Active
+EMP1579,Sneha Reddy,Male,35,finance,Analyst,Hyderabad,30-08-2023,1000,10,1,Active
+EMP1749,Manoj Raj,Male,49,Operations,Supervisor,Hyderabad,17-06-2018,58000,19,5,Active
+EMP1830,Revathi Menon,Male,23,Operations,Supervisor,Mumbai,01-11-2020,26000,19,2,Active
+EMP1196,Karthik Patel,Male,33,HR,HR Manager,Pune,08-05-2018,9999999,20,1,Resigned
+EMP1405,Sanjay Reddy,Male,56,Marketing,Marketing Executive,Bangalore,31-05-2024,66000,17,N/A,Active
+EMP1029,Sanjay Menon,Female,53,Sales,Sales Executive,Hyderabad,13-09-2016,58000,16,1,Resigned
+EMP1563,Rahul Sharma,Male,36,Operations,Operations Executive,Chennai,15-07-2021,42000,11,2,Active
+EMP1693,Lakshmi Menon,Male,42,Finance,Analyst,Hyderabad,16-11-2023,51000,17,2,Resigned
+EMP1357,Meera Gupta,Female,56,Finance,Finance Manager,Chennai,21-06-2018,51000,10,5,Active
+EMP1247,Rohan Pillai,Female,22,Finance,Accountant,Coimbatore,11-12-2016,45000,11,4,Active
+EMP1122,Revathi Das,Male,29,Finance,Accountant,Chennai,07-12-2022,44000,14,1,Active
+EMP1245,Meera Reddy,Male,23,MARKETING,Marketing Executive,Hyderabad,01-08-2024,41000,10,1,Resigned
+EMP1009,Rahul Nair,Female,25,HR,HR Executive,Pune,13-11-2022,44000,20,5,Resigned
+EMP1841,Aarav Singh,Female,44,Finance,Finance Manager,Coimbatore,26-07-2023,71000,8,4,Resigned
+EMP1385,Pooja Sharma,Female,49,Operations,Supervisor,Bangalore,22-01-2019,44000,20,N/A,Active
+EMP1013,Meera Raj,Male,21,IT,Tester,Hyderabad,16-01-2017,73000,9,1,Active
+EMP1468,Sneha Raj,Male,56,Finance,Finance Manager,Chennai,12-02-2022,50000,18,2,Active
+EMP1943,Arjun Iyer,Female,24,Marketing,Marketing Executive,Chennai,07-04-2019,75000,4,4,Active
+EMP1335,Vikram Singh,Male,44,IT,Tester,Pune,03-01-2024,106000,16,3,Resigned
+EMP1310,Rahul Patel,Female,48,Marketing,Content Writer,Hyderabad,17-08-2022,67000,17,2,Active
+EMP1965,Rohan Gupta,Female,30,Sales,Sales Manager,Chennai,22-08-2020,31000,4,4,Active
+EMP1209,Sanjay Patel,Male,31,IT,IT Manager,Bangalore,12-06-2021,116000,0,3,Resigned
+EMP1844,Sneha Patel,Female,25,HR,HR Manager,Hyderabad,15-05-2016,54000,7,3,Active
+EMP1435,Ananya Singh,Male,42,Operations,Supervisor,Coimbatore,11-01-2016,38000,20,3,Active
+EMP1980,Sanjay Pillai,Female,56,IT,Developer,Mumbai,18-07-2020,80000,15,5,Resigned
+EMP1623,Rahul Kumar,Male,40,Sales,Sales Manager,chennai,22-07-2023,29000,3,1,Resigned
+EMP1954,Lakshmi Sharma,Female,42,Finance,Accountant,Hyderabad,12-12-2022,38000,16,5,Active
+EMP1909,Rohan Raj,Male,24,it,Tester,Hyderabad,28-09-2023,105000,6,N/A,Resigned
+EMP1167,Suresh Sharma,Female,52,Operations,Operations Executive,Coimbatore,23-05-2017,51000,20,2,Active
+EMP1820,Sneha Reddy,Male,24,HR,HR Executive,Pune,13-03-2016,43000,8,4,Resigned
+EMP1440,Rahul Sharma,Male,58,IT,Tester,Pune,13-12-2017,63000,1,2,Resigned
+EMP1202,Sneha Patel,Female,51,Sales,Sales Executive,Chennai,04-10-2020,28000,20,2,Resigned
+EMP1941,Priya Singh,Female,37,IT,Tester,Pune,30-01-2021,58000,16,3,Resigned
+EMP1562,Karthik Sharma,Female,48,IT,Developer,Pune,09-09-2022,43000,5,5,Active
+EMP1493,Priya Pillai,Male,30,Operations,Supervisor,Bangalore,28-08-2020,45000,12,N/A,Active
+EMP1231,Suresh Kumar,Female,45,Operations,Supervisor,Bangalore,24-01-2017,59000,9,2,Resigned
+EMP1194,Rahul Raj,Female,32,Operations,Supervisor,Chennai,28-02-2019,40000,7,2,Active
+EMP1833,Revathi Gupta,Female,32,HR,Recruiter,Chennai,14-03-2020,27000,45,2,Active
+EMP1098,Revathi Nair,Male,27,Sales,Sales Manager,Chennai,03-06-2015,48000,10,2,Active
+EMP1985,Revathi Raj,Male,44,Finance,Analyst,Hyderabad,20-03-2022,82000,3,3,Active
+EMP1304,Vikram Menon,Male,31,Finance,Finance Manager,chennai,28-08-2017,80000,0,2,Active
+EMP1685,Rohan Sharma,Male,57,Operations,Operations Executive,Hyderabad,11-02-2021,49000,20,3,Resigned
+EMP1270,Kavya Sharma,Female,57,Sales,Sales Manager,Coimbatore,27-03-2022,56000,13,4,Active
+EMP1756,Aarav Gupta,Male,50,IT,IT Manager,Pune,09-07-2018,68000,16,1,Active
+EMP1177,Aarav Singh,Male,21,IT,IT Manager,Pune,13-05-2016,51000,6,1,Active
+EMP1637,Suresh Sharma,Male,30,Sales,Sales Executive,Bangalore,08-07-2024,43000,9,1,Active
+EMP1389,Aarav Singh,Female,26,Marketing,Content Writer,Mumbai,16-12-2022,53000,8,3,Active
+EMP1803,Sanjay Das,Male,58,IT,IT Manager,Chennai,01-10-2018,44000,4,5,Active
+EMP1213,Meera Pillai,Female,27,Marketing,Content Writer,Coimbatore,16-01-2023,41000,1,3,Active
+EMP1607,Deepak Das,Male,22,Operations,Operations Executive,Mumbai,06-06-2015,61000,3,5,Resigned
+EMP1957,Pooja Reddy,Female,42,Operations,Operations Executive,Mumbai,05-05-2018,38000,6,1,Active
+EMP1345,Manoj Sharma,Male,35,Sales,Sales Executive,Hyderabad,02-03-2024,25000,3,4,Active
+EMP1601,Kavya Kumar,Female,46,Marketing,Marketing Executive,N/A,24-11-2018,61000,45,2,Active
+EMP1105,Ananya Iyer,Male,25,Finance,Accountant,Mumbai,02-07-2020,83000,6,3,Active
+EMP1581,Aarav Reddy,Male,42,Finance,Analyst,Chennai,02-05-2022,89000,13,2,Active
+EMP1127,Nisha Kumar,Female,48,Operations,Supervisor,Coimbatore,27-04-2023,53000,5,2,Active
+EMP1627,Priya Sharma,Male,48,Marketing,Marketing Executive,Hyderabad,11-10-2022,43000,18,3,Resigned
+EMP1998,Kavya Reddy,Female,28,Operations,Operations Executive,Coimbatore,26-12-2021,56000,20,2,Active
+EMP1734,Aarav Gupta,Male,32,IT,Developer,Bengaluru,20-04-2018,-1000,16,2,Resigned
+EMP1910,Nisha Menon,Female,38,Operations,Operations Executive,Hyderabad,12-01-2024,38000,14,1,Resigned
+EMP1862,Arjun Sharma,Female,48,Finance,Finance Manager,Hyderabad,10-08-2023,53000,18,3,Active
+EMP1452,Suresh Pillai,Male,44,Sales ,Sales Executive,Pune,18-07-2017,26000,19,4,ACTIVE
+EMP1774,Ananya Kumar,Male,22,Operations,Supervisor,chennai,15-05-2024,51000,14,3,Active
+EMP1587,Revathi Gupta,Female,39,Finance,Accountant,Hyderabad,14-01-2023,58000,3,3,Active
+EMP1359,Manoj Iyer,Male,48,IT,Tester,Pune,03-07-2019,54000,1,3,Active
+EMP1873,Priya Gupta,Male,26,HR,HR Executive,Bangalore,15-06-2023,51000,19,1,Active
+EMP1628,Divya Gupta,Female,22,Finance,Analyst,Mumbai,26-07-2021,55000,9,5,Active
+EMP1124,Deepak Pillai,Female,36,Marketing,Marketing Executive,Coimbatore,30-06-2015,33000,17,1,Resigned
+EMP1718,Arjun Sharma,Female,58,Operations,Supervisor,Hyderabad,17-06-2016,31000,18,1,Resigned
+EMP1809,Ananya Gupta,Male,37,HR,HR Manager,Chennai,10-09-2017,33000,19,5,Resigned
+EMP1937,Rahul Gupta,Female,22,Marketing,Marketing Executive,Chennai,04-10-2023,71000,20,3,Active
+EMP1593,Ananya Raj,Male,55,Finance,Finance Manager,Hyderabad,06-05-2024,49000,14,3,Active
+EMP1420,Meera Raj,Male,36,Marketing,Marketing Executive,Chennai,01-01-2024,30000,1,4,Active
+EMP1785,Ananya Reddy,Male,51,HR,Recruiter,Hyderabad,15-06-2022,60000,11,1,Active
+EMP1282,Sanjay Singh,Female,54,Marketing,Marketing Executive,chennai,13-12-2019,55000,8,1,Active
+EMP1670,Rohan Patel,Female,28,Sales,Sales Executive,Mumbai,27-05-2022,34000,9,4,Active
+EMP1425,Arjun Raj,Female,28,HR,HR Manager,Coimbatore,14-02-2021,58000,11,1,Active
+EMP1259,Rohan Pillai,Male,UNKNOWN,IT,Tester,Pune,27-02-2022,62000,18,2,Resigned
+EMP1747,Nisha Iyer,Male,42,Marketing,Content Writer,Pune,15-04-2024,55000,11,5,Active
+EMP1300,Rohan Patel,Male,42,Marketing,Content Writer,chennai,25-08-2020,53000,7,2,Active
+EMP1118,Manoj Reddy,Male,60,HR,HR Manager,N/A,28-04-2018,58000,8,3,Active
+EMP1684,Sanjay Pillai,Male,40,IT ,Developer,Pune,08-02-2022,84000,17,4,Active
+EMP1582,Meera Singh,Male,54,MARKETING,Content Writer,Bangalore,06-04-2020,75000,15,4,Active
+EMP1653,Sanjay Das,Female,27,Finance,Analyst,Pune,16-07-2023,73000,19,1,active
+EMP1888,Lakshmi Raj,Male,46,Marketing,Content Writer,Chennai,10-07-2017,49000,0,2,Active
+EMP1940,Kavya Patel,Female,57,IT,IT Manager,Pune,11-01-2020,103000,7,1,Active
+EMP1877,Kavya Singh,Male,47,Finance,Analyst,Chennai,01-06-2020,62000,15,3,Resigned
+EMP1166,Pooja Singh,Male,32,Finance,Finance Manager,Bangalore,18-02-2022,76000,0,1,Active
+EMP1287,Lakshmi Kumar,Male,59,HR,HR Executive,Mumbai,13-05-2018,32000,4,4,Active
+EMP1564,Vikram Iyer,Female,49,Sales,Sales Executive,Coimbatore,24-06-2016,30000,17,4,Active
+EMP1790,Revathi Gupta,Female,54,Operations,Operations Executive,Pune,08-03-2015,37000,18,N/A,Active
+EMP1348,Vikram Sharma,Female,45,Marketing,Content Writer,Pune,08-05-2018,65000,12,5,Resigned
+EMP1200,Suresh Reddy,Male,32,IT,IT Manager,Mumbai,16-03-2021,58000,14,2,active
+EMP1197,Lakshmi Nair,Female,28,Finance,Analyst,Mumbai,05-04-2019,45000,14,2,Active
+EMP1289,Lakshmi Menon,Female,52,IT,Developer,Hyderabad,18-12-2018,52000,11,5,Active
+EMP1072,Deepak Menon,Male,26,IT,Tester,Chennai,25-04-2019,91000,20,4,Resigned
+EMP1993,Priya Sharma,Female,38,HR,Recruiter,Hyderabad,16-09-2022,36000,14,3,Active
+EMP1624,Deepak Pillai,Male,45,Finance,Analyst,Chennai,15-12-2023,65000,45,1,Active
+EMP1592,Deepak Patel,Female,56,Operations,Operations Executive,Pune,02-06-2020,64000,3,2,Active
+EMP1795,Sanjay Menon,Male,22,HR,HR Manager,Coimbatore,11-06-2021,30000,3,3,Active
+EMP1621,Rohan Singh,Female,28,Sales,Sales Executive,Pune,13-01-2020,41000,6,2,Resigned
+EMP1738,Pooja Kumar,Male,27,Finance,Accountant,Pune,03-12-2023,61000,8,3,Active
+EMP1038,Meera Sharma,Male,37,HR,Recruiter,Coimbatore,26-09-2023,36000,8,2,Resigned
+EMP1580,Suresh Menon,Male,UNKNOWN,Marketing,Content Writer,Coimbatore,30-08-2017,43000,14,3,Resigned
+EMP1152,Suresh Kumar,Female,UNKNOWN,Operations,Operations Executive,Coimbatore,26-10-2017,59000,6,2,Active
+EMP1971,Rahul Gupta,Male,44,Finance,Finance Manager,Chennai,07-06-2019,43000,11,2,Resigned
+EMP1248,Ananya Singh,Female,28,HR,Recruiter,Hyderabad,29-04-2019,46000,12,1,ACTIVE
+EMP1085,Lakshmi Singh,Male,56,HR,HR Executive,Mumbai,31-12-2018,44000,13,1,Active
+EMP1834,Rahul Gupta,Female,44,HR,Recruiter,coimbatore,08-08-2018,36000,17,2,Resigned
+EMP1777,Kavya Sharma,Male,38,HR,HR Executive,Mumbai,16-01-2016,59000,20,5,Active
+EMP1109,Ananya Raj,Female,40,Marketing,Marketing Executive,Mumbai,14-05-2019,72000,11,4,Resigned
+EMP1268,Kavya Reddy,Male,24,Finance,Analyst,Bangalore,18-03-2017,42000,9,4,Active
+EMP1744,Meera Iyer,Female,55,HR,HR Executive,Chennai,21-07-2024,58000,18,4,Resigned
+EMP1699,Deepak Sharma,Female,35,Marketing,Marketing Executive,Bangalore,04-09-2016,36000,6,5,Active
+EMP1442,Karthik Patel,Female,55,Finance,Finance Manager,N/A,20-07-2016,58000,8,3,Active
+EMP1276,Rohan Sharma,Male,49,Operations ,Supervisor,Chennai,13-06-2017,48000,0,1,Resigned
+EMP1453,Arjun Kumar,Female,49,Sales,Sales Executive,chennai,01-06-2018,72000,10,5,Active
+EMP1366,Rahul Patel,Male,51,Operations,Supervisor,Chennai,06-12-2017,31000,3,2,ACTIVE
+EMP1407,Rohan Menon,Female,35,Sales,Sales Executive,Bangalore,17-12-2020,46000,8,1,Resigned
+EMP1665,Karthik Reddy,Female,24,HR,Recruiter,Pune,16-01-2020,32000,0,4,Active
+EMP1179,Nisha Pillai,Female,50,Operations,Supervisor,Coimbatore,16-01-2023,27000,1,`,Active
+EMP1946,Suresh Das,Female,52,IT,Developer,Mumbai,09-07-2017,41000,15,1,Resigned
+EMP1140,Vikram Gupta,Male,39,Marketing,Marketing Executive,Pune,06-08-2017,61000,5,1,Active
+EMP1514,Nisha Kumar,Male,51,Marketing,Content Writer,Hyderabad,24-01-2022,75000,12,4,Active
+EMP1480,Revathi Patel,Male,39,HR,HR Executive,chennai,05-10-2020,40000,4,2,Active
+EMP1878,Arjun Patel,Female,55,HR,Recruiter,Chennai,26-04-2017,29000,2,2,Active
+EMP1008,Pooja Kumar,Male,56,Sales,Sales Manager,Bangalore,18-10-2022,47000,19,4,Resigned
+EMP1852,Priya Singh,Female,23,HR,HR Manager,Hyderabad,21-08-2016,41000,16,4,Active
+EMP1753,Manoj Nair,Male,23,SALES,Sales Executive,Mumbai,29-11-2021,45000,5,5,Active
+EMP1938,Aarav Sharma,Male,54,IT,Tester,Hyderabad,17-11-2020,93000,5,5,Active
+EMP1961,Kavya Kumar,Female,23,Marketing,Content Writer,Hyderabad,28-10-2023,34000,12,5,Active
+EMP1732,Divya Raj,Female,32,Operations,Operations Executive,Hyderabad,14-12-2016,26000,7,3,Resigned
+EMP1565,Karthik Raj,Female,28,Operations,Operations Executive,Mumbai,12-01-2016,39000,0,2,Active
+EMP1787,Arjun Das,Male,37,Sales,Sales Executive,Bangalore,06-07-2016,51000,8,3,Active
+EMP1180,Revathi Sharma,Female,40,Operations,Supervisor,Pune,24-09-2021,35000,15,5,Active
+EMP1849,Kavya Pillai,Male,39,Finance,Analyst,Hyderabad,31-08-2015,38000,1,4,Active
+EMP1043,Deepak Raj,Male,38,Sales,Sales Manager,Coimbatore,22-10-2017,27000,0,1,Active
+EMP1761,Nisha Nair,Female,51,Operations,Supervisor,Mumbai,11-12-2021,60000,18,2,Active
+EMP1553,Meera Patel,Male,26,HR,Recruiter,Hyderabad,07-05-2019,52000,10,4,Active
+EMP1119,Aarav Pillai,Male,35,Operations,Operations Executive,Bangalore,28-11-2021,65000,13,4,Active
+EMP1356,Vikram Pillai,Female,48,Operations,Operations Executive,Coimbatore,20-10-2022,33000,1,2,Resigned
+EMP1808,Karthik Reddy,Female,38,Marketing,Content Writer,Coimbatore,17-03-2016,55000,8,2,Active
+EMP1053,Aarav Kumar,Male,44,HR,HR Executive,Mumbai,16-05-2024,53000,17,1,Active
+EMP1260,Deepak Nair,Female,57,Operations,Supervisor,Coimbatore,03-04-2016,43000,1,5,Active
+EMP1371,Meera Gupta,Male,36,IT,Developer,Hyderabad,13-10-2018,52000,1,2,Active
+EMP1840,Meera Nair,Female,28,Sales,Sales Executive,Hyderabad,25-04-2023,66000,8,3,Active
+EMP1502,Suresh Nair,Female,53,IT,IT Manager,N/A,05-07-2020,109000,16,1,Active
+EMP1130,Vikram Reddy,Male,31,IT,IT Manager,Bangalore,25-02-2017,89000,10,5,Active
+EMP1652,Revathi Das,Female,23,Operations,Supervisor,Pune,08-09-2021,42000,45,4,Active
+EMP1214,Kavya Gupta,Female,28,Sales,Sales Executive,Coimbatore,20-07-2019,33000,17,5,Active
+EMP1885,Suresh Sharma,Female,29,Finance,Analyst,Mumbai,14-04-2023,42000,15,5,Active
+EMP1283,Arjun Menon,Male,35,IT,Tester,Pune,24-01-2016,64000,16,3,Resigned
+EMP1659,Karthik Singh,Female,40,HR,HR Manager,Pune,15-06-2015,32000,14,5,Active
+EMP1556,Pooja Patel,Male,53,Finance,Analyst,Chennai,01-08-2021,37000,15,1,Active
+EMP1133,Karthik Pillai,Male,22,Finance,Accountant,Chennai,07-10-2022,76000,20,1,Active
+EMP1974,Revathi Iyer,Male,39,Sales,Sales Executive,Chennai,12-09-2016,69000,1,1,Active
+EMP1067,Kavya Singh,Female,39,it,Tester,Bangalore,16-04-2023,73000,12,2,Active
+EMP1150,Divya Raj,Male,50,Operations,Supervisor,Bangalore,30-11-2017,9999999,3,4,Active
+EMP1545,Aarav Reddy,Male,34,Sales,Sales Executive,Chennai,03-07-2022,32000,9,N/A,Active
+EMP1557,Priya Nair,Male,42,Operations,Operations Executive,Coimbatore,03-11-2020,37000,16,4,Active
+EMP1144,Manoj Das,Male,58,IT,Developer,Chennai,30-09-2018,99000,20,2,Active
+EMP1262,Deepak Sharma,Female,48,Finance,Analyst,Bangalore,03-10-2022,67000,20,4,Active
+EMP1185,Sanjay Iyer,Female,56,IT,IT Manager,Mumbai,21-11-2018,108000,2,5,ACTIVE
+EMP1354,Kavya Iyer,Male,56,Marketing,Marketing Executive,Mumbai,23-06-2017,73000,9,2,Active
+EMP1164,Pooja Reddy,Male,UNKNOWN,Finance,Analyst,Hyderabad,28-08-2015,65000,14,2,Resigned
+EMP1983,Revathi Sharma,Male,55,Sales ,Sales Executive,Pune,10-06-2017,63000,15,4,Active
+EMP1046,Vikram Singh,Male,24,Operations,Operations Executive,Pune,07-06-2024,49000,16,3,Active
+EMP1546,Sanjay Pillai,Male,38,Operations,Operations Executive,Mumbai,25-12-2015,42000,10,5,Active
+EMP1350,Arjun Menon,Female,50,HR,HR Manager,Mumbai,17-12-2022,34000,11,3,Active
+EMP1121,Sneha Menon,Female,55,Finance,Accountant,Mumbai,18-07-2021,54000,18,2,Active
+EMP1449,Sneha Sharma,Female,37,IT,Tester,Mumbai,21-10-2023,56000,2,4,Active
+EMP1090,Karthik Das,Male,21,Sales,Sales Manager,Pune,01-09-2023,34000,19,2,Active
+EMP1554,Priya Das,Male,23,IT,IT Manager,Chennai,22-03-2017,48000,8,1,Active
+EMP1591,Nisha Iyer,Male,32,IT,IT Manager,Chennai,25-11-2017,104000,4,5,Active
+EMP1157,Arjun Das,Male,30,Operations,Supervisor,Pune,01-03-2022,51000,14,3,Active
+EMP1955,Priya Gupta,Female,35,Operations,Operations Executive,Coimbatore,07-05-2021,9999999,14,4,resigned
+EMP1963,Rohan Kumar,Male,24,Operations,Supervisor,Hyderabad,27-02-2023,61000,1,3,Active
+EMP1267,Pooja Iyer,Male,59,Marketing,Content Writer,Mumbai,27-04-2024,43000,3,3,Active
+EMP1821,Kavya Kumar,Female,25,Finance,Finance Manager,Mumbai,25-08-2015,58000,13,4,Resigned
+EMP1690,Manoj Nair,Female,37,Operations,Operations Executive,Chennai,14-09-2018,39000,10,2,Resigned
+EMP1594,Kavya Das,Male,24,Finance,Finance Manager,Coimbatore,27-11-2015,74000,19,1,Active
+EMP1250,Aarav Patel,Male,36,Finance,Finance Manager,Chennai,15-01-2016,47000,8,5,Active
+EMP1669,Rohan Sharma,Male,53,Finance,Finance Manager,Pune,03-10-2016,67000,13,2,Active
+EMP1750,Arjun Singh,Male,47,Sales,Sales Executive,Hyderabad,16-11-2018,70000,4,5,Resigned
+EMP1297,Rohan Nair,Male,53,finance,Analyst,Bengaluru,19-05-2021,71000,16,5,Active
+EMP1141,Nisha Sharma,Female,43,Sales,Sales Executive,Mumbai,05-06-2019,72000,2,4,Active
+EMP1424,Rohan Raj,Male,56,SALES,Sales Executive,Coimbatore,06-02-2017,78000,N/A,4,Active
+EMP1649,Aarav Sharma,Male,48,HR,Recruiter,Pune,12-07-2020,48000,3,5,Resigned
+EMP1463,Deepak Nair,Male,24,Finance,Finance Manager,Pune,16-04-2020,48000,10,1,Resigned
+EMP1487,Pooja Pillai,Female,44,SALES,Sales Executive,Chennai,20-02-2020,60000,3,1,Active
+EMP1151,Divya Nair,Female,51,Sales,Sales Manager,Coimbatore,20-12-2021,79000,13,5,Active
+EMP1100,Arjun Kumar,Female,56,HR,Recruiter,Coimbatore,30-07-2019,31000,12,5,Active
+EMP1510,Lakshmi Gupta,Female,40,Sales,Sales Manager,Chennai,13-02-2022,38000,14,1,Active
+EMP1896,Manoj Iyer,Male,40,Finance,Finance Manager,Mumbai,06-06-2016,51000,16,4,ACTIVE
+EMP1516,Divya Menon,Male,32,Finance,Analyst,Coimbatore,10-07-2016,86000,0,5,Active
+EMP1349,Priya Nair,Female,36,Operations,Supervisor,Mumbai,19-01-2021,41000,9,2,Active
+EMP1369,Aarav Sharma,Male,52,HR,HR Manager,Hyderabad,13-05-2017,9999999,2,2,Active
+EMP1142,Arjun Nair,Female,48,Finance,Finance Manager,Hyderabad,01-12-2016,59000,20,2,Resigned
+EMP1555,Suresh Raj,Male,48,HR,Recruiter,Coimbatore,28-09-2020,53000,7,2,Active
+EMP1465,Karthik Pillai,Male,44,SALES,Sales Manager,Mumbai,10-06-2022,56000,11,2,Active
+EMP1589,Arjun Raj,Female,44,IT,Tester,Bangalore,11-08-2017,62000,14,2,Active
+EMP1818,Karthik Gupta,Male,21,Marketing,Marketing Executive,Chennai,09-12-2017,66000,8,2,Active
+EMP1837,Ananya Sharma,Male,27,Operations,Supervisor,Chennai,19-09-2023,45000,1,5,Resigned
+EMP1483,Pooja Pillai,Female,55,Sales,Sales Manager,Pune,12-07-2018,64000,1,1,Resigned
+EMP1631,Arjun Iyer,Male,56,Marketing,Marketing Executive,Coimbatore,20-11-2017,75000,5,3,Active
+EMP1051,Revathi Singh,Female,52,Operations,Operations Executive,Bangalore,14-02-2023,64000,20,2,Active
+EMP1324,Deepak Singh,Male,32,IT,Developer,Pune,22-01-2021,58000,20,5,Active
+EMP1538,Divya Gupta,Female,25,it,IT Manager,Mumbai,22-12-2020,119000,14,2,Active
+EMP1327,Suresh Pillai,Male,50,HR,HR Manager,Bangalore,25-02-2021,9999999,13,3,Resigned
+EMP1945,Pooja Patel,Female,43,Sales,Sales Manager,Hyderabad,27-06-2020,46000,6,3,Active
+EMP1596,Arjun Patel,Female,59,IT,Developer,Chennai,10-10-2018,87000,2,1,Active
+EMP1569,Ananya Nair,Male,49,Marketing,Content Writer,Hyderabad,05-05-2020,45000,16,5,Resigned
+EMP1857,Divya Raj,Female,35,Marketing,Marketing Executive,Chennai,10-05-2024,41000,14,2,Active
+EMP1027,Aarav Pillai,Male,54,HR,HR Manager,Chennai,12-11-2019,37000,6,1,Active
+EMP1724,Lakshmi Kumar,Female,37,IT,Developer,Hyderabad,28-09-2018,66000,12,3,Active
+EMP1760,Nisha Pillai,Female,43,HR,HR Executive,Chennai,16-11-2015,54000,14,2,Active
+EMP1829,Nisha Das,Female,36,MARKETING,Marketing Executive,Coimbatore,23-05-2019,31000,11,4,Active
+EMP1614,Divya Singh,Female,34,finance,Finance Manager,Coimbatore,11-04-2021,48000,14,5,Active
+EMP1386,Kavya Das,Female,22,Operations,Operations Executive,Pune,02-05-2016,60000,12,4,Active
+EMP1773,Revathi Reddy,Female,33,FINANCE,Accountant,Chennai,06-08-2018,82000,16,1,Active
+EMP1640,Manoj Nair,Male,24,IT,Tester,Hyderabad,11-05-2015,55000,18,1,Resigned
+EMP1503,Rohan Menon,Male,32,Marketing,Marketing Executive,Pune,08-03-2021,37000,18,3,Active
+EMP1241,Nisha Menon,Male,57,Operations,Operations Executive,Mumbai,30-09-2021,32000,4,2,Active
+EMP1751,Arjun Reddy,Male,36,Operations,Operations Executive,Bangalore,06-04-2015,50000,8,3,Active
+EMP1311,Revathi Nair,Female,23,IT,IT Manager,Bangalore,23-04-2022,110000,14,5,Active
+EMP1054,Nisha Raj,Male,52,Operations,Supervisor,Coimbatore,15-02-2020,29000,16,5,Active
+EMP1347,Priya Raj,Male,41,Sales,Sales Manager,Chennai,23-10-2020,9999999,45,N/A,Active
+EMP1917,Rohan Iyer,Male,22,IT,IT Manager,Chennai,31-07-2015,50000,9,4,Active
+EMP1395,Sneha Nair,Female,21,Operations,Operations Executive,Hyderabad,08-04-2024,61000,9,3,Active
+EMP1387,Karthik Pillai,Female,UNKNOWN,Marketing,Content Writer,Mumbai,15-07-2016,-1000,8,2,Active
+EMP1286,Divya Reddy,Male,26,Marketing,Marketing Executive,Bangalore,15-09-2023,69000,1,4,Active
+EMP1339,Vikram Reddy,Female,49,Finance,Accountant,Hyderabad,18-02-2022,66000,2,2,Active
+EMP1233,Aarav Kumar,Male,37,SALES,Sales Manager,Bangalore,06-01-2021,74000,9,5,Resigned
+EMP1156,Meera Nair,Female,54,HR,HR Executive,Mumbai,07-03-2020,38000,5,2,Active
+EMP1476,Meera Gupta,Male,51,sales,Sales Manager,Chennai,23-02-2015,37000,18,2,Active
+EMP1279,Nisha Patel,Female,48,HR,HR Manager,Pune,24-09-2016,50000,19,5,Active
+EMP1459,Pooja Iyer,Male,58,IT,Tester,Mumbai,03-11-2017,112000,7,2,Active
+EMP1444,Rohan Patel,Male,51,IT,Tester,Coimbatore,27-07-2015,52000,12,3,Active
+EMP1864,Divya Menon,Female,33,Sales,Sales Executive,Chennai,07-06-2017,65000,4,1,active
+EMP1918,Sanjay Raj,Male,35,Marketing,Marketing Executive,N/A,19-10-2017,45000,2,1,Active
+EMP1307,Arjun Patel,Female,22,HR,HR Manager,Mumbai,19-07-2019,46000,5,1,Resigned
+EMP1063,Aarav Pillai,Female,37,IT,Tester,Coimbatore,29-05-2019,89000,18,1,Active
+EMP1881,Revathi Iyer,Male,47,Marketing,Marketing Executive,Coimbatore,22-11-2022,39000,2,5,Resigned
+EMP1662,Vikram Gupta,Male,29,Finance,Finance Manager,chennai,14-09-2016,50000,0,N/A,Active
+EMP1526,Manoj Kumar,Female,46,Sales,Sales Executive,Coimbatore,27-10-2023,60000,16,2,Resigned
+EMP1758,Sanjay Menon,Female,57,HR,Recruiter,Coimbatore,19-11-2018,51000,0,3,Active
+EMP1490,Suresh Raj,Male,47,IT,Developer,Coimbatore,07-08-2017,113000,11,1,Active
+EMP1486,Sneha Pillai,Female,41,Marketing,Marketing Executive,Hyderabad,08-10-2021,56000,5,2,Active
+EMP1112,Karthik Sharma,Female,UNKNOWN,HR,HR Executive,Coimbatore,08-06-2023,57000,12,2,Active
+EMP1729,Suresh Das,Male,40,Marketing,Content Writer,Coimbatore,17-06-2019,71000,11,5,Active
+EMP1655,Kavya Nair,Male,39,marketing,Marketing Executive,Bengaluru,05-08-2018,75000,1,2,Active
+EMP1856,Nisha Patel,Female,47,Marketing,Marketing Executive,Bengaluru,04-04-2016,60000,4,3,Active
+EMP1814,Sneha Reddy,Male,24,Operations,Supervisor,Coimbatore,27-04-2022,29000,12,5,Active
+EMP1455,Arjun Gupta,Male,33,operations,Supervisor,Chennai,23-06-2018,54000,8,2,Active
+EMP1740,Ananya Patel,Male,41,Finance,Accountant,Bangalore,23-12-2022,79000,16,4,Active
+EMP1541,Sanjay Patel,Male,56,Finance,Analyst,Hyderabad,07-09-2018,45000,10,1,Active
+EMP1682,Lakshmi Raj,Female,55,Finance,Accountant,Pune,27-01-2024,41000,45,3,Resigned
+EMP1629,Deepak Sharma,Male,54,Operations,Supervisor,Bangalore,26-07-2017,48000,3,3,Active
+EMP1326,Vikram Sharma,Male,33,Finance,Finance Manager,Coimbatore,30-07-2019,9999999,17,3,Active
+EMP1198,Aarav Das,Male,23,Operations,Operations Executive,Chennai,15-11-2015,64000,11,2,Resigned
+EMP1710,Nisha Raj,Female,51,IT,Developer,Coimbatore,10-11-2018,111000,6,3,Active
+EMP1069,Meera Das,Female,49,Marketing,Content Writer,Chennai,21-02-2021,42000,7,1,Active
+EMP1495,Manoj Patel,Female,50,Marketing,Marketing Executive,Pune,26-10-2018,53000,7,1,Active
+EMP1522,Divya Gupta,Male,40,Operations,Operations Executive,Coimbatore,18-08-2015,35000,3,1,Active
+EMP1675,Manoj Singh,Male,57,Marketing,Content Writer,Pune,04-12-2016,45000,20,5,Resigned
+EMP1418,Sanjay Pillai,Male,51,HR,HR Executive,Mumbai,24-04-2022,40000,20,4,Resigned
+EMP1410,Ananya Pillai,Male,60,Marketing ,Marketing Executive,coimbatore,20-12-2018,43000,N/A,N/A,Active
+EMP1188,Suresh Das,Male,33,Marketing,Marketing Executive,Chennai,13-01-2016,41000,9,3,Active
+EMP1397,Divya Pillai,Female,46,Operations,Supervisor,Pune,30-05-2024,46000,12,4,Resigned
+EMP1859,Sneha Raj,Male,26,Finance,Analyst,Coimbatore,09-03-2019,54000,11,5,Active
+EMP1422,Sneha Iyer,Male,54,HR,HR Executive,Hyderabad,28-09-2020,45000,3,5,Resigned
+EMP1331,Nisha Singh,Male,45,Marketing,Content Writer,Pune,20-09-2015,55000,16,3,Active
+EMP1116,Suresh Singh,Male,37,Operations,Operations Executive,Hyderabad,18-07-2015,65000,11,4,Active
+EMP1578,Karthik Raj,Male,60,Finance,Finance Manager,Chennai,27-04-2017,36000,18,5,Active
+EMP1364,Nisha Sharma,Male,59,HR,Recruiter,Mumbai,28-05-2015,27000,1,5,Active
+EMP1743,Meera Sharma,Male,49,IT,IT Manager,Hyderabad,18-01-2024,40000,7,1,Active
+EMP1441,Priya Singh,Female,26,HR,HR Manager,Hyderabad,03-07-2017,28000,2,3,Active
+EMP1195,Lakshmi Kumar,Male,24,Finance,Analyst,Hyderabad,16-12-2022,82000,20,4,Active
+EMP1933,Rahul Gupta,Male,46,HR,HR Executive,Chennai,19-01-2021,57000,11,3,Active
+EMP1496,Suresh Kumar,Male,35,HR,Recruiter,Coimbatore,24-11-2021,29000,15,1,Active
+EMP1988,Deepak Raj,Female,29,Marketing,Content Writer,Mumbai,01-11-2023,44000,8,1,Resigned
+EMP1225,Rohan Kumar,Female,31,Marketing,Marketing Executive,Bangalore,30-03-2021,50000,15,3,Active
+EMP1768,Pooja Das,Male,45,Marketing,Marketing Executive,Hyderabad,30-09-2019,61000,5,4,Active
+EMP1968,Karthik Nair,Male,47,Marketing,Content Writer,Hyderabad,07-07-2023,49000,12,3,Active
+EMP1243,Meera Patel,Female,31,IT,Developer,Bangalore,19-01-2022,52000,18,1,Active
+EMP1076,Sneha Sharma,Male,40,Operations,Operations Executive,Mumbai,04-12-2017,39000,19,1,Active
+EMP1220,Sneha Nair,Male,54,Marketing,Marketing Executive,Mumbai,27-08-2017,32000,9,1,Active
+EMP1318,Arjun Gupta,Male,51,SALES,Sales Manager,Chennai,24-03-2024,44000,9,1,Active
+EMP1811,Rahul Reddy,Female,37,Sales,Sales Manager,Chennai,17-11-2017,74000,3,2,Active
+EMP1843,Vikram Reddy,Female,42,Operations,Operations Executive,coimbatore,31-10-2022,46000,8,5,Active
+EMP1360,Arjun Raj,Male,39,Operations,Supervisor,Bangalore,14-03-2015,56000,2,2,Resigned
+EMP1320,Lakshmi Kumar,Female,32,IT,Tester,Chennai,03-05-2018,43000,3,2,Active
+EMP1370,Aarav Singh,Male,60,Finance,Finance Manager,Coimbatore,10-04-2018,71000,3,1,Active
+EMP1927,Sanjay Gupta,Male,33,IT,Developer,Bangalore,28-11-2022,116000,8,4,Active
+EMP1886,Kavya Sharma,Male,57,IT,IT Manager,Hyderabad,05-10-2016,-1000,6,3,Active
+EMP1007,Kavya Patel,Female,39,Marketing,Marketing Executive,Coimbatore,27-09-2020,56000,5,3,Active
+EMP1249,Lakshmi Menon,Male,45,Sales,Sales Executive,Mumbai,07-03-2018,47000,7,4,Active
+EMP1527,Rohan Iyer,Male,53,IT,IT Manager,Hyderabad,23-01-2015,86000,13,2,Resigned
+EMP1702,Rahul Raj,Male,54,IT,IT Manager,Pune,29-06-2015,117000,4,1,Resigned
+EMP1319,Kavya Reddy,Male,41,HR,HR Manager,Hyderabad,13-09-2021,53000,6,5,active
+EMP1057,Sanjay Iyer,Male,51,Marketing,Marketing Executive,Mumbai,05-01-2018,73000,3,2,Resigned
+EMP1384,Meera Das,Female,43,HR,HR Manager,Coimbatore,13-03-2021,57000,12,2,Active
+EMP1358,Meera Singh,Male,41,it,Tester,Chennai,09-03-2022,77000,7,5,Active
+EMP1511,Sanjay Patel,Male,53,IT,Tester,Chennai,07-09-2019,101000,14,5,Resigned
+EMP1574,Vikram Das,Male,29,IT ,Tester,Mumbai,05-12-2019,76000,13,2,Active
+EMP1171,Nisha Singh,Male,46,Sales,Sales Manager,Coimbatore,26-01-2015,27000,6,N/A,Active
+EMP1737,Manoj Pillai,Female,55,Marketing,Marketing Executive,Hyderabad,12-11-2017,69000,3,2,Active
+EMP1904,Vikram Iyer,Male,55,Finance,Accountant,Chennai,30-05-2016,80000,11,1,Active
+EMP1011,Ananya Iyer,Male,UNKNOWN,IT,Tester,Mumbai,27-11-2015,61000,14,4,Active
+EMP1651,Kavya Sharma,Female,27,HR,Recruiter,Pune,06-11-2019,57000,19,1,Active
+EMP1812,Arjun Das,Male,27,Marketing,Content Writer,Mumbai,19-08-2018,63000,12,2,Active
+EMP1190,Suresh Gupta,Male,43,IT,Tester,Hyderabad,22-10-2021,42000,3,1,Active
+EMP1117,Nisha Raj,Female,44,Finance,Analyst,Mumbai,20-02-2019,71000,4,3,Active
+EMP1772,Pooja Reddy,Male,54,Marketing,Marketing Executive,Chennai,23-06-2023,52000,13,3,Active
+EMP1715,Manoj Iyer,Male,44,Sales,Sales Executive,Chennai,04-05-2021,25000,4,N/A,Active
+EMP1958,Vikram Iyer,Female,50,Operations,Operations Executive,Pune,10-12-2022,45000,20,2,Resigned
+EMP1126,Revathi Raj,Female,60,Marketing,Marketing Executive,Hyderabad,21-06-2018,34000,9,1,Resigned
+EMP1257,Lakshmi Singh,Male,50,Finance,Accountant,N/A,13-12-2018,75000,3,2,Active
+EMP1757,Arjun Singh,Female,42,Finance,Analyst,Hyderabad,15-04-2015,39000,17,3,Active
+EMP1846,Aarav Menon,Male,52,it,Developer,Chennai,28-01-2023,86000,16,4,Active
+EMP1017,Arjun Gupta,Female,30,HR,HR Manager,Bangalore,23-11-2018,48000,15,1,Active
+EMP1560,Pooja Sharma,Male,26,Sales,Sales Executive,Coimbatore,02-02-2021,37000,8,1,Resigned
+EMP1630,Ananya Patel,Male,47,Operations,Supervisor,Hyderabad,16-09-2021,40000,13,4,Active
+EMP1158,Lakshmi Reddy,Female,45,SALES,Sales Manager,Mumbai,12-08-2022,36000,15,1,Active
+EMP1697,Deepak Iyer,Male,54,MARKETING,Marketing Executive,Mumbai,02-06-2016,-1000,6,5,Active
+EMP1895,Deepak Kumar,Female,39,Operations,Supervisor,Chennai,04-12-2018,54000,1,N/A,Active
+EMP1383,Rohan Nair,Female,41,Marketing,Marketing Executive,Chennai,21-05-2019,63000,0,1,Active
+EMP1219,Manoj Raj,Male,23,Sales,Sales Executive,chennai,18-12-2021,42000,19,3,Active
+EMP1870,Kavya Gupta,Male,48,Sales,Sales Manager,Mumbai,29-08-2022,27000,12,3,Active
+EMP1815,Priya Menon,Male,55,HR,HR Manager,Coimbatore,24-04-2020,53000,10,1,Active
+EMP1091,Manoj Patel,Male,53,Finance,Accountant,Mumbai,11-06-2023,45000,7,4,Active
+EMP1605,Pooja Reddy,Male,30,Operations,Supervisor,Chennai,18-09-2020,34000,10,2,Resigned
+EMP1055,Deepak Sharma,Female,37,Operations,Operations Executive,Bangalore,19-08-2017,38000,7,4,Resigned
+EMP1458,Sneha Nair,Female,30,Marketing,Marketing Executive,Hyderabad,08-07-2016,67000,10,1,Active
+EMP1923,Lakshmi Menon,Male,47,Marketing,Content Writer,Mumbai,15-05-2015,42000,17,4,Resigned
+EMP1128,Meera Raj,Male,28,Finance,Analyst,Pune,18-10-2022,89000,8,1,Active
+EMP1110,Aarav Kumar,Female,50,IT,Developer,N/A,25-07-2023,119000,14,2,Resigned
+EMP1485,Deepak Sharma,Male,UNKNOWN,Sales,Sales Executive,coimbatore,03-04-2023,28000,1,3,Active
+EMP1044,Kavya Reddy,Female,27,Marketing,Content Writer,Pune,20-07-2020,64000,12,N/A,Active
+EMP1423,Rahul Kumar,Male,53,HR,HR Manager,Hyderabad,15-11-2021,59000,2,1,Active
+EMP1674,Sanjay Raj,Female,48,finance,Analyst,Mumbai,16-03-2016,49000,2,3,Active
+EMP1739,Vikram Pillai,Male,44,IT,Tester,Bangalore,22-04-2022,59000,14,4,Active
+EMP1797,Arjun Reddy,Male,57,Finance,Analyst,Mumbai,05-08-2017,62000,15,2,Active
+EMP1680,Suresh Kumar,Female,38,Sales,Sales Manager,Mumbai,12-08-2017,42000,5,4,Active
+EMP1875,Lakshmi Sharma,Male,54,Finance,Finance Manager,Pune,26-09-2021,46000,11,4,Active
+EMP1146,Suresh Reddy,Female,27,IT,Developer,Pune,21-02-2016,65000,12,2,Active
+EMP1959,Pooja Nair,Female,54,IT,Developer,Hyderabad,30-10-2020,77000,3,1,Active
+EMP1920,Ananya Sharma,Male,55,Marketing,Content Writer,Bangalore,26-05-2023,32000,1,1,Active
+EMP1835,Suresh Nair,Female,35,Marketing,Content Writer,Hyderabad,02-02-2018,56000,9,5,Active
+EMP1654,Nisha Reddy,Female,57,Finance,Finance Manager,Coimbatore,30-10-2019,64000,17,5,Active
+EMP1290,Sneha Kumar,Male,37,Marketing,Content Writer,Chennai,13-10-2022,58000,0,5,Resigned
+EMP1316,Rohan Raj,Female,24,HR,HR Executive,Hyderabad,21-03-2019,51000,12,2,Active
+EMP1603,Sneha Das,Female,45,Finance,Finance Manager,Hyderabad,09-06-2024,48000,10,4,Active
+EMP1469,Vikram Iyer,Male,59,Finance,Analyst,Pune,07-08-2023,72000,1,2,Active
+EMP1451,Deepak Kumar,Female,23,operations,Operations Executive,Mumbai,14-06-2022,63000,4,3,Active
+EMP1382,Priya Singh,Female,45,Operations,Supervisor,Bangalore,10-09-2016,48000,5,2,Active
+EMP1462,Nisha Reddy,Female,25,Marketing,Content Writer,Hyderabad,14-04-2019,9999999,8,2,Resigned
+EMP1935,Rohan Menon,Female,46,HR,HR Manager,Coimbatore,11-04-2019,28000,6,2,Active
+EMP1712,Priya Raj,Female,58,Operations,Operations Executive,Mumbai,23-06-2021,51000,18,1,Active
+EMP1484,Vikram Iyer,Male,56,HR,HR Executive,Coimbatore,23-03-2020,27000,9,1,Active
+EMP1443,Deepak Raj,Male,36,IT,Developer,Bengaluru,14-07-2023,88000,0,2,Active
+EMP1504,Arjun Menon,Male,53,HR,HR Manager,Pune,31-05-2017,57000,14,2,Active
+EMP1583,Rohan Das,Female,59,HR,HR Manager,Chennai,22-09-2023,55000,17,4,Active
+EMP1986,Ananya Kumar,Male,35,HR,HR Manager,Mumbai,19-06-2020,49000,12,4,Active
+EMP1850,Rahul Gupta,Male,UNKNOWN,Operations ,Supervisor,Bangalore,11-10-2015,59000,6,4,Resigned
+EMP1577,Vikram Kumar,Female,45,Marketing,Marketing Executive,Mumbai,09-10-2023,30000,11,1,Active
+EMP1766,Suresh Das,Male,46,Sales,Sales Manager,Pune,07-10-2016,45000,12,4,Active
+EMP1189,Deepak Iyer,Male,23,Sales,Sales Manager,Bangalore,10-03-2016,48000,20,N/A,Active
+EMP1491,Priya Kumar,Female,35,Marketing,Content Writer,Bangalore,07-02-2019,49000,N/A,5,Active
+EMP1929,Rahul Sharma,Female,55,operations,Supervisor,Hyderabad,05-05-2017,34000,5,2,Resigned
+EMP1123,Karthik Raj,Female,46,Operations,Supervisor,Coimbatore,18-08-2015,60000,11,5,Resigned
+EMP1010,Rohan Raj,Female,22,Finance,Analyst,Bangalore,19-11-2016,74000,3,4,Active
+EMP1735,Karthik Menon,Male,41,Operations,Operations Executive,Chennai,14-01-2020,35000,14,4,Active
+EMP1165,Kavya Iyer,Male,31,IT ,Tester,Mumbai,21-10-2022,112000,15,3,Resigned
+EMP1714,Pooja Nair,Female,40,IT,IT Manager,Coimbatore,10-12-2019,42000,10,1,Resigned
+EMP1352,Meera Das,Female,33,Finance ,Finance Manager,Chennai,31-12-2023,72000,19,N/A,Resigned
+EMP1374,Kavya Kumar,Female,54,HR,Recruiter,Coimbatore,05-06-2023,29000,6,1,Active
+EMP1572,Lakshmi Pillai,Male,38,Operations,Operations Executive,Bangalore,17-01-2019,51000,1,4,Active
+EMP1561,Kavya Nair,Male,27,Marketing,Content Writer,Hyderabad,26-01-2024,58000,9,1,Resigned
+EMP1872,Ananya Singh,Male,23,Sales,Sales Executive,Bengaluru,18-03-2020,63000,3,5,Active
+EMP1240,Sneha Gupta,Male,22,Sales,Sales Executive,Chennai,01-08-2020,74000,17,5,Active
+EMP1962,Meera Raj,Male,48,Marketing,Marketing Executive,Chennai,22-03-2024,37000,10,3,Resigned
+EMP1077,Ananya Das,Female,41,Marketing,Marketing Executive,Mumbai,25-11-2020,45000,17,2,Active
+EMP1224,Kavya Das,Female,22,Marketing,Marketing Executive,Bangalore,26-06-2017,42000,45,5,Resigned
+EMP1984,Manoj Singh,Female,36,Sales,Sales Executive,Chennai,26-08-2023,27000,12,5,Active
+EMP1519,Suresh Nair,Male,31,Finance,Finance Manager,Mumbai,31-03-2015,39000,6,2,Active
+EMP1667,Ananya Nair,Male,34,Sales,Sales Manager,Bangalore,26-12-2019,43000,6,4,Active
+EMP1461,Rahul Menon,Female,40,Sales,Sales Executive,Mumbai,25-09-2017,56000,16,5,Active
+EMP1019,Divya Menon,Male,34,Operations,Supervisor,Chennai,27-09-2022,59000,0,5,Active
+EMP1192,Priya Patel,Male,32,finance,Analyst,Coimbatore,23-04-2015,38000,1,5,Active
+EMP1414,Aarav Reddy,Female,54,Finance,Analyst,N/A,20-02-2023,59000,5,4,Active
+EMP1281,Deepak Raj,Male,33,Finance,Accountant,Pune,18-04-2023,63000,2,2,Active
+EMP1500,Sanjay Gupta,Female,22,Sales,Sales Executive,Mumbai,14-01-2016,36000,16,3,resigned
+EMP1001,Karthik Singh,Male,25,Finance,Finance Manager,chennai,06-02-2019,72000,1,5,Active
+EMP1810,Kavya Kumar,Male,34,IT,IT Manager,Hyderabad,12-11-2018,79000,9,1,Active
+EMP1340,Ananya Gupta,Female,23,Sales,Sales Manager,Mumbai,12-02-2019,27000,9,N/A,Resigned
+EMP1183,Aarav Iyer,Female,58,Marketing,Content Writer,Chennai,23-03-2019,54000,12,5,Active
+EMP1494,Meera Menon,Female,24,IT,Tester,Chennai,04-07-2024,80000,N/A,5,Active
+EMP1059,Ananya Das,Male,53,HR,Recruiter,Bangalore,04-05-2019,38000,6,1,Active
+EMP1056,Rahul Das,Male,23,Sales ,Sales Executive,chennai,22-09-2021,34000,10,3,Active
+EMP1523,Divya Sharma,Female,31,Finance,Accountant,Chennai,19-03-2017,73000,11,2,Active
+EMP1845,Revathi Reddy,Female,34,HR,Recruiter,Mumbai,25-06-2018,48000,16,3,Active
+EMP1305,Manoj Reddy,Female,53,Sales ,Sales Executive,Chennai,17-09-2017,71000,1,2,Active
+EMP1216,Priya Patel,Female,46,Sales,Sales Executive,Bangalore,09-01-2023,52000,18,3,Resigned
+EMP1299,Karthik Raj,Male,40,IT,Tester,Pune,25-01-2019,105000,20,2,Active
+EMP1372,Suresh Sharma,Female,58,Finance,Accountant,Coimbatore,24-07-2018,61000,13,1,Active
+EMP1775,Revathi Pillai,Female,30,Operations,Operations Executive,Chennai,26-04-2024,65000,14,3,Active
+EMP1238,Divya Menon,Female,53,Operations,Operations Executive,Hyderabad,09-02-2017,51000,5,1,Active
+EMP1377,Vikram Reddy,Male,33,HR,HR Manager,Mumbai,19-04-2021,40000,15,5,Active
+EMP1731,Rahul Gupta,Female,43,HR,HR Manager,Chennai,03-05-2022,52000,10,3,Active
+EMP1992,Divya Kumar,Male,47,Marketing,Marketing Executive,Mumbai,20-06-2024,43000,9,2,resigned
+EMP1039,Vikram Singh,Male,55,Operations,Supervisor,Pune,01-09-2018,30000,8,1,Active
+EMP1153,Lakshmi Sharma,Female,55,Marketing,Marketing Executive,Pune,02-05-2020,62000,0,3,Active
+EMP1080,Ananya Pillai,Male,34,HR,Recruiter,Chennai,30-06-2018,37000,7,4,Active
+EMP1430,Rohan Sharma,Male,49,Finance,Accountant,Pune,10-05-2022,65000,19,3,Active
+EMP1242,Sneha Sharma,Male,54,HR,Recruiter,Mumbai,15-11-2021,52000,1,1,Active
+EMP1944,Revathi Nair,Male,58,HR,HR Executive,Chennai,21-02-2022,45000,0,N/A,Active
+EMP1346,Sanjay Das,Male,33,IT,IT Manager,Bangalore,31-05-2020,47000,17,4,Active
+EMP1876,Karthik Das,Male,34,Sales,Sales Manager,Hyderabad,07-10-2020,71000,7,4,Resigned
+EMP1507,Deepak Iyer,Male,59,IT,Developer,Chennai,26-07-2021,54000,14,5,resigned
+EMP1765,Arjun Sharma,Male,27,Sales ,Sales Executive,Chennai,09-02-2016,53000,18,1,Active
+EMP1162,Lakshmi Iyer,Male,46,Sales,Sales Executive,Hyderabad,19-09-2022,63000,2,5,Active
+EMP1755,Lakshmi Patel,Female,59,Marketing,Marketing Executive,Bangalore,14-09-2018,75000,10,3,Active
+EMP1855,Suresh Menon,Male,38,IT,IT Manager,Mumbai,14-08-2019,82000,9,2,Resigned
+EMP1120,Karthik Das,Female,60,HR,HR Manager,Coimbatore,02-04-2015,28000,0,5,Active
+EMP1263,Arjun Singh,Male,52,Operations ,Operations Executive,Coimbatore,18-11-2022,60000,8,2,Active
+EMP1571,Ananya Das,Female,26,Operations,Supervisor,Pune,03-05-2022,38000,45,4,Active
+EMP1082,Priya Reddy,Male,59,Sales,Sales Executive,Mumbai,01-08-2015,70000,1,2,Resigned
+EMP1916,Pooja Reddy,Male,UNKNOWN,Operations,Operations Executive,Bangalore,06-02-2018,26000,6,3,Active
+EMP1776,Manoj Kumar,Female,42,Marketing,Content Writer,N/A,04-10-2015,-1000,14,1,Resigned
+EMP1784,Meera Nair,Female,30,Sales,Sales Manager,Pune,16-02-2020,36000,14,3,Resigned
+EMP1949,Suresh Kumar,Male,26,Marketing,Content Writer,Pune,05-07-2024,50000,3,2,Active
+EMP1084,Ananya Raj,Female,UNKNOWN,HR,Recruiter,Mumbai,24-11-2016,31000,0,1,Active
+EMP1093,Pooja Das,Female,32,HR,HR Executive,Chennai,04-09-2019,54000,19,2,Active
+EMP1302,Ananya Pillai,Female,37,IT,IT Manager,Hyderabad,08-03-2021,83000,2,2,Active
+EMP1020,Rahul Pillai,Female,54,Operations,Supervisor,Chennai,27-12-2018,39000,17,5,Active
+EMP1559,Pooja Sharma,Female,UNKNOWN,IT,Tester,Chennai,26-12-2017,82000,7,1,Resigned
+EMP1186,Arjun Pillai,Male,40,Sales,Sales Executive,Pune,08-06-2019,54000,6,3,Active
+EMP1228,Arjun Gupta,Female,54,IT,Developer,Bengaluru,03-05-2023,100000,8,2,Resigned
+EMP1210,Rahul Sharma,Female,36,Marketing,Content Writer,Pune,12-04-2019,66000,1,N/A,Active
+EMP1334,Divya Iyer,Female,32,Operations,Operations Executive,Bangalore,11-04-2019,48000,13,1,Resigned
+EMP1528,Pooja Patel,Female,58,Operations,Operations Executive,Bangalore,23-03-2019,37000,8,2,Active
+EMP1232,Rohan Gupta,Male,26,Marketing,Content Writer,Bangalore,16-06-2024,-1000,7,3,Active
+EMP1509,Suresh Das,Male,34,IT,IT Manager,Bangalore,31-07-2019,71000,6,2,Active
+EMP1429,Divya Gupta,Female,49,HR,Recruiter,Pune,03-07-2016,41000,9,3,Active
+EMP1315,Arjun Raj,Female,45,Sales,Sales Manager,Chennai,19-08-2018,75000,0,1,Active
+EMP1552,Kavya Singh,Female,55,Marketing,Marketing Executive,Pune,26-08-2015,45000,13,2,Active
+EMP1138,Priya Menon,Male,26,Operations,Supervisor,Chennai,22-11-2019,25000,16,2,Active
+EMP1026,Sanjay Das,Male,60,IT,IT Manager,N/A,16-05-2022,84000,45,N/A,Active
+EMP1062,Lakshmi Singh,Female,28,Sales,Sales Manager,Coimbatore,22-08-2018,73000,10,4,Active
+EMP1524,Pooja Patel,Female,47,HR,Recruiter,Mumbai,10-08-2017,55000,0,2,Active
+EMP1472,Suresh Sharma,Female,41,Sales,Sales Manager,Mumbai,FALSE,55000,8,3,Active
+EMP1018,Manoj Das,Female,40,Sales,Sales Executive,Chennai,23-02-2016,72000,10,3,Resigned
+EMP1068,Nisha Raj,Female,28,Sales,Sales Executive,Pune,24-10-2016,29000,6,5,Resigned
+EMP1722,Vikram Nair,Female,49,Marketing,Marketing Executive,Bangalore,09-12-2017,74000,14,2,Resigned
+EMP1113,Revathi Pillai,Male,33,HR,HR Executive,Mumbai,25-03-2018,35000,7,1,Active
+EMP1853,Pooja Pillai,Female,41,Sales,Sales Manager,chennai,28-07-2024,42000,1,5,Active
+EMP1619,Aarav Pillai,Female,32,Finance,Finance Manager,N/A,20-02-2022,67000,13,1,Active
+EMP1950,Kavya Singh,Male,32,HR,HR Executive,Mumbai,22-09-2017,51000,18,5,Active
+EMP1103,Pooja Iyer,Female,28,HR,HR Executive,Mumbai,24-06-2021,-1000,14,2,Active
+EMP1416,Sanjay Menon,Male,41,IT,Tester,Hyderabad,11-04-2021,99000,15,2,Active
+EMP1767,Sneha Raj,Male,49,marketing,Content Writer,Coimbatore,28-10-2015,45000,11,2,Active
+EMP1488,Rohan Das,Male,32,Operations,Supervisor,Mumbai,30-05-2019,37000,4,2,Resigned
+EMP1474,Kavya Iyer,Male,59,Marketing,Marketing Executive,Chennai,29-05-2024,74000,13,4,Active
+EMP1292,Vikram Menon,Female,49,Marketing,Marketing Executive,Coimbatore,03-11-2018,39000,15,5,Resigned
+EMP1264,Meera Menon,Female,36,Operations,Operations Executive,Chennai,05-01-2019,47000,13,1,Active
+EMP1252,Kavya Menon,Male,35,Finance,Analyst,Pune,20-06-2016,80000,8,5,Resigned
+EMP1606,Vikram Iyer,Male,32,Sales,Sales Executive,Chennai,29-04-2020,62000,N/A,2,Resigned
+EMP1819,Suresh Reddy,Male,32,HR,HR Manager,Chennai,18-11-2021,51000,16,5,Active
+EMP1799,Lakshmi Menon,Male,51,Sales,Sales Executive,Hyderabad,09-05-2024,44000,9,1,Resigned
+EMP1002,Rahul Singh,Female,25,HR,HR Executive,Coimbatore,07-03-2021,52000,1,5,Active
+EMP1550,Lakshmi Pillai,Female,56,IT,Developer,Bangalore,24-02-2019,72000,17,N/A,Active
+EMP1376,Ananya Kumar,Female,58,Operations,Operations Executive,Mumbai,30-04-2019,65000,16,3,Active
+EMP1967,Suresh Raj,Male,32,Operations,Operations Executive,Mumbai,11-07-2016,42000,18,3,Active
+EMP1403,Suresh Reddy,Male,50,HR,HR Manager,Chennai,05-01-2020,42000,16,N/A,Resigned
+EMP1679,Ananya Patel,Male,30,Marketing,Content Writer,Pune,20-10-2019,44000,3,1,Active
+EMP1831,Sneha Raj,Male,55,Finance,Accountant,Chennai,04-12-2022,88000,20,1,Active
+EMP1003,Sanjay Kumar,Female,24,it,Developer,N/A,30-03-2021,57000,45,4,Active
+EMP1096,Sneha Raj,Female,23,Operations,Operations Executive,chennai,28-04-2020,39000,14,3,Active
+EMP1536,Kavya Pillai,Male,39,Marketing,Content Writer,Hyderabad,29-01-2017,38000,20,1,Active
+EMP1497,Rohan Nair,Female,UNKNOWN,Sales,Sales Manager,Pune,02-02-2022,61000,15,3,Active
+EMP1847,Sanjay Raj,Male,24,IT,Tester,Hyderabad,05-10-2020,106000,5,2,Active
+EMP1915,Lakshmi Iyer,Male,24,IT,Developer,Bangalore,25-10-2018,62000,15,4,Active
+EMP1411,Lakshmi Raj,Male,57,Marketing ,Content Writer,Bangalore,06-06-2018,36000,1,2,Active
+EMP1646,Divya Kumar,Male,49,HR,HR Executive,Coimbatore,28-01-2020,26000,0,4,Resigned
+EMP1174,Ananya Menon,Female,40,IT,Developer,Mumbai,21-05-2015,80000,0,4,Active
+EMP1288,Arjun Gupta,Male,43,Marketing,Marketing Executive,N/A,12-05-2023,51000,0,3,Active
+EMP1783,Revathi Kumar,Male,23,Operations,Operations Executive,Hyderabad,07-12-2020,39000,19,N/A,Resigned
+EMP1143,Nisha Gupta,Male,43,IT,IT Manager,Bangalore,07-11-2020,59000,14,5,Active
+EMP1413,Suresh Das,Male,27,Finance,Finance Manager,Hyderabad,26-10-2017,67000,12,N/A,Active
+EMP1193,Manoj Das,Male,59,Operations,Supervisor,Coimbatore,03-12-2022,30000,8,3,Active
+EMP1402,Arjun Reddy,Female,27,Marketing,Content Writer,Pune,19-05-2021,35000,11,1,Active
+EMP1863,Arjun Raj,Male,56,HR,Recruiter,Coimbatore,24-11-2015,34000,15,5,Active
+EMP1759,Lakshmi Kumar,Male,36,HR,HR Manager,Pune,07-12-2020,54000,3,5,Active
+EMP1598,Aarav Kumar,Female,35,Marketing,Content Writer,Coimbatore,01-06-2022,65000,15,5,resigned
+EMP1762,Nisha Menon,Male,30,HR,Recruiter,coimbatore,28-01-2017,51000,13,5,Active
+EMP1155,Rohan Singh,Female,21,Finance,Accountant,Mumbai,19-09-2019,75000,11,5,Active
+EMP1404,Nisha Gupta,Male,23,Marketing,Content Writer,Coimbatore,04-06-2020,44000,9,3,Active
+EMP1182,Pooja Das,Female,49,Operations,Supervisor,Hyderabad,29-09-2018,43000,8,1,Active
+EMP1336,Rahul Nair,Female,39,Operations,Supervisor,Pune,02-04-2016,9999999,20,4,Active
+EMP1848,Lakshmi Pillai,Male,56,IT,Tester,Pune,12-11-2023,111000,5,3,Active
+EMP1075,Priya Kumar,Male,35,Marketing,Marketing Executive,Pune,07-01-2023,49000,4,3,Resigned
+EMP1415,Aarav Sharma,Male,58,IT,IT Manager,Mumbai,24-04-2015,41000,2,4,Active
+EMP1436,Rahul Gupta,Female,46,Operations,Supervisor,N/A,19-09-2015,29000,17,1,Active
+EMP1626,Manoj Nair,Male,41,Sales,Sales Executive,Hyderabad,29-04-2023,31000,17,4,Active
+EMP1234,Deepak Pillai,Female,45,Marketing,Content Writer,Bangalore,16-06-2015,68000,11,4,resigned
+EMP1021,Meera Gupta,Male,36,Operations,Supervisor,Pune,04-01-2024,39000,6,5,Resigned
+EMP1899,Suresh Reddy,Male,41,Operations,Supervisor,Hyderabad,27-12-2016,33000,2,2,active
+EMP1770,Rohan Menon,Female,48,Operations,Operations Executive,Chennai,21-07-2017,47000,10,1,Active
+EMP1907,Revathi Nair,Male,46,Operations,Operations Executive,Mumbai,10-07-2015,32000,11,2,Active
+EMP1804,Ananya Patel,Female,52,Operations,Supervisor,Mumbai,29-08-2020,48000,6,3,Active
+EMP1610,Meera Reddy,Male,37,IT,Tester,Coimbatore,12-12-2017,102000,5,3,Active
+EMP1590,Priya Kumar,Female,35,Operations,Supervisor,Pune,03-07-2019,27000,15,5,Resigned
+EMP1031,Deepak Menon,Female,27,Operations,Operations Executive,coimbatore,22-02-2017,42000,1,1,Resigned
+EMP1291,Aarav Das,Male,25,HR,Recruiter,Chennai,07-09-2016,60000,9,4,Active
+EMP1253,Lakshmi Menon,Male,46,Marketing,Marketing Executive,Chennai,02-06-2023,37000,16,1,Active
+EMP1070,Nisha Sharma,Female,36,Finance,Analyst,Bangalore,29-01-2024,71000,6,1,Resigned
+EMP1115,Vikram Gupta,Male,41,Marketing,Content Writer,Coimbatore,25-03-2017,41000,12,2,Active
+EMP1549,Vikram Menon,Female,48,Operations,Supervisor,Pune,01-04-2015,26000,1,4,Resigned
+EMP1092,Priya Das,Female,31,Operations,Supervisor,Coimbatore,23-10-2015,41000,19,1,Active
+EMP1466,Arjun Nair,Male,23,Operations,Operations Executive,Mumbai,28-11-2021,51000,20,1,Resigned
+EMP1889,Rahul Patel,Male,51,Operations,Supervisor,Hyderabad,27-05-2023,29000,16,2,Active
+EMP1168,Lakshmi Patel,Female,54,HR,HR Manager,Chennai,09-03-2018,52000,10,4,resigned
+EMP1408,Karthik Singh,Female,60,Marketing,Content Writer,Chennai,31-10-2018,69000,6,1,Resigned
+EMP1617,Ananya Kumar,Female,49,Operations,Supervisor,Hyderabad,12-09-2021,39000,10,1,Active
+EMP1321,Ananya Iyer,Female,27,IT,Developer,Mumbai,28-08-2022,90000,2,4,Active
+EMP1948,Priya Singh,Male,38,Marketing,Content Writer,Bangalore,24-12-2016,38000,8,3,Active
+EMP1586,Deepak Menon,Female,28,HR,Recruiter,Bangalore,25-01-2021,38000,7,4,Active
+EMP1078,Ananya Kumar,Male,33,Sales,Sales Manager,Pune,04-04-2022,51000,2,3,Active
+EMP1705,Lakshmi Kumar,Female,47,Sales,Sales Executive,Hyderabad,03-03-2016,56000,18,1,Resigned
+EMP1599,Nisha Das,Female,50,Sales,Sales Executive,Chennai,25-02-2018,42000,16,2,Active
+EMP1258,Vikram Gupta,Male,23,HR,Recruiter,Coimbatore,28-10-2021,35000,45,2,Active
+EMP1256,Rohan Nair,Female,46,IT,Tester,Pune,18-01-2022,56000,8,2,Active
+EMP1728,Divya Gupta,Female,54,HR,HR Executive,Pune,27-07-2021,52000,6,2,Resigned
+EMP1942,Karthik Menon,Female,33,Marketing,Content Writer,Bangalore,19-07-2023,56000,19,3,Active
+EMP1706,Karthik Das,Female,32,Operations,Operations Executive,Hyderabad,13-07-2019,33000,16,4,Active
+EMP1498,Ananya Pillai,Female,UNKNOWN,Operations,Operations Executive,Hyderabad,03-08-2021,58000,N/A,4,Resigned
+EMP1131,Nisha Das,Female,54,Sales,Sales Executive,coimbatore,26-11-2019,71000,7,5,resigned
+EMP1990,Lakshmi Pillai,Male,UNKNOWN,MARKETING,Marketing Executive,Coimbatore,26-07-2021,34000,17,5,Resigned
+EMP1101,Nisha Sharma,Male,46,Operations,Supervisor,Mumbai,06-03-2018,44000,13,1,Active
+EMP1172,Nisha Gupta,Female,60,Marketing,Marketing Executive,chennai,22-07-2022,74000,19,1,Active
+EMP1966,Rohan Raj,Male,39,Finance,Accountant,Hyderabad,24-02-2020,55000,0,1,Active
+EMP1703,Revathi Raj,Female,38,Sales,Sales Executive,Mumbai,05-05-2021,42000,16,1,Active
+EMP1900,Aarav Menon,Male,28,HR ,Recruiter,Pune,02-07-2016,42000,4,3,Active
+EMP1454,Rohan Kumar,Male,21,HR,Recruiter,Mumbai,12-08-2017,29000,15,3,Resigned
+EMP1987,Pooja Nair,Female,42,Finance,Accountant,Mumbai,18-04-2017,89000,1,2,Active
+EMP1656,Divya Nair,Male,45,Operations,Operations Executive,Pune,26-11-2022,58000,19,3,Active
+EMP1201,Pooja Reddy,Male,22,Sales,Sales Manager,Hyderabad,31-05-2024,43000,10,2,Active
+EMP1203,Sneha Nair,Male,44,Finance,Analyst,Bangalore,04-09-2017,50000,3,4,Active
+EMP1828,Priya Das,Male,52,Finance,Analyst,Coimbatore,10-08-2018,57000,N/A,1,Active
+EMP1661,Deepak Patel,Male,32,Sales,Sales Manager,Pune,31-08-2022,50000,4,5,Resigned
+EMP1456,Pooja Iyer,Female,47,HR,HR Manager,chennai,05-04-2015,48000,5,2,Active
+EMP1634,Nisha Pillai,Female,46,Operations,Supervisor,Hyderabad,09-06-2019,37000,12,2,Active
+EMP1137,Revathi Pillai,Male,47,Finance,Accountant,chennai,25-10-2020,84000,3,3,Resigned
+EMP1521,Nisha Sharma,Male,48,Marketing,Marketing Executive,Coimbatore,23-05-2023,61000,12,4,Active
+EMP1660,Sneha Reddy,Male,40,Sales,Sales Executive,Coimbatore,11-08-2015,80000,8,1,Active
+EMP1379,Aarav Nair,Female,59,Finance,Accountant,Coimbatore,10-02-2024,65000,13,4,Active
+EMP1271,Suresh Kumar,Female,26,Marketing,Content Writer,Pune,17-11-2021,71000,8,N/A,Active
+EMP1064,Vikram Kumar,Female,27,Sales,Sales Executive,Pune,15-03-2018,65000,4,2,Active
+EMP1071,Pooja Pillai,Male,45,Sales,Sales Manager,Bangalore,08-06-2023,28000,15,3,Active
+EMP1535,Deepak Kumar,Female,51,Finance,Accountant,Coimbatore,02-12-2015,89000,1,2,Resigned
+EMP1272,Aarav Kumar,Female,30,IT,Tester,Bangalore,30-01-2017,107000,5,1,Active
+EMP1544,Arjun Menon,Male,44,Operations,Operations Executive,Hyderabad,18-02-2017,44000,9,N/A,Active
+EMP1779,Aarav Sharma,Male,35,Marketing,Marketing Executive,Chennai,22-08-2018,51000,12,1,Active
+EMP1161,Aarav Reddy,Male,39,Operations,Supervisor,Hyderabad,20-02-2016,62000,4,2,Active
+EMP1170,Kavya Sharma,Female,33,IT,Tester,Pune,10-05-2018,56000,45,1,Active
+EMP1037,Nisha Das,Female,22,Finance,Analyst,Bangalore,20-10-2020,74000,9,5,Active
+EMP1244,Manoj Gupta,Female,22,IT,Developer,Bengaluru,10-06-2019,114000,1,4,ACTIVE
+EMP1083,Suresh Pillai,Male,26,Sales,Sales Executive,Bangalore,20-02-2017,36000,20,5,Resigned
+EMP1261,Sneha Kumar,Female,34,IT,Tester,Pune,19-12-2015,93000,12,5,Active
+EMP1373,Karthik Pillai,Male,30,IT,Tester,Chennai,14-04-2017,65000,45,3,ACTIVE
+EMP1991,Nisha Raj,Female,21,Operations,Supervisor,Hyderabad,07-06-2021,51000,11,2,Resigned
+EMP1023,Rahul Reddy,Male,35,Finance,Analyst,Chennai,15-10-2018,48000,15,5,Active
+EMP1309,Suresh Kumar,Female,60,Marketing,Content Writer,Chennai,18-01-2016,31000,4,2,Active
+EMP1508,Pooja Menon,Male,52,Finance,Accountant,Mumbai,20-12-2015,90000,2,5,Resigned
+EMP1221,Divya Sharma,Male,59,Finance,Finance Manager,Bangalore,13-12-2015,64000,18,5,Active
+EMP1996,Priya Sharma,Female,23,Sales,Sales Manager,Hyderabad,16-07-2018,-1000,16,4,Resigned
+EMP1673,Manoj Singh,Male,26,HR,HR Executive,Pune,25-06-2017,44000,12,2,Resigned
+EMP1512,Vikram Das,Male,51,Sales,Sales Executive,Hyderabad,24-11-2016,39000,2,3,Resigned
+EMP1178,Aarav Nair,Male,49,Sales,Sales Executive,Coimbatore,07-02-2019,74000,4,1,Active
+EMP1277,Ananya Sharma,Male,53,IT,IT Manager,Mumbai,19-10-2018,48000,14,1,Active
+EMP1880,Nisha Reddy,Male,28,Sales ,Sales Executive,Pune,19-09-2021,30000,17,N/A,Active
+EMP1548,Sanjay Pillai,Female,45,Finance,Analyst,Pune,21-04-2015,39000,19,4,Active
+EMP1839,Karthik Singh,Male,43,Sales,Sales Manager,Coimbatore,16-11-2017,57000,2,3,Active
+EMP1720,Revathi Iyer,Female,25,Sales,Sales Manager,Bengaluru,19-03-2015,32000,8,4,Active
+EMP1226,Ananya Kumar,Male,31,IT,IT Manager,Coimbatore,17-10-2021,84000,14,1,Resigned
+EMP1633,Deepak Raj,Female,23,Sales,Sales Executive,N/A,21-05-2019,68000,13,2,Active
+EMP1030,Revathi Kumar,Male,32,IT,Developer,Mumbai,10-12-2021,55000,17,1,Active
+EMP1860,Arjun Iyer,Male,53,HR,HR Executive,Bangalore,11-02-2020,-1000,13,1,Active
+EMP1701,Ananya Menon,Male,UNKNOWN,Finance,Analyst,Chennai,21-11-2015,48000,11,5,Resigned
+EMP1723,Arjun Das,Male,34,Marketing,Content Writer,Chennai,07-06-2019,49000,12,N/A,Resigned
+EMP1838,Arjun Menon,Male,25,Sales,Sales Manager,Chennai,08-06-2022,44000,N/A,1,Resigned
+EMP1746,Revathi Das,Male,57,IT,IT Manager,Pune,07-12-2020,82000,20,1,Resigned
+EMP1931,Sneha Iyer,Male,28,HR,Recruiter,Hyderabad,24-11-2020,45000,16,2,Active
+EMP1460,Pooja Sharma,Male,48,Operations,Operations Executive,Coimbatore,01-04-2018,29000,9,2,Active
+EMP1678,Pooja Menon,Male,23,Marketing,Marketing Executive,Chennai,27-06-2022,43000,2,4,Active
+EMP1639,Meera Singh,Female,36,HR,HR Executive,Hyderabad,12-02-2016,54000,13,5,Active
+EMP1882,Ananya Das,Male,54,HR,Recruiter,Coimbatore,09-12-2021,49000,8,4,Active
+EMP1475,Aarav Reddy,Female,25,Operations,Supervisor,coimbatore,26-09-2015,62000,4,2,Resigned
+EMP1265,Ananya Iyer,Male,52,Operations,Supervisor,Chennai,30-11-2022,40000,0,5,Resigned
+EMP1065,Deepak Patel,Male,44,Sales,Sales Manager,Coimbatore,08-02-2024,73000,20,4,active
+EMP1215,Karthik Raj,Female,46,IT,Developer,Coimbatore,13-02-2022,89000,13,5,Active
+EMP1973,Kavya Iyer,Male,48,Finance,Accountant,Bangalore,11-03-2020,81000,2,4,Active
+EMP1897,Manoj Raj,Female,21,Marketing,Marketing Executive,Coimbatore,20-01-2015,46000,13,1,Active
+EMP1951,Ananya Iyer,Male,51,HR,HR Executive,Bengaluru,10-01-2020,38000,8,2,Active
+EMP1176,Rohan Gupta,Male,51,operations,Supervisor,Hyderabad,22-02-2016,30000,20,4,resigned
+EMP1902,Sanjay Menon,Male,39,IT,IT Manager,Bangalore,24-10-2023,85000,2,1,Resigned
+EMP1033,Meera Pillai,Male,56,Marketing,Marketing Executive,Mumbai,15-07-2016,56000,3,N/A,Resigned
+EMP1032,Aarav Sharma,Female,41,Marketing ,Marketing Executive,chennai,09-02-2018,58000,16,5,Resigned
+EMP1745,Aarav Reddy,Female,40,Finance ,Finance Manager,Pune,15-10-2023,66000,1,3,Resigned
+EMP1236,Pooja Das,Female,49,IT,IT Manager,Hyderabad,07-11-2018,107000,2,2,Active
+EMP1375,Rahul Raj,Male,58,Sales,Sales Executive,Mumbai,18-07-2022,74000,15,2,Active
+EMP1686,Pooja Raj,Male,52,IT,Developer,Mumbai,25-08-2023,67000,10,4,Active
+EMP1419,Karthik Sharma,Male,59,Marketing,Content Writer,Coimbatore,06-11-2022,45000,7,1,Resigned
+EMP1390,Kavya Kumar,Female,29,Marketing,Marketing Executive,Hyderabad,21-01-2024,33000,5,3,Active
+EMP1816,Rahul Sharma,Female,27,Operations,Supervisor,N/A,22-08-2017,41000,19,5,Active
+EMP1015,Rohan Sharma,Female,46,Sales,Sales Executive,Chennai,03-10-2015,38000,14,2,Active
+EMP1095,Meera Iyer,Female,58,IT,Developer,Bangalore,23-09-2015,90000,8,2,Active
+EMP1529,Suresh Patel,Female,60,Marketing,Content Writer,Bengaluru,07-06-2021,64000,15,3,Active
+EMP1392,Suresh Das,Female,27,Marketing,Content Writer,Bangalore,02-06-2019,50000,12,4,Active
+EMP1854,Karthik Menon,Female,33,Operations,Supervisor,Coimbatore,22-11-2018,48000,5,3,resigned
+EMP1730,Sneha Pillai,Male,59,operations,Supervisor,Bangalore,27-01-2018,42000,19,1,Active
+EMP1802,Pooja Das,Male,30,Operations,Operations Executive,Chennai,19-02-2019,39000,12,3,Resigned
+EMP1926,Aarav Gupta,Male,46,HR,Recruiter,Pune,20-08-2016,60000,18,5,Active
+EMP1924,Suresh Singh,Male,35,IT,Tester,Pune,01-06-2017,98000,7,5,Active
+EMP1604,Vikram Iyer,Male,31,Finance,Analyst,Pune,27-01-2016,85000,N/A,4,Resigned
+EMP1184,Ananya Pillai,Male,41,Sales,Sales Manager,Bangalore,27-09-2019,35000,18,1,Active
+EMP1381,Rahul Nair,Male,49,Finance,Analyst,Pune,13-01-2021,86000,7,1,Active
+EMP1836,Divya Nair,Female,44,IT,IT Manager,Mumbai,01-10-2015,74000,15,N/A,Active
+EMP1492,Rohan Nair,Male,35,sales,Sales Executive,Bengaluru,09-08-2019,73000,20,5,Active
+EMP1780,Karthik Menon,Male,33,Sales,Sales Manager,Hyderabad,30-01-2015,74000,6,3,Resigned
+EMP1191,Kavya Gupta,Male,37,Marketing,Content Writer,Mumbai,02-02-2016,58000,18,5,Active
+EMP1365,Karthik Singh,Female,25,Sales,Sales Manager,Pune,09-06-2022,71000,5,3,Active
+EMP1246,Pooja Gupta,Female,52,Finance,Accountant,Chennai,06-08-2022,59000,18,N/A,Resigned
+EMP1275,Pooja Das,Male,40,Sales,Sales Executive,Chennai,18-09-2022,39000,N/A,2,Resigned
+EMP1148,Aarav Singh,Female,35,HR,HR Manager,Pune,28-04-2018,54000,0,2,Active
+EMP1106,Kavya Patel,Male,59,HR,HR Manager,N/A,20-12-2015,35000,20,2,Resigned
+EMP1325,Lakshmi Das,Male,43,Marketing,Marketing Executive,Chennai,15-03-2023,34000,8,2,Active
+EMP1771,Sneha Das,Male,50,Finance,Finance Manager,Pune,03-04-2020,35000,12,1,Active
+EMP1800,Rahul Sharma,Male,49,Sales,Sales Manager,Bangalore,12-05-2020,57000,8,5,Active
+EMP1692,Lakshmi Patel,Male,53,Operations,Operations Executive,Bengaluru,21-10-2017,-1000,18,4,Resigned
+EMP1874,Deepak Sharma,Female,50,Operations,Operations Executive,Mumbai,23-01-2017,32000,14,1,Resigned
+EMP1677,Priya Iyer,Male,43,Operations,Supervisor,Coimbatore,01-06-2017,40000,15,3,Resigned
+EMP1111,Sneha Sharma,Male,UNKNOWN,Sales,Sales Manager,Bangalore,11-01-2016,76000,14,5,Active
+EMP1901,Sanjay Kumar,Female,53,Marketing,Content Writer,Bangalore,23-06-2018,72000,13,3,Active
+EMP1977,Karthik Das,Male,27,Finance,Analyst,Bangalore,25-09-2019,81000,11,3,Active
+EMP1769,Sneha Gupta,Male,42,Marketing,Content Writer,Chennai,07-09-2021,70000,7,2,Resigned
+EMP1006,Sanjay Das,Female,40,Sales,Sales Executive,Chennai,03-11-2022,74000,7,N/A,Active
+EMP1975,Sneha Pillai,Female,41,HR,Recruiter,Coimbatore,12-04-2018,30000,19,3,Active
+EMP1145,Ananya Pillai,Female,30,Finance,Accountant,Pune,30-08-2018,73000,16,3,Active
+EMP1104,Priya Menon,Male,46,HR,HR Executive,Hyderabad,23-12-2021,48000,16,2,Active
+EMP1211,Kavya Das,Male,54,Operations,Operations Executive,Coimbatore,24-09-2017,30000,7,5,Active
+EMP1898,Nisha Raj,Male,41,IT,IT Manager,Coimbatore,22-02-2023,-1000,2,5,Active
+EMP1447,Manoj Das,Male,42,Finance,Finance Manager,Coimbatore,20-10-2015,67000,7,4,Active
+EMP1042,Divya Nair,Male,32,HR,HR Executive,Bangalore,19-01-2022,44000,16,2,Active
+EMP1363,Manoj Das,Male,42,Finance,Finance Manager,chennai,02-01-2017,42000,9,1,Resigned
