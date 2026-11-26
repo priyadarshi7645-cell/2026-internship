@@ -1,0 +1,1966 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1f3f6">
+  <title>Job Market Analytics · Streamlit</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1b2735;
+      --muted: #64748b;
+      --faint: #91a0b2;
+      --navy: #183b5b;
+      --teal: #0e888b;
+      --teal-soft: #e8f4f3;
+      --blue-soft: #eaf1f8;
+      --line: #e6ebf0;
+      --paper: #f7f9fb;
+      --sidebar: #f0f2f6;
+      --white: #ffffff;
+      --shadow: 0 18px 48px rgba(37, 51, 67, 0.13);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 18% 0%, #ffffff 0, transparent 38%),
+        #edf0f4;
+      font-size: 14px;
+    }
+
+    button, input { font: inherit; }
+    button { color: inherit; }
+    .desktop-stage {
+      width: min(1512px, calc(100vw - 48px));
+      margin: 34px auto;
+    }
+
+    .browser-window {
+      overflow: hidden;
+      min-height: calc(100vh - 68px);
+      border: 1px solid #d5dbe2;
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .browser-chrome {
+      display: grid;
+      grid-template-columns: 102px minmax(210px, 1fr) 42px minmax(230px, 650px) 1fr;
+      align-items: center;
+      gap: 12px;
+      min-height: 57px;
+      padding: 8px 14px;
+      border-bottom: 1px solid #dfe4ea;
+      background: #f7f8fa;
+    }
+
+    .window-dots { display: flex; align-items: center; gap: 7px; padding-left: 3px; }
+    .window-dot { width: 11px; height: 11px; border-radius: 50%; }
+    .window-dot.red { background: #ff6058; }
+    .window-dot.yellow { background: #ffbd2e; }
+    .window-dot.green { background: #28c840; }
+
+    .browser-tab {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      width: fit-content;
+      max-width: 100%;
+      min-height: 36px;
+      padding: 0 16px;
+      overflow: hidden;
+      border: 1px solid #e1e5ea;
+      border-bottom-color: var(--white);
+      border-radius: 9px 9px 0 0;
+      background: var(--white);
+      color: #344255;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .tab-mark {
+      display: grid;
+      width: 17px;
+      height: 17px;
+      place-items: center;
+      border-radius: 5px;
+      background: #e8f3f2;
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .browser-reload {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      background: transparent;
+      color: #536274;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .browser-reload:hover { background: #e9edf2; color: var(--navy); }
+
+    .address-bar {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      height: 34px;
+      padding: 0 12px;
+      border: 1px solid #e0e5ea;
+      border-radius: 8px;
+      background: #fff;
+      color: #596779;
+      font-size: 12px;
+    }
+    .address-lock { color: #7d8998; font-size: 11px; }
+    .address-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .browser-tools { justify-self: end; color: #8a96a5; font-size: 16px; }
+
+    .app-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 59px;
+      padding: 0 28px;
+      border-bottom: 1px solid #edf0f3;
+      background: #fff;
+    }
+
+    .app-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #566578;
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+    }
+
+    .app-brand-mark {
+      display: grid;
+      width: 24px;
+      height: 24px;
+      place-items: center;
+      border-radius: 7px;
+      background: var(--navy);
+      color: white;
+      font-size: 13px;
+    }
+
+    .sidebar-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 11px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: #506075;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .sidebar-toggle:hover { border-color: #b7c7d4; color: var(--navy); }
+
+    .dashboard-body {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      min-height: 820px;
+      background: var(--paper);
+      transition: grid-template-columns 180ms ease;
+    }
+
+    .dashboard-body.sidebar-collapsed { grid-template-columns: 0 minmax(0, 1fr); }
+    .sidebar {
+      position: relative;
+      z-index: 4;
+      min-width: 0;
+      padding: 21px 16px 25px;
+      overflow: visible;
+      border-right: 1px solid #e2e6eb;
+      background: var(--sidebar);
+      transition: padding 180ms ease, opacity 160ms ease;
+    }
+    .sidebar-collapsed .sidebar { padding-right: 0; padding-left: 0; opacity: 0; overflow: hidden; }
+    .sidebar-content { min-width: 236px; }
+    .side-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 2px 6px;
+      color: #334154;
+      font-size: 13px;
+      font-weight: 750;
+    }
+    .side-intro { margin: 0 2px 19px; color: #788596; font-size: 11px; line-height: 1.5; }
+    .filter-label {
+      display: block;
+      margin: 15px 2px 7px;
+      color: #526074;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .multi-select { position: relative; }
+    .multi-trigger {
+      display: flex;
+      width: 100%;
+      min-height: 38px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 0 10px;
+      border: 1px solid #d9dfe6;
+      border-radius: 8px;
+      background: #fff;
+      color: #657285;
+      cursor: pointer;
+      text-align: left;
+      font-size: 12px;
+    }
+    .multi-trigger:hover, .multi-select.open .multi-trigger { border-color: #8eb6b8; }
+    .multi-trigger .chevron { color: #8491a0; font-size: 10px; }
+    .multi-menu {
+      position: absolute;
+      z-index: 10;
+      top: calc(100% + 5px);
+      right: 0;
+      left: 0;
+      display: none;
+      max-height: 230px;
+      padding: 5px;
+      overflow-y: auto;
+      border: 1px solid #d9e0e7;
+      border-radius: 9px;
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(30, 45, 62, 0.14);
+    }
+    .multi-select.open .multi-menu { display: block; }
+    .multi-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 8px;
+      border-radius: 6px;
+      color: #435267;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .multi-option:hover { background: #f3f7f8; }
+    .multi-option input { accent-color: var(--teal); }
+
+    .side-input {
+      width: 100%;
+      height: 38px;
+      padding: 0 10px;
+      border: 1px solid #d9dfe6;
+      border-radius: 8px;
+      outline: none;
+      background: #fff;
+      color: #344255;
+      font-size: 12px;
+    }
+    .side-input:focus, .search-input:focus { border-color: #5da4a5; box-shadow: 0 0 0 3px rgba(14, 136, 139, 0.10); }
+    .side-input::placeholder, .search-input::placeholder { color: #9aa5b2; }
+
+    .switch-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 17px 2px 14px;
+      color: #526074;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 37px;
+      height: 21px;
+      flex: 0 0 auto;
+    }
+    .switch input { width: 0; height: 0; opacity: 0; }
+    .switch-track {
+      position: absolute;
+      inset: 0;
+      border-radius: 999px;
+      background: #bdc5cf;
+      cursor: pointer;
+      transition: background 150ms ease;
+    }
+    .switch-track::before {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+      content: "";
+      transition: transform 150ms ease;
+    }
+    .switch input:checked + .switch-track { background: var(--teal); }
+    .switch input:checked + .switch-track::before { transform: translateX(16px); }
+    .switch input:focus-visible + .switch-track { outline: 3px solid rgba(14, 136, 139, 0.2); }
+
+    .refresh-db {
+      width: 100%;
+      min-height: 38px;
+      border: 1px solid #c5d6dc;
+      border-radius: 8px;
+      background: #fff;
+      color: var(--navy);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .refresh-db:hover { border-color: var(--teal); background: #f7fbfb; }
+    .demo-note {
+      margin: 11px 1px 17px;
+      color: #7b8795;
+      font-size: 10px;
+      line-height: 1.5;
+    }
+
+    .filter-summary {
+      margin: 16px 0 17px;
+      padding: 11px;
+      border: 1px solid #e0e5eb;
+      border-radius: 9px;
+      background: rgba(255,255,255,0.64);
+    }
+    .summary-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .summary-title { color: #526074; font-size: 10px; font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; }
+    .clear-filters {
+      padding: 2px 0;
+      border: 0;
+      background: transparent;
+      color: var(--teal);
+      cursor: pointer;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    .summary-content { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 9px; }
+    .summary-empty { color: #8a96a5; font-size: 11px; }
+    .filter-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      max-width: 100%;
+      padding: 4px 7px;
+      border: 1px solid #d9e8e7;
+      border-radius: 999px;
+      background: #f0f8f7;
+      color: #386667;
+      font-size: 10px;
+    }
+    .remove-chip {
+      padding: 0;
+      border: 0;
+      background: none;
+      color: #628687;
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 1;
+    }
+    .dedupe-state { margin: 0 2px 14px; color: #798595; font-size: 10px; }
+
+    details.schema-box {
+      padding: 9px 10px;
+      border: 1px solid #dfe4e9;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.60);
+    }
+    .schema-box summary { color: #536174; cursor: pointer; font-size: 11px; font-weight: 700; }
+    .schema-box pre {
+      margin: 11px 0 2px;
+      overflow-x: auto;
+      color: #526074;
+      font: 10px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      white-space: pre-wrap;
+    }
+
+    .main-content { min-width: 0; padding: 26px 30px 34px; background: #f8fafc; }
+    .page-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 21px;
+    }
+    .eyebrow {
+      margin-bottom: 7px;
+      color: var(--teal);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      color: #18324c;
+      font-size: clamp(21px, 2.2vw, 29px);
+      font-weight: 760;
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+    }
+    .subtitle { margin: 8px 0 0; color: #748194; font-size: 12px; }
+    .data-stamp {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 2px;
+      padding: 7px 10px;
+      border: 1px solid #e2e9ea;
+      border-radius: 999px;
+      background: #fff;
+      color: #637284;
+      font-size: 10px;
+      white-space: nowrap;
+    }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #43a885; }
+
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; margin-bottom: 22px; }
+    .kpi-card {
+      min-height: 111px;
+      padding: 15px 16px 13px;
+      border: 1px solid #e7ebef;
+      border-radius: 11px;
+      background: #fff;
+      box-shadow: 0 2px 9px rgba(38, 53, 69, 0.035);
+    }
+    .kpi-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .kpi-label { color: #69788b; font-size: 11px; font-weight: 650; }
+    .kpi-icon {
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 8px;
+      background: var(--blue-soft);
+      color: var(--navy);
+      font-size: 13px;
+    }
+    .kpi-card:nth-child(2) .kpi-icon, .kpi-card:nth-child(4) .kpi-icon { background: var(--teal-soft); color: var(--teal); }
+    .kpi-value { margin-top: 9px; color: #1f344b; font-size: 25px; font-weight: 760; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+    .kpi-value.skill-value { font-size: 20px; }
+    .kpi-note { margin-top: 3px; color: #8793a2; font-size: 10px; line-height: 1.4; }
+
+    .tab-bar {
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid #e6eaef;
+      border-radius: 10px;
+      background: #eef2f5;
+    }
+    .tab-button {
+      flex: 1;
+      min-height: 37px;
+      border: 0;
+      border-radius: 7px;
+      background: transparent;
+      color: #657286;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 700;
+      transition: background 120ms ease, box-shadow 120ms ease, color 120ms ease;
+    }
+    .tab-button.active {
+      background: #fff;
+      color: var(--navy);
+      box-shadow: 0 1px 4px rgba(41, 54, 68, 0.10);
+    }
+    .tab-panel { padding-top: 17px; }
+    .tab-panel[hidden] { display: none; }
+
+    .chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      min-width: 0;
+      padding: 16px 17px;
+      border: 1px solid #e7ebef;
+      border-radius: 11px;
+      background: #fff;
+      box-shadow: 0 2px 9px rgba(38, 53, 69, 0.025);
+    }
+    .card.wide { grid-column: 1 / -1; }
+    .card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin-bottom: 13px; }
+    .card-title { margin: 0; color: #263a50; font-size: 13px; font-weight: 740; }
+    .card-subtitle { margin: 4px 0 0; color: #8994a1; font-size: 10px; line-height: 1.45; }
+    .card-action { color: #8490a0; font-size: 10px; }
+    .chart-area { min-height: 190px; }
+    .empty-state {
+      display: grid;
+      min-height: 160px;
+      place-items: center;
+      padding: 18px;
+      color: #8a96a4;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .line-chart { display: block; width: 100%; height: auto; min-height: 190px; overflow: visible; }
+    .line-chart text { fill: #8793a2; font: 10px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .line-chart .grid-line { stroke: #edf0f3; stroke-width: 1; }
+    .line-chart .trend-line { fill: none; stroke: #0e888b; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .line-chart .trend-dot { fill: #fff; stroke: #0e888b; stroke-width: 3; }
+    .chart-bars { display: flex; flex-direction: column; gap: 11px; padding: 3px 0; }
+    .bar-item {
+      display: grid;
+      grid-template-columns: minmax(100px, 1.1fr) minmax(80px, 2fr) 30px;
+      align-items: center;
+      gap: 9px;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      text-align: left;
+    }
+    button.bar-item { cursor: pointer; }
+    button.bar-item:hover .bar-label { color: var(--teal); }
+    .bar-label { overflow: hidden; color: #526174; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+    .bar-track { height: 9px; overflow: hidden; border-radius: 999px; background: #edf1f4; }
+    .bar-fill { height: 100%; min-width: 2px; border-radius: inherit; background: #0e888b; }
+    .bar-count { color: #617084; font-size: 10px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+    .company-bar .bar-fill { background: #315d7e; }
+    .role-bar .bar-fill { background: #7ca9ae; }
+    .bar-item.is-active { padding: 4px 5px; margin: -4px -5px; background: #edf7f6; }
+    .chart-legend { display: flex; gap: 14px; margin-top: 7px; color: #8994a1; font-size: 10px; }
+    .legend-mark { display: inline-block; width: 7px; height: 7px; margin-right: 5px; border-radius: 50%; background: var(--teal); }
+
+    .explorer-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: 0 0 11px; }
+    .explorer-count { color: #788597; font-size: 11px; white-space: nowrap; }
+    .search-wrap { position: relative; width: min(340px, 100%); }
+    .search-icon { position: absolute; top: 9px; left: 11px; color: #8793a2; font-size: 13px; }
+    .search-input { width: 100%; height: 35px; padding: 0 11px 0 32px; border: 1px solid #e0e5ea; border-radius: 8px; outline: 0; background: #fff; color: #344255; font-size: 11px; }
+    .table-wrap { width: 100%; overflow-x: auto; border: 1px solid #e7ebef; border-radius: 8px; }
+    table.job-table { width: 100%; border-collapse: collapse; font-size: 10px; }
+    .job-table th { padding: 10px 9px; border-bottom: 1px solid #e8edf1; background: #f8fafb; color: #69788b; font-size: 9px; font-weight: 750; letter-spacing: .035em; text-align: left; text-transform: uppercase; white-space: nowrap; }
+    .job-table td { padding: 10px 9px; border-bottom: 1px solid #edf0f3; color: #59697c; vertical-align: middle; }
+    .job-table tr:last-child td { border-bottom: 0; }
+    .job-name { min-width: 150px; color: #263a50 !important; font-size: 10px; font-weight: 700; }
+    .job-company { color: #536a7d !important; font-weight: 650; white-space: nowrap; }
+    .job-date { white-space: nowrap; }
+    .skill-chips { display: flex; flex-wrap: wrap; gap: 4px; min-width: 95px; }
+    .skill-chip { padding: 3px 6px; border: 1px solid #e2eceb; border-radius: 999px; background: #f2f8f7; color: #548082; font-size: 9px; white-space: nowrap; }
+    .job-link { color: #287d80; text-decoration: none; font-weight: 700; white-space: nowrap; }
+    .job-link:hover { text-decoration: underline; }
+    .jd-button { padding: 5px 8px; border: 1px solid #dce5e8; border-radius: 6px; background: #fff; color: #385d67; cursor: pointer; font-size: 9px; font-weight: 700; white-space: nowrap; }
+    .jd-button:hover { border-color: #8cb8b8; background: #f3f9f8; }
+
+    .skill-bar .bar-fill { background: linear-gradient(90deg, #0e888b, #4a9ea0); }
+    .skill-bar.is-active { padding: 4px 5px; margin: -4px -5px; background: #edf7f6; }
+    .matrix-wrap { width: 100%; overflow: auto; border: 1px solid #e8edf1; border-radius: 8px; }
+    .skill-matrix { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 10px; }
+    .skill-matrix th { position: sticky; top: 0; z-index: 1; padding: 9px 8px; border-bottom: 1px solid #e7ebef; background: #f7f9fb; color: #68778a; font-size: 9px; text-align: center; white-space: nowrap; }
+    .skill-matrix th:first-child { left: 0; z-index: 2; text-align: left; }
+    .skill-matrix td { padding: 7px 6px; border-bottom: 1px solid #f0f2f5; color: #47576a; text-align: center; }
+    .skill-matrix td:first-child { position: sticky; left: 0; background: #fff; font-weight: 700; text-align: left; white-space: nowrap; }
+    .heat-cell { display: inline-grid; min-width: 31px; min-height: 24px; place-items: center; border-radius: 5px; font-variant-numeric: tabular-nums; }
+    .matrix-note { margin-top: 9px; color: #8a95a2; font-size: 10px; line-height: 1.5; }
+    .skill-filter-banner { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 12px; padding: 6px 9px; border: 1px solid #d9e8e7; border-radius: 999px; background: #f0f8f7; color: #456b6e; font-size: 10px; }
+    .skill-filter-clear { padding: 0 2px; border: 0; background: transparent; color: var(--teal); cursor: pointer; font-weight: 800; }
+
+    .demo-banner {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      margin-top: 17px;
+      padding: 10px 12px;
+      border: 1px solid #e8e2d2;
+      border-radius: 8px;
+      background: #fffdf7;
+      color: #7c6d4c;
+      font-size: 10px;
+      line-height: 1.5;
+    }
+    .demo-banner strong { color: #665735; }
+    .toast {
+      position: fixed;
+      z-index: 40;
+      right: 25px;
+      bottom: 24px;
+      max-width: min(380px, calc(100vw - 32px));
+      padding: 11px 15px;
+      transform: translateY(12px);
+      border: 1px solid #d6e5e3;
+      border-radius: 9px;
+      background: #fff;
+      box-shadow: 0 10px 32px rgba(30, 45, 62, 0.16);
+      color: #426568;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 160ms ease, transform 160ms ease;
+      font-size: 12px;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    dialog#jd-dialog {
+      width: min(710px, calc(100vw - 32px));
+      max-height: min(82vh, 760px);
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #dce3e9;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 24px 80px rgba(23, 38, 56, 0.28);
+      color: var(--ink);
+    }
+    dialog#jd-dialog::backdrop { background: rgba(27, 40, 55, 0.44); backdrop-filter: blur(2px); }
+    .dialog-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; padding: 19px 22px 15px; border-bottom: 1px solid #edf0f3; }
+    .dialog-kicker { color: var(--teal); font-size: 9px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+    .dialog-head h2 { margin: 7px 0 5px; color: #21374e; font-size: 21px; letter-spacing: -.025em; }
+    .dialog-meta { color: #7b8795; font-size: 11px; }
+    .dialog-close { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid #e5e9ed; border-radius: 8px; background: #fff; color: #667487; cursor: pointer; font-size: 17px; }
+    .dialog-body { max-height: calc(82vh - 165px); padding: 20px 22px; overflow-y: auto; }
+    .description-label { margin-bottom: 9px; color: #69788b; font-size: 10px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+    .description-text { color: #46576b; font-size: 13px; line-height: 1.75; white-space: pre-wrap; }
+    .description-text mark { padding: 1px 2px; border-radius: 3px; background: #fff0bd; color: #5d4d1f; }
+    .dialog-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 22px; border-top: 1px solid #edf0f3; background: #fafbfc; }
+    .dialog-hint { color: #8b96a3; font-size: 10px; }
+    .dialog-link { padding: 8px 12px; border: 0; border-radius: 7px; background: var(--navy); color: #fff; font-size: 11px; font-weight: 700; text-decoration: none; }
+    .dialog-link:hover { background: #24577c; }
+
+    @media (max-width: 1120px) {
+      .desktop-stage { width: min(100% - 24px, 1512px); margin: 12px auto; }
+      .browser-window { min-height: calc(100vh - 24px); }
+      .browser-chrome { grid-template-columns: 75px minmax(140px, 1fr) 36px minmax(150px, 1.5fr) 20px; }
+      .dashboard-body { grid-template-columns: 246px minmax(0, 1fr); }
+      .main-content { padding-right: 20px; padding-left: 20px; }
+    }
+    @media (max-width: 800px) {
+      .desktop-stage { width: 100%; margin: 0; }
+      .browser-window { min-height: 100vh; border: 0; border-radius: 0; box-shadow: none; }
+      .browser-chrome { grid-template-columns: 57px minmax(0, 1fr) 34px; gap: 8px; padding: 7px 10px; }
+      .browser-tab { padding: 0 8px; font-size: 10px; }
+      .address-bar { grid-column: 1 / -1; grid-row: 2; }
+      .browser-tools { display: none; }
+      .app-topbar { min-height: 51px; padding: 0 13px; }
+      .dashboard-body { grid-template-columns: 236px minmax(0, 1fr); min-height: calc(100vh - 108px); }
+      .main-content { padding: 20px 14px 28px; }
+      .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+      .kpi-card { min-height: 100px; padding: 12px; }
+      .chart-grid { grid-template-columns: 1fr; }
+      .card.wide { grid-column: auto; }
+      .page-heading { flex-direction: column; gap: 10px; }
+    }
+    @media (max-width: 600px) {
+      .dashboard-body { display: block; }
+      .sidebar {
+        position: absolute;
+        top: 143px;
+        bottom: 0;
+        left: 0;
+        width: 270px;
+        height: calc(100vh - 143px);
+        overflow-y: auto;
+        box-shadow: 14px 0 28px rgba(26, 40, 57, 0.10);
+      }
+      .dashboard-body.sidebar-collapsed .sidebar { display: none; }
+      .main-content { min-height: calc(100vh - 143px); }
+      .kpi-value { font-size: 22px; }
+      .app-brand { font-size: 10px; }
+      .data-stamp { font-size: 9px; }
+      .explorer-toolbar { align-items: stretch; flex-direction: column; }
+      .search-wrap { width: 100%; }
+      .tab-button { font-size: 10px; }
+      .browser-tab { max-width: 100%; }
+      .browser-tab span:last-child { overflow: hidden; text-overflow: ellipsis; }
+    }
+  </style>
+  <style>
+    :root {
+      --teal: #0068c9;
+      --teal-soft: #e8f2fc;
+      --blue-soft: #edf3fa;
+      --st-red: #ff4b4b;
+      --st-sidebar: #f0f2f6;
+      --st-border: #e6e9ef;
+    }
+
+    html, body { min-height: 100%; }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      background: #101827;
+      color: #262730;
+    }
+    .desktop-stage {
+      width: min(1512px, 100%);
+      height: min(960px, calc(100vh - 36px));
+      margin: 0 auto;
+    }
+    .browser-window {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid #344154;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 28px 80px rgba(0, 0, 0, .38);
+    }
+    .browser-chrome {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      gap: 0;
+      padding: 0;
+      background: #e0e3e8;
+    }
+    .browser-tabbar {
+      display: grid;
+      min-height: 48px;
+      grid-template-columns: 90px minmax(160px, 480px) 34px minmax(0, 1fr);
+      align-items: end;
+      gap: 12px;
+      padding: 7px 16px 0;
+    }
+    .window-dots { justify-self: center; padding-bottom: 12px; }
+    .browser-tab {
+      display: flex;
+      width: 100%;
+      height: 41px;
+      align-items: center;
+      gap: 9px;
+      padding: 0 12px;
+      border: 1px solid #d5d9df;
+      border-bottom-color: #fff;
+      border-radius: 14px 14px 0 0;
+      background: #fff;
+      color: #22242b;
+      font-size: 13px;
+      box-shadow: 0 -1px 3px rgba(0, 0, 0, .035);
+    }
+    .browser-tab .tab-mark { background: var(--st-red); }
+    .browser-newtab {
+      width: 30px;
+      height: 32px;
+      border: 0;
+      background: transparent;
+      color: #687180;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .browser-tools {
+      justify-self: end;
+      margin: 0 3px 8px 0;
+      padding: 6px 10px;
+      border: 1px solid #d2d7de;
+      border-radius: 7px;
+      background: #d7dce3;
+      color: #5d6674;
+      font: 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .browser-addressbar {
+      display: grid;
+      min-height: 49px;
+      grid-template-columns: 118px minmax(0, 1fr) 34px;
+      align-items: center;
+      gap: 10px;
+      padding: 0 18px 7px;
+      background: #e0e3e8;
+    }
+    .browser-addressbar > .address-bar { grid-column: auto; grid-row: auto; }
+    .browser-nav { display: flex; align-items: center; justify-content: center; gap: 12px; }
+    .browser-nav-button, .browser-reload {
+      display: grid;
+      width: 26px;
+      height: 28px;
+      place-items: center;
+      border: 0;
+      border-radius: 7px;
+      background: transparent;
+      color: #687180;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .browser-nav-button:hover, .browser-reload:hover { background: #d2d7de; }
+    .address-bar {
+      display: flex;
+      min-width: 0;
+      height: 34px;
+      align-items: center;
+      gap: 10px;
+      padding: 0 13px;
+      border: 1px solid #e4e6eb;
+      border-radius: 999px;
+      background: #f4f5f7;
+      color: #485263;
+      font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .address-lock { color: #7d8794; }
+    .browser-profile {
+      display: grid;
+      width: 31px;
+      height: 31px;
+      place-items: center;
+      border-radius: 50%;
+      background: #dbe3ec;
+      color: #465469;
+      font-size: 11px;
+      font-weight: 750;
+    }
+    .st-rainbow-bar {
+      height: 5px;
+      flex: 0 0 auto;
+      background: linear-gradient(90deg, #ff4b4b 0%, #ffad42 36%, #ffe14b 57%, #18b875 76%, #1685d1 100%);
+    }
+    .app-topbar {
+      min-height: 57px;
+      flex: 0 0 auto;
+      border-bottom: 1px solid #e9ebef;
+      background: #fff;
+      color: #262730;
+    }
+    .app-brand { gap: 12px; color: #424854; font-size: 13px; font-weight: 500; }
+    .app-brand-mark { display: none; }
+    .source-breadcrumb { color: #626b78; font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .source-breadcrumb strong { color: #242a33; }
+    .sidebar-toggle {
+      display: grid;
+      width: 31px;
+      height: 31px;
+      place-items: center;
+      padding: 0;
+      border: 0;
+      border-radius: 7px;
+      background: transparent;
+      color: #616a77;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    .sidebar-toggle:hover, .topbar-menu:hover { background: #f2f3f5; }
+    .sidebar-toggle span:last-child { display: none; }
+    .topbar-actions { display: flex; align-items: center; gap: 14px; }
+    .preview-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #557366;
+      font-size: 10px;
+    }
+    .preview-status::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #21a675;
+      content: "";
+    }
+    .deploy-button {
+      padding: 6px 11px;
+      border: 1px solid #e4e6eb;
+      border-radius: 7px;
+      background: #fff;
+      color: #343944;
+      font-size: 11px;
+      font-weight: 650;
+    }
+    .topbar-menu { width: 28px; height: 30px; border: 0; border-radius: 7px; background: transparent; color: #6a7280; cursor: pointer; font-size: 17px; }
+    .dashboard-body {
+      display: grid;
+      min-height: 0;
+      flex: 1 1 auto;
+      grid-template-columns: 270px minmax(0, 1fr);
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+    }
+    .sidebar {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      width: auto;
+      height: auto;
+      min-height: 0;
+      overflow-y: auto;
+      padding: 20px 14px;
+      border-right: 1px solid #e4e7ed;
+      background: var(--st-sidebar);
+      box-shadow: none;
+    }
+    .sidebar-content { width: 100%; min-width: 0; max-width: 100%; }
+    .source-card {
+      margin-bottom: 18px;
+      padding: 12px;
+      border: 1px solid #e1e4ea;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .025);
+    }
+    .source-card-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+    .source-card-label { color: #6c7481; font-size: 9px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+    .source-card-state { display: inline-flex; align-items: center; gap: 5px; color: #167750; font: 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .source-card-state::before { width: 7px; height: 7px; border-radius: 50%; background: #20a879; content: ""; }
+    .source-card-file { margin-top: 9px; padding: 8px; overflow: hidden; border: 1px solid #e8eaf0; border-radius: 8px; background: #f8f9fb; color: #394352; font: 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-overflow: ellipsis; white-space: nowrap; }
+    .source-card-note { margin: 7px 1px 0; color: #7e8795; font-size: 9px; line-height: 1.4; }
+    .side-heading { color: #343a45; font-size: 13px; }
+    .side-intro { color: #777f8d; font-size: 10px; }
+    .side-input:focus, .search-input:focus { border-color: #ff7777; box-shadow: 0 0 0 3px rgba(255, 75, 75, .10); }
+    .multi-option input { accent-color: var(--st-red); }
+    .switch input:checked + .switch-track { background: var(--st-red); }
+    .switch input:focus-visible + .switch-track { outline-color: rgba(255, 75, 75, .22); }
+    .refresh-db:hover { border-color: var(--st-red); background: #fff9f9; }
+    .clear-filters, .filter-chip { color: #b63d3d; }
+    .filter-chip { border-color: #f4dada; background: #fff5f5; }
+    .remove-chip { color: #b65b5b; }
+    .main-content {
+      min-height: 0;
+      overflow-y: auto;
+      padding: 27px clamp(20px, 3.2vw, 46px) 36px;
+      background: #fff;
+    }
+    .eyebrow { color: #d84848; }
+    h1 { color: #222631; }
+    .subtitle { color: #6b7280; }
+    .data-stamp { border-color: #e6e8ed; color: #606976; }
+    .status-dot { background: #21a675; }
+    .kpi-card, .card { border-color: #e6e8ed; border-radius: 12px; box-shadow: 0 1px 3px rgba(0, 0, 0, .035); }
+    .kpi-label { color: #68707d; }
+    .kpi-value, .card-title { color: #242a35; }
+    .tab-bar {
+      gap: 20px;
+      padding: 0;
+      border: 0;
+      border-bottom: 1px solid #e7e9ed;
+      border-radius: 0;
+      background: transparent;
+    }
+    .tab-button {
+      position: relative;
+      flex: 0 0 auto;
+      min-height: 41px;
+      padding: 0 2px;
+      border-radius: 0;
+      color: #68707d;
+      font-weight: 600;
+    }
+    .tab-button.active { background: transparent; color: #d84646; box-shadow: none; }
+    .tab-button.active::after {
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      background: var(--st-red);
+      content: "";
+    }
+    .bar-fill { background: #0876cc; }
+    .company-bar .bar-fill { background: #23a58b; }
+    .role-bar .bar-fill { background: #7a70c8; }
+    .skill-bar .bar-fill { background: linear-gradient(90deg, #0876cc, #39a7d8); }
+    .bar-item.is-active, .skill-bar.is-active { background: #edf5fc; }
+    button.bar-item:hover .bar-label { color: #075fa6; }
+    .job-link, .skill-filter-clear { color: #0876cc; }
+    .jd-button:hover { border-color: #ff9a9a; background: #fff7f7; }
+    .demo-banner { border-color: #e5e8ed; background: #f8f9fb; color: #66707e; }
+    .demo-banner strong { color: #414a57; }
+    .toast { border-color: #dfe3e9; color: #414a57; }
+
+    @media (max-width: 800px) {
+      body { padding: 12px; }
+      .desktop-stage { width: 100%; height: calc(100vh - 24px); margin: 0; }
+      .browser-window { min-height: 0; border-radius: 16px; }
+      .browser-tabbar { grid-template-columns: 62px minmax(125px, 1fr) 28px auto; gap: 6px; padding-right: 10px; padding-left: 10px; }
+      .browser-tools { max-width: 150px; overflow: hidden; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+      .browser-addressbar { grid-template-columns: 93px minmax(0, 1fr) 31px; padding-right: 12px; padding-left: 12px; }
+      .dashboard-body { grid-template-columns: 235px minmax(0, 1fr); }
+      .main-content { padding: 22px 18px 30px; }
+    }
+    @media (max-width: 600px) {
+      body { display: block; padding: 0; }
+      .desktop-stage { width: 100%; height: 100vh; }
+      .browser-window { border: 0; border-radius: 0; }
+      .browser-tabbar { min-height: 42px; grid-template-columns: 48px minmax(0, 1fr) 26px; padding: 4px 8px 0; }
+      .window-dots { padding-bottom: 11px; }
+      .browser-tab { height: 37px; padding: 0 8px; font-size: 10px; }
+      .browser-newtab, .browser-tools { display: none; }
+      .browser-addressbar { min-height: 43px; grid-template-columns: 74px minmax(0, 1fr) 28px; gap: 5px; padding: 0 8px 5px; }
+      .browser-nav { gap: 4px; }
+      .browser-nav-button, .browser-reload { width: 22px; }
+      .address-bar { height: 30px; padding: 0 9px; font-size: 10px; }
+      .browser-profile { width: 27px; height: 27px; }
+      .app-topbar { min-height: 48px; padding: 0 10px; }
+      .app-brand { gap: 6px; }
+      .source-breadcrumb { max-width: 50vw; overflow: hidden; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+      .topbar-actions { gap: 5px; }
+      .preview-status, .deploy-button { display: none; }
+      .dashboard-body { display: block; }
+      .sidebar {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: min(290px, 84vw);
+        height: auto;
+        box-shadow: 14px 0 28px rgba(26, 40, 57, .15);
+      }
+      .dashboard-body.sidebar-collapsed .sidebar { display: none; }
+      .main-content { height: 100%; min-height: 0; padding: 18px 13px 26px; }
+      .page-heading { flex-direction: column; gap: 10px; }
+      .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .kpi-card { min-height: 95px; padding: 11px; }
+      .chart-grid { grid-template-columns: 1fr; }
+      .card.wide { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="desktop-stage">
+    <div class="browser-window" aria-label="Desktop browser mockup">
+      <div class="browser-chrome">
+        <div class="browser-tabbar">
+          <div class="window-dots" aria-label="Window controls">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+          </div>
+          <div class="browser-tab" title="Job Market Analytics · Streamlit">
+            <span class="tab-mark">S</span>
+            <span>Job Market Analytics · Streamlit</span>
+          </div>
+          <button class="browser-newtab" type="button" aria-label="New tab">+</button>
+          <div class="browser-tools">Local preview</div>
+        </div>
+        <div class="browser-addressbar">
+          <div class="browser-nav">
+            <button class="browser-nav-button" type="button" aria-label="Back" title="Back">‹</button>
+            <button class="browser-nav-button" type="button" aria-label="Forward" title="Forward">›</button>
+            <button class="browser-reload" id="browser-reload" type="button" aria-label="Reload and reset this demo" title="Reload view">⟳</button>
+          </div>
+          <div class="address-bar" aria-label="Browser address bar">
+            <span class="address-lock">ⓘ</span>
+            <span class="address-text">http://localhost:8501</span>
+          </div>
+          <div class="browser-profile" aria-label="Profile">DS</div>
+        </div>
+      </div>
+
+      <div class="st-rainbow-bar" aria-hidden="true"></div>
+      <div class="app-topbar">
+        <div class="app-brand">
+          <button class="sidebar-toggle" id="sidebar-toggle" type="button" aria-expanded="true" aria-label="Toggle sidebar">
+            <span aria-hidden="true">☰</span><span>Hide filters</span>
+          </button>
+          <span class="source-breadcrumb">sample_jobs.sqlite <span aria-hidden="true">›</span> <strong>jobs</strong></span>
+        </div>
+        <div class="topbar-actions">
+          <span class="preview-status">Embedded demo</span>
+          <button class="deploy-button" type="button" onclick="showToast('This standalone preview does not deploy an app.', 'info')">Deploy</button>
+          <button class="topbar-menu" type="button" aria-label="More options" onclick="showToast('Local interactive prototype', 'info')">⋮</button>
+        </div>
+      </div>
+
+      <div class="dashboard-body" id="dashboard-body">
+        <aside class="sidebar" id="sidebar" aria-label="Dashboard filters">
+          <div class="sidebar-content">
+            <div class="source-card">
+              <div class="source-card-head">
+                <span class="source-card-label">Jobs data source</span>
+                <span class="source-card-state">Embedded</span>
+              </div>
+              <div class="source-card-file">sample_jobs.sqlite → <strong>jobs</strong></div>
+              <p class="source-card-note">Illustrative records embedded in this standalone preview.</p>
+            </div>
+            <div class="side-heading"><span>Filters</span><span aria-hidden="true">⌕</span></div>
+            <p class="side-intro">Narrow the jobs table to explore current roles, companies, and skills.</p>
+            <div id="sidebar-controls"></div>
+            <div class="filter-summary" id="filter-summary"></div>
+            <p class="dedupe-state" id="dedupe-state"></p>
+            <details class="schema-box">
+              <summary>Inspect jobs table schema</summary>
+              <pre>CREATE TABLE "jobs" (
+  "Job_Title" TEXT,
+  "Company" TEXT,
+  "Country" TEXT,
+  "Location" TEXT,
+  "Posting_Date" TEXT,
+  "Job_Description" TEXT,
+  "Job_URL" TEXT
+);</pre>
+            </details>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <div class="page-heading">
+            <div>
+              <h1>📊 Job Market Analytics</h1>
+              <p class="subtitle">Wipro · Accenture · Infosys · Last 3 days</p>
+            </div>
+          </div>
+
+          <section class="kpi-grid" id="kpi-grid" aria-label="Job market metrics"></section>
+
+          <div class="tab-bar" role="tablist" aria-label="Dashboard tabs">
+            <button class="tab-button active" id="tab-market" role="tab" aria-selected="true" aria-controls="market-panel" data-tab="market">Market Overview</button>
+            <button class="tab-button" id="tab-skills" role="tab" aria-selected="false" aria-controls="skills-panel" data-tab="skills">Skills &amp; Role Explorer</button>
+          </div>
+
+          <section class="tab-panel" id="market-panel" role="tabpanel" aria-labelledby="tab-market">
+            <div id="market-content"></div>
+          </section>
+          <section class="tab-panel" id="skills-panel" role="tabpanel" aria-labelledby="tab-skills" hidden>
+            <div id="skills-content"></div>
+          </section>
+
+          <div class="demo-banner">
+            <span aria-hidden="true">ⓘ</span>
+            <span><strong>Standalone prototype:</strong> these illustrative records are embedded in this HTML file and follow the SQLite <code>jobs</code> schema. The Refresh DB control reloads this demo sample; it does not connect to or modify a database.</span>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <dialog id="jd-dialog" aria-labelledby="jd-title">
+    <div class="dialog-head">
+      <div>
+        <div class="dialog-kicker">Job description</div>
+        <h2 id="jd-title"></h2>
+        <div class="dialog-meta" id="jd-meta"></div>
+      </div>
+      <button class="dialog-close" id="jd-close" type="button" aria-label="Close job description">×</button>
+    </div>
+    <div class="dialog-body">
+      <div class="description-label">Full description · matched skills highlighted</div>
+      <div class="description-text" id="jd-description"></div>
+    </div>
+    <div class="dialog-foot">
+      <span class="dialog-hint">Open the original posting in a new tab.</span>
+      <a class="dialog-link" id="jd-url" href="#" target="_blank" rel="noopener noreferrer">Open job posting ↗</a>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    "use strict";
+
+    const sampleJobs = [
+      {
+        Job_Title: "AI/ML Engineer",
+        Company: "Wipro",
+        Country: "India",
+        Location: "Bengaluru",
+        Posting_Date: "2026-11-26",
+        Job_Description: "Build and evaluate machine-learning services for customer products. Use Python and PySpark for data preparation, develop RAG workflows with LLMs, and deploy monitored models on Azure. Partner with engineering teams on responsible AI and production quality.",
+        Job_URL: "https://careers.wipro.com/global/en/job/WIPRO-AIML-1001"
+      },
+      {
+        Job_Title: "AI Engineer",
+        Company: "Wipro",
+        Country: "India",
+        Location: "Hyderabad",
+        Posting_Date: "2026-11-25",
+        Job_Description: "Create generative AI services using Python, GenAI frameworks, and LLMs. Prototype retrieval-augmented generation (RAG), evaluate prompt quality, and integrate secure model endpoints on Microsoft Azure.",
+        Job_URL: "https://careers.wipro.com/global/en/job/WIPRO-AI-1002"
+      },
+      {
+        Job_Title: "Data Analyst",
+        Company: "Wipro",
+        Country: "India",
+        Location: "Pune",
+        Posting_Date: "2026-11-24",
+        Job_Description: "Prepare business reporting and analyze operational datasets with SQL and Python. Build Power BI dashboards, validate source data, and communicate clear data analytics findings to business partners.",
+        Job_URL: "https://careers.wipro.com/global/en/job/WIPRO-DA-1003"
+      },
+      {
+        Job_Title: "Machine Learning Engineer",
+        Company: "Wipro",
+        Country: "India",
+        Location: "Gurugram",
+        Posting_Date: "2026-11-24",
+        Job_Description: "Develop and productionize machine learning models with Python. Use AWS services, establish MLOps workflows, and scale feature pipelines with PySpark while monitoring model quality.",
+        Job_URL: "https://careers.wipro.com/global/en/job/WIPRO-MLE-1004"
+      },
+      {
+        Job_Title: "AI/ML Engineer",
+        Company: "Wipro",
+        Country: "India",
+        Location: "Chennai",
+        Posting_Date: "2026-11-25",
+        Job_Description: "Apply Python and machine learning to build language-enabled applications. Work with GenAI, LLMs, and RAG search patterns, and deploy containerized services to Google Cloud Platform (GCP).",
+        Job_URL: "https://careers.wipro.com/global/en/job/WIPRO-AIML-1005"
+      },
+      {
+        Job_Title: "Business Data Analyst",
+        Company: "Wipro",
+        Country: "India",
+        Location: "Mumbai",
+        Posting_Date: "2026-11-24",
+        Job_Description: "Translate business questions into reliable SQL analysis and Tableau reporting. Create Power BI visualizations, document metric definitions, and collaborate with product teams on data quality.",
+        Job_URL: "https://careers.wipro.com/global/en/job/WIPRO-BDA-1006"
+      },
+      {
+        Job_Title: "AI Engineer",
+        Company: "Accenture",
+        Country: "India",
+        Location: "Bengaluru",
+        Posting_Date: "2026-11-26",
+        Job_Description: "Design AI solutions with Python and cloud-native services. Build agentic AI prototypes around LLMs and RAG, evaluate retrieval quality, and deploy secure inference workloads on AWS.",
+        Job_URL: "https://www.accenture.com/in-en/careers/jobdetails?id=ACC-AI-2001"
+      },
+      {
+        Job_Title: "GenAI Engineer",
+        Company: "Accenture",
+        Country: "India",
+        Location: "Hyderabad",
+        Posting_Date: "2026-11-25",
+        Job_Description: "Deliver GenAI applications using Python, LLMs, and retrieval-augmented generation. Tune Azure-based model services, establish MLOps checks, and work with responsible AI guidelines.",
+        Job_URL: "https://www.accenture.com/in-en/careers/jobdetails?id=ACC-GENAI-2002"
+      },
+      {
+        Job_Title: "Data Analyst",
+        Company: "Accenture",
+        Country: "India",
+        Location: "Chennai",
+        Posting_Date: "2026-11-26",
+        Job_Description: "Use SQL and Python to analyze customer and operations data. Develop Power BI and Tableau dashboards, automate recurring reports, and explain trends to cross-functional stakeholders.",
+        Job_URL: "https://www.accenture.com/in-en/careers/jobdetails?id=ACC-DA-2003"
+      },
+      {
+        Job_Title: "Decision Science Consultant",
+        Company: "Accenture",
+        Country: "India",
+        Location: "Gurugram",
+        Posting_Date: "2026-11-24",
+        Job_Description: "Frame client decisions as analytical problems and build predictive models in Python. Apply SQL, machine learning, and GCP services to translate evidence into practical recommendations.",
+        Job_URL: "https://www.accenture.com/in-en/careers/jobdetails?id=ACC-DS-2004"
+      },
+      {
+        Job_Title: "AI/ML Engineer",
+        Company: "Accenture",
+        Country: "India",
+        Location: "Pune",
+        Posting_Date: "2026-11-25",
+        Job_Description: "Engineer scalable AI/ML products with Python and PySpark. Apply machine learning, LLMs, and AWS managed services, and create repeatable evaluation and deployment workflows.",
+        Job_URL: "https://www.accenture.com/in-en/careers/jobdetails?id=ACC-AIML-2005"
+      },
+      {
+        Job_Title: "Data Scientist",
+        Company: "Accenture",
+        Country: "India",
+        Location: "Mumbai",
+        Posting_Date: "2026-11-24",
+        Job_Description: "Explore structured datasets with Python and SQL, build machine-learning models, and test GenAI use cases. Deploy experiments on AWS and present limitations alongside model results.",
+        Job_URL: "https://www.accenture.com/in-en/careers/jobdetails?id=ACC-DSCI-2006"
+      },
+      {
+        Job_Title: "AI Engineer",
+        Company: "Infosys",
+        Country: "India",
+        Location: "Bengaluru",
+        Posting_Date: "2026-11-25",
+        Job_Description: "Build enterprise AI capabilities using Python, GenAI, and Azure. Connect LLM applications to trusted knowledge sources through RAG and measure answer quality with repeatable tests.",
+        Job_URL: "https://career.infosys.com/jobdesc?jobReference=INF-AI-3001"
+      },
+      {
+        Job_Title: "Data Analyst",
+        Company: "Infosys",
+        Country: "India",
+        Location: "Hyderabad",
+        Posting_Date: "2026-11-24",
+        Job_Description: "Analyze business data using SQL and Python. Design Power BI reports, apply data validation rules, and share concise findings with consulting and delivery teams.",
+        Job_URL: "https://career.infosys.com/jobdesc?jobReference=INF-DA-3002"
+      },
+      {
+        Job_Title: "AI/ML Engineer",
+        Company: "Infosys",
+        Country: "India",
+        Location: "Chennai",
+        Posting_Date: "2026-11-26",
+        Job_Description: "Develop machine-learning and AI features in Python. Build LLM and RAG components, evaluate production behavior, and use AWS tools to support reliable model operations.",
+        Job_URL: "https://career.infosys.com/jobdesc?jobReference=INF-AIML-3003"
+      },
+      {
+        Job_Title: "Decision Science Consultant",
+        Company: "Infosys",
+        Country: "India",
+        Location: "Pune",
+        Posting_Date: "2026-11-25",
+        Job_Description: "Support decision science engagements through Python, SQL, and machine learning. Prepare large datasets with PySpark, create MLOps-ready experiments, and explain model outputs to clients.",
+        Job_URL: "https://career.infosys.com/jobdesc?jobReference=INF-DS-3004"
+      },
+      {
+        Job_Title: "AI Engineer",
+        Company: "Infosys",
+        Country: "India",
+        Location: "Gurugram",
+        Posting_Date: "2026-11-24",
+        Job_Description: "Prototype conversational AI tools with Python and LLMs. Implement RAG retrieval, connect to GCP model services, and document safety and evaluation requirements.",
+        Job_URL: "https://career.infosys.com/jobdesc?jobReference=INF-AI-3005"
+      },
+      {
+        Job_Title: "Data Analytics Consultant",
+        Company: "Infosys",
+        Country: "India",
+        Location: "Mumbai",
+        Posting_Date: "2026-11-26",
+        Job_Description: "Partner with business teams to define data analytics measures. Query source systems with SQL, build Tableau and Power BI dashboards, and assess GenAI opportunities for reporting workflows.",
+        Job_URL: "https://career.infosys.com/jobdesc?jobReference=INF-DAC-3006"
+      }
+    ];
+
+    const jobsTable = [
+      ...sampleJobs,
+      { ...sampleJobs[14] }
+    ];
+
+    const skillDefinitions = [
+      { name: "Agentic AI", pattern: /\bagentic\s+ai\b/i },
+      { name: "Machine Learning", pattern: /\bmachine[-\s]+learning\b/i },
+      { name: "Power BI", pattern: /\bpower\s*bi\b/i },
+      { name: "JavaScript", pattern: /\bjavascript\b/i },
+      { name: "PySpark", pattern: /\bpyspark\b/i },
+      { name: "MLOps", pattern: /\bmlops\b/i },
+      { name: "GenAI", pattern: /\bgen\s*ai\b|\bgenerative\s+ai\b/i },
+      { name: "LLMs", pattern: /\bllms?\b/i },
+      { name: "Python", pattern: /\bpython\b/i },
+      { name: "SQL", pattern: /\b(?:sql|mysql|postgresql|pl\/sql)\b/i },
+      { name: "Azure", pattern: /\bazure\b/i },
+      { name: "AWS", pattern: /\baws\b/i },
+      { name: "GCP", pattern: /\b(?:gcp|google cloud platform|google cloud)\b/i },
+      { name: "RAG", pattern: /\brag\b/i },
+      { name: "AI", pattern: /\bai\b/i },
+      { name: "React", pattern: /\breact(?:\.js)?\b/i },
+      { name: "Angular", pattern: /\bangular(?:\.js)?\b/i },
+      { name: "Tableau", pattern: /\btableau\b/i }
+    ];
+
+    const companyColors = {
+      Wipro: "#244b68",
+      Accenture: "#0e888b",
+      Infosys: "#6783a4"
+    };
+
+    const state = {
+      countries: new Set(),
+      locations: new Set(),
+      companies: new Set(),
+      keyword: "",
+      explorerSearch: "",
+      dedupe: true,
+      selectedSkill: "",
+      activeTab: "market",
+      sidebarCollapsed: false
+    };
+
+    const schemaText = `CREATE TABLE "jobs" (
+  "Job_Title" TEXT,
+  "Company" TEXT,
+  "Country" TEXT,
+  "Location" TEXT,
+  "Posting_Date" TEXT,
+  "Job_Description" TEXT,
+  "Job_URL" TEXT
+);`;
+
+    const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    })[character]);
+
+    const uniqueValues = (key) => [...new Set(jobsTable.map((job) => job[key]).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b));
+
+    function extractSkills(description) {
+      return skillDefinitions
+        .filter((skill) => skill.pattern.test(description || ""))
+        .map((skill) => skill.name);
+    }
+
+    function uniqueByUrl(rows) {
+      const seen = new Set();
+      return rows.filter((job, index) => {
+        const url = String(job.Job_URL || "").trim();
+        const key = url || `missing-url-${index}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    }
+
+    function getRawFilteredJobs() {
+      const keyword = state.keyword.trim().toLocaleLowerCase();
+      return jobsTable.filter((job) => {
+        if (state.countries.size && !state.countries.has(job.Country)) return false;
+        if (state.locations.size && !state.locations.has(job.Location)) return false;
+        if (state.companies.size && !state.companies.has(job.Company)) return false;
+        if (state.selectedSkill && !extractSkills(job.Job_Description).includes(state.selectedSkill)) return false;
+        if (keyword) {
+          const searchable = [
+            job.Job_Title, job.Company, job.Country, job.Location,
+            job.Job_Description, extractSkills(job.Job_Description).join(" ")
+          ].join(" ").toLocaleLowerCase();
+          if (!searchable.includes(keyword)) return false;
+        }
+        return true;
+      });
+    }
+
+    function getFilteredJobs() {
+      const rawRows = getRawFilteredJobs();
+      return state.dedupe ? uniqueByUrl(rawRows) : rawRows;
+    }
+
+    function countBy(rows, selector) {
+      const counts = new Map();
+      rows.forEach((row) => {
+        const label = selector(row);
+        if (label) counts.set(label, (counts.get(label) || 0) + 1);
+      });
+      return [...counts.entries()]
+        .map(([label, count]) => ({ label, count }))
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+    }
+
+    function familyFor(title) {
+      const normalized = String(title).toLocaleLowerCase();
+      if (/ai\s*\/\s*ml|machine learning/.test(normalized)) return "AI/ML Engineer";
+      if (/\bai engineer\b|\bgenai engineer\b/.test(normalized)) return "AI Engineer";
+      if (/\bdata analyst\b/.test(normalized)) return "Data Analyst";
+      if (/decision science|consultant/.test(normalized)) return "Decision Science / Consultant";
+      if (/data scientist/.test(normalized)) return "Data Scientist";
+      return "Other Roles";
+    }
+
+    function formatDate(value) {
+      const localDate = new Date(`${value}T12:00:00`);
+      return Number.isNaN(localDate.getTime())
+        ? value
+        : localDate.toLocaleDateString("en-IN", { day: "2-digit", month: "short" });
+    }
+
+    function formatNumber(value) {
+      return new Intl.NumberFormat("en-IN").format(value);
+    }
+
+    function getDuplicateCount(rows) {
+      return rows.length - uniqueByUrl(rows).length;
+    }
+
+    function getTopSkill(rows) {
+      const totals = new Map();
+      rows.forEach((job) => {
+        extractSkills(job.Job_Description).forEach((skill) => {
+          totals.set(skill, (totals.get(skill) || 0) + 1);
+        });
+      });
+      return [...totals.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0] || null;
+    }
+
+    function renderKpis(rows, rawRows) {
+      const companies = new Set(rows.map((job) => job.Company));
+      const locations = new Set(rows.map((job) => job.Location).filter(Boolean));
+      const topSkill = getTopSkill(rows);
+      const duplicateCount = getDuplicateCount(rawRows);
+      const uniqueCount = uniqueByUrl(rawRows).length;
+      const roleNote = state.dedupe
+        ? `${formatNumber(uniqueCount)} unique Job_URL${uniqueCount === 1 ? "" : "s"} · ${formatNumber(duplicateCount)} duplicate row${duplicateCount === 1 ? "" : "s"} removed`
+        : `${formatNumber(duplicateCount)} duplicate Job_URL row${duplicateCount === 1 ? "" : "s"} included`;
+      const cards = [
+        ["Total Open Roles", formatNumber(rows.length), roleNote, "▤"],
+        ["Unique Companies", formatNumber(companies.size), "Companies represented in the filtered jobs table", "◉"],
+        ["Hiring Locations", formatNumber(locations.size), "Distinct locations in the filtered jobs table", "⌖"],
+        ["Top Skill Mentioned", topSkill ? topSkill[0] : "—", topSkill ? `Found in ${formatNumber(topSkill[1])} job descriptions` : "No matched skill mentions in this selection", "✦"]
+      ];
+      document.getElementById("kpi-grid").innerHTML = cards.map(([label, value, note, icon], index) => `
+        <article class="kpi-card">
+          <div class="kpi-top"><span class="kpi-label">${escapeHtml(label)}</span><span class="kpi-icon" aria-hidden="true">${icon}</span></div>
+          <div class="kpi-value ${index === 3 ? "skill-value" : ""}">${escapeHtml(value)}</div>
+          <div class="kpi-note">${escapeHtml(note)}</div>
+        </article>`).join("");
+    }
+
+    function multiSelectMarkup(key, label, options) {
+      const selected = state[key];
+      const allLabel = {
+        countries: "All countries",
+        locations: "All locations",
+        companies: "All companies"
+      }[key];
+      const summary = selected.size
+        ? `${selected.size} selected`
+        : allLabel;
+      return `
+        <label class="filter-label" for="trigger-${key}">${escapeHtml(label)}</label>
+        <div class="multi-select" data-multi="${key}">
+          <button class="multi-trigger" id="trigger-${key}" type="button" aria-expanded="false">
+            <span>${escapeHtml(summary)}</span><span class="chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="multi-menu">
+            ${options.map((option) => `
+              <label class="multi-option">
+                <input type="checkbox" data-filter="${key}" value="${escapeHtml(option)}" ${selected.has(option) ? "checked" : ""}>
+                <span>${escapeHtml(option)}</span>
+              </label>`).join("")}
+          </div>
+        </div>`;
+    }
+
+    function renderSidebar() {
+      document.getElementById("sidebar-controls").innerHTML = `
+        ${multiSelectMarkup("countries", "Country", uniqueValues("Country"))}
+        ${multiSelectMarkup("locations", "Location", uniqueValues("Location"))}
+        ${multiSelectMarkup("companies", "Company", uniqueValues("Company"))}
+        <label class="filter-label" for="keyword-filter">Skill / Keyword filter</label>
+        <input class="side-input" id="keyword-filter" type="search" value="${escapeHtml(state.keyword)}" placeholder="e.g. Python, SQL, GenAI" autocomplete="off">
+        <div class="switch-line">
+          <span>Deduplicate by Job_URL</span>
+          <label class="switch" aria-label="Deduplicate by Job_URL">
+            <input id="dedupe-toggle" type="checkbox" ${state.dedupe ? "checked" : ""}>
+            <span class="switch-track"></span>
+          </label>
+        </div>
+        <button class="refresh-db" id="refresh-db" type="button">↻ &nbsp; Refresh DB</button>
+        <p class="demo-note">Refresh reloads the embedded demo rows and clears selections. No live SQLite connection is made by this HTML prototype.</p>`;
+      renderActiveSummary();
+    }
+
+    function filterChip(group, value, label) {
+      return `<span class="filter-chip">${escapeHtml(label)} <button class="remove-chip" type="button" data-remove-filter="${group}" data-remove-value="${escapeHtml(value)}" aria-label="Remove ${escapeHtml(label)}">×</button></span>`;
+    }
+
+    function renderActiveSummary() {
+      const chips = [];
+      state.countries.forEach((value) => chips.push(filterChip("countries", value, `Country: ${value}`)));
+      state.locations.forEach((value) => chips.push(filterChip("locations", value, `Location: ${value}`)));
+      state.companies.forEach((value) => chips.push(filterChip("companies", value, `Company: ${value}`)));
+      if (state.keyword.trim()) chips.push(filterChip("keyword", "", `Keyword: ${state.keyword.trim()}`));
+      if (state.selectedSkill) chips.push(filterChip("selectedSkill", "", `Skill: ${state.selectedSkill}`));
+      document.getElementById("filter-summary").innerHTML = `
+        <div class="summary-head">
+          <span class="summary-title">Active filters</span>
+          <button class="clear-filters" type="button" data-action="clear">Clear all</button>
+        </div>
+        <div class="summary-content">${chips.length ? chips.join("") : '<span class="summary-empty">No filters selected</span>'}</div>`;
+      document.getElementById("dedupe-state").textContent = state.dedupe
+        ? "URL deduplication is on"
+        : "URL deduplication is off";
+    }
+
+    function renderBarList(items, className = "", onClickAttribute = "") {
+      if (!items.length) return '<div class="empty-state">No matching records for this chart.</div>';
+      const max = Math.max(...items.map((item) => item.count), 1);
+      return `<div class="chart-bars">${items.map((item) => {
+        const width = Math.max(2, item.count / max * 100);
+        const active = (onClickAttribute === "location" && state.locations.has(item.label))
+          || (onClickAttribute === "skill" && state.selectedSkill === item.label);
+        const attributes = onClickAttribute === "location"
+          ? `data-location-filter="${escapeHtml(item.label)}" aria-label="Toggle location ${escapeHtml(item.label)}"`
+          : onClickAttribute === "skill"
+            ? `data-skill-filter="${escapeHtml(item.label)}" aria-label="Filter by skill ${escapeHtml(item.label)}"`
+            : "";
+        const tag = onClickAttribute ? "button" : "div";
+        return `<${tag} class="bar-item ${className} ${active ? "is-active" : ""}" ${attributes} ${onClickAttribute ? 'type="button"' : ""}>
+          <span class="bar-label" title="${escapeHtml(item.label)}">${escapeHtml(item.label)}</span>
+          <span class="bar-track"><span class="bar-fill" style="width:${width.toFixed(2)}%"></span></span>
+          <span class="bar-count">${formatNumber(item.count)}</span>
+        </${tag}>`;
+      }).join("")}</div>`;
+    }
+
+    function renderTrend(rows) {
+      if (!rows.length) return '<div class="empty-state">No postings in the selected view.</div>';
+      const byDate = countBy(rows, (job) => job.Posting_Date).sort((a, b) => a.label.localeCompare(b.label));
+      if (!byDate.length) return '<div class="empty-state">No valid posting dates are available.</div>';
+      const width = 680;
+      const height = 220;
+      const plot = { left: 42, right: 22, top: 17, bottom: 36 };
+      const max = Math.max(...byDate.map((point) => point.count), 1);
+      const x = (index) => byDate.length === 1
+        ? (width - plot.left - plot.right) / 2 + plot.left
+        : plot.left + index * (width - plot.left - plot.right) / (byDate.length - 1);
+      const y = (value) => height - plot.bottom - value / max * (height - plot.top - plot.bottom);
+      const grid = [0, 0.5, 1].map((step) => {
+        const value = Math.round(max * step);
+        const yy = y(value);
+        return `<line class="grid-line" x1="${plot.left}" y1="${yy}" x2="${width - plot.right}" y2="${yy}"></line>
+          <text x="${plot.left - 10}" y="${yy + 3}" text-anchor="end">${value}</text>`;
+      }).join("");
+      const points = byDate.map((point, index) => `${x(index)},${y(point.count)}`).join(" ");
+      const circles = byDate.map((point, index) => `
+        <circle class="trend-dot" cx="${x(index)}" cy="${y(point.count)}" r="5">
+          <title>${formatDate(point.label)} · ${point.count} postings</title>
+        </circle>
+        <text x="${x(index)}" y="${height - 10}" text-anchor="middle">${escapeHtml(formatDate(point.label))}</text>`).join("");
+      return `<svg class="line-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Job postings by date">
+        ${grid}<polyline class="trend-line" points="${points}"></polyline>${circles}
+      </svg>`;
+    }
+
+    function roleCounts(rows) {
+      const counts = new Map();
+      rows.forEach((job) => {
+        const family = familyFor(job.Job_Title);
+        counts.set(family, (counts.get(family) || 0) + 1);
+      });
+      return [...counts.entries()]
+        .map(([label, count]) => ({ label, count }))
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+    }
+
+    function renderMarketTab(rows) {
+      const locationCounts = countBy(rows, (job) => job.Location).slice(0, 7);
+      const companyCounts = countBy(rows, (job) => job.Company);
+      const familyData = roleCounts(rows).slice(0, 7);
+      document.getElementById("market-content").innerHTML = `
+        <div class="chart-grid">
+          <section class="card">
+            <div class="card-head"><div><h2 class="card-title">Posting Trend</h2><p class="card-subtitle">Job postings grouped by their Posting_Date value</p></div><span class="card-action">Daily</span></div>
+            <div class="chart-area">${renderTrend(rows)}</div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><h2 class="card-title">Top Hiring Locations</h2><p class="card-subtitle">Select a bar to toggle that location filter</p></div><span class="card-action">Top 7</span></div>
+            <div class="chart-area">${renderBarList(locationCounts, "", "location")}</div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><h2 class="card-title">Top Hiring Companies</h2><p class="card-subtitle">Openings in the current selection</p></div><span class="card-action">Companies</span></div>
+            <div class="chart-area">${renderBarList(companyCounts, "company-bar")}</div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><h2 class="card-title">Role Family Breakdown</h2><p class="card-subtitle">Rule-based groups inferred from Job_Title</p></div><span class="card-action">Roles</span></div>
+            <div class="chart-area">${renderBarList(familyData, "role-bar")}</div>
+          </section>
+          <section class="card wide">
+            <div class="card-head">
+              <div><h2 class="card-title">Job Listings Explorer</h2><p class="card-subtitle">Search the filtered jobs table, open a job description, or visit the source posting.</p></div>
+              <span class="card-action">SQLite jobs schema</span>
+            </div>
+            ${state.selectedSkill ? `<div class="skill-filter-banner">Skill filter: <strong>${escapeHtml(state.selectedSkill)}</strong><button class="skill-filter-clear" type="button" data-action="clear-skill" aria-label="Clear skill filter">×</button></div>` : ""}
+            <div class="explorer-toolbar">
+              <label class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input class="search-input" id="explorer-search" type="search" value="${escapeHtml(state.explorerSearch)}" placeholder="Search title, company, location, or description" autocomplete="off"></label>
+              <span class="explorer-count" id="explorer-count"></span>
+            </div>
+            <div class="table-wrap">
+              <table class="job-table">
+                <thead><tr><th>Job title</th><th>Company</th><th>Location</th><th>Posted</th><th>Matched skills</th><th>Job URL</th><th>Description</th></tr></thead>
+                <tbody id="job-table-body"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>`;
+      renderExplorerTable(rows);
+    }
+
+    function getExplorerRows(rows) {
+      const query = state.explorerSearch.trim().toLocaleLowerCase();
+      if (!query) return rows;
+      return rows.filter((job) => [
+        job.Job_Title, job.Company, job.Country, job.Location,
+        job.Posting_Date, job.Job_Description
+      ].join(" ").toLocaleLowerCase().includes(query));
+    }
+
+    function renderExplorerTable(rows) {
+      const body = document.getElementById("job-table-body");
+      if (!body) return;
+      const visibleRows = getExplorerRows(rows);
+      const count = document.getElementById("explorer-count");
+      if (count) count.textContent = `${formatNumber(visibleRows.length)} matching job${visibleRows.length === 1 ? "" : "s"}`;
+      if (!visibleRows.length) {
+        body.innerHTML = '<tr><td colspan="7"><div class="empty-state">No jobs match this search and filter combination.</div></td></tr>';
+        return;
+      }
+      body.innerHTML = visibleRows.map((job) => {
+        const sourceIndex = jobsTable.indexOf(job);
+        const skills = extractSkills(job.Job_Description).slice(0, 4);
+        return `<tr>
+          <td class="job-name">${escapeHtml(job.Job_Title)}<div class="card-subtitle">${escapeHtml(familyFor(job.Job_Title))}</div></td>
+          <td class="job-company">${escapeHtml(job.Company)}</td>
+          <td>${escapeHtml(job.Location)}<div class="card-subtitle">${escapeHtml(job.Country)}</div></td>
+          <td class="job-date">${escapeHtml(formatDate(job.Posting_Date))}</td>
+          <td><div class="skill-chips">${skills.length ? skills.map((skill) => `<span class="skill-chip">${escapeHtml(skill)}</span>`).join("") : '<span class="card-subtitle">No matched skills</span>'}</div></td>
+          <td><a class="job-link" href="${escapeHtml(job.Job_URL)}" target="_blank" rel="noopener noreferrer">Open ↗</a></td>
+          <td><button class="jd-button" type="button" data-view-jd="${sourceIndex}">View JD</button></td>
+        </tr>`;
+      }).join("");
+    }
+
+    function skillCounts(rows) {
+      const counts = new Map();
+      rows.forEach((job) => {
+        extractSkills(job.Job_Description).forEach((skill) => {
+          counts.set(skill, (counts.get(skill) || 0) + 1);
+        });
+      });
+      return [...counts.entries()]
+        .map(([label, count]) => ({ label, count }))
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+    }
+
+    function renderSkillMatrix(rows, skills) {
+      if (!skills.length) return '<div class="empty-state">No matched skills are available for this selection.</div>';
+      const companies = ["Wipro", "Accenture", "Infosys"];
+      const max = Math.max(1, ...companies.flatMap((company) => skills.map((skill) => {
+        return rows.filter((job) => job.Company === company && extractSkills(job.Job_Description).includes(skill.label)).length;
+      })));
+      const heading = skills.map((skill) => `<th title="${escapeHtml(skill.label)}">${escapeHtml(skill.label)}</th>`).join("");
+      const body = companies.map((company) => {
+        const cells = skills.map((skill) => {
+          const count = rows.filter((job) => job.Company === company && extractSkills(job.Job_Description).includes(skill.label)).length;
+          const opacity = count ? 0.12 + count / max * 0.66 : 0;
+          const color = count / max > 0.53 ? "#fff" : "#526579";
+          return `<td><span class="heat-cell" style="background:rgba(14,136,139,${opacity.toFixed(2)});color:${color}">${count || "—"}</span></td>`;
+        }).join("");
+        return `<tr><td>${escapeHtml(company)}</td>${cells}</tr>`;
+      }).join("");
+      return `<div class="matrix-wrap"><table class="skill-matrix"><thead><tr><th>Company</th>${heading}</tr></thead><tbody>${body}</tbody></table></div>`;
+    }
+
+    function renderSkillsTab(rows) {
+      const skills = skillCounts(rows);
+      const topSkills = skills.slice(0, 12);
+      const skillFilterMarkup = state.selectedSkill
+        ? `<div class="skill-filter-banner">Filtering by <strong>${escapeHtml(state.selectedSkill)}</strong><button class="skill-filter-clear" type="button" data-action="clear-skill" aria-label="Clear skill filter">×</button></div>`
+        : "";
+      document.getElementById("skills-content").innerHTML = `
+        ${skillFilterMarkup}
+        <div class="chart-grid">
+          <section class="card">
+            <div class="card-head"><div><h2 class="card-title">Top In-Demand Skills</h2><p class="card-subtitle">Unique job postings that mention each skill · select a bar to filter jobs</p></div><span class="card-action">Top 12</span></div>
+            <div class="chart-area">${renderBarList(topSkills, "skill-bar", "skill")}</div>
+            <div class="chart-legend"><span><i class="legend-mark"></i>Job descriptions with a token-aware skill match</span></div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><h2 class="card-title">Skill Mentions</h2><p class="card-subtitle">Counts update with every active filter.</p></div><span class="card-action">${formatNumber(rows.length)} jobs</span></div>
+            ${topSkills.length ? `<div class="table-wrap"><table class="job-table"><thead><tr><th>Skill</th><th>Job descriptions</th><th>Share</th></tr></thead><tbody>${topSkills.map((skill) => `<tr><td class="job-name">${escapeHtml(skill.label)}</td><td>${formatNumber(skill.count)}</td><td>${rows.length ? (skill.count / rows.length * 100).toFixed(0) : 0}%</td></tr>`).join("")}</tbody></table></div>` : '<div class="empty-state">No recognized skills in the current selection.</div>'}
+          </section>
+          <section class="card wide">
+            <div class="card-head"><div><h2 class="card-title">Company × Skill Co-Occurrence Matrix</h2><p class="card-subtitle">Each cell is the number of job descriptions from that company containing the skill.</p></div><span class="card-action">Top 10 skills</span></div>
+            ${renderSkillMatrix(rows, topSkills.slice(0, 10))}
+            <p class="matrix-note">Counts represent postings with at least one match, not the number of repeated mentions within a description. Skills are detected only from Job_Description.</p>
+          </section>
+        </div>`;
+    }
+
+    function renderMain() {
+      const rawRows = getRawFilteredJobs();
+      const rows = state.dedupe ? uniqueByUrl(rawRows) : rawRows;
+      renderKpis(rows, rawRows);
+      renderActiveSummary();
+      renderMarketTab(rows);
+      renderSkillsTab(rows);
+      setActiveTab(state.activeTab);
+    }
+
+    function setActiveTab(tab) {
+      state.activeTab = tab;
+      const isMarket = tab === "market";
+      document.getElementById("market-panel").hidden = !isMarket;
+      document.getElementById("skills-panel").hidden = isMarket;
+      document.getElementById("tab-market").classList.toggle("active", isMarket);
+      document.getElementById("tab-skills").classList.toggle("active", !isMarket);
+      document.getElementById("tab-market").setAttribute("aria-selected", String(isMarket));
+      document.getElementById("tab-skills").setAttribute("aria-selected", String(!isMarket));
+    }
+
+    function renderDashboard() {
+      renderSidebar();
+      renderMain();
+    }
+
+    function resetFilters(showMessage = false) {
+      state.countries.clear();
+      state.locations.clear();
+      state.companies.clear();
+      state.keyword = "";
+      state.explorerSearch = "";
+      state.dedupe = true;
+      state.selectedSkill = "";
+      state.activeTab = "market";
+      renderDashboard();
+      if (showMessage) showToast("Embedded jobs table refreshed. Filters were reset.");
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      window.clearTimeout(showToast.timeoutId);
+      showToast.timeoutId = window.setTimeout(() => toast.classList.remove("show"), 2800);
+    }
+
+    function highlightDescription(job) {
+      const text = job.Job_Description || "";
+      const matches = [];
+      skillDefinitions.forEach((skill) => {
+        const regex = new RegExp(skill.pattern.source, "gi");
+        let match;
+        while ((match = regex.exec(text)) !== null) {
+          matches.push({ start: match.index, end: match.index + match[0].length });
+          if (match[0].length === 0) regex.lastIndex += 1;
+        }
+      });
+      matches.sort((a, b) => a.start - b.start || b.end - a.end);
+      let output = "";
+      let cursor = 0;
+      matches.forEach((match) => {
+        if (match.start < cursor) return;
+        output += escapeHtml(text.slice(cursor, match.start));
+        output += `<mark>${escapeHtml(text.slice(match.start, match.end))}</mark>`;
+        cursor = match.end;
+      });
+      output += escapeHtml(text.slice(cursor));
+      return output;
+    }
+
+    function openJobDescription(index) {
+      const job = jobsTable[Number(index)];
+      if (!job) return;
+      document.getElementById("jd-title").textContent = job.Job_Title;
+      document.getElementById("jd-meta").textContent = `${job.Company} · ${job.Location}, ${job.Country} · Posted ${formatDate(job.Posting_Date)}`;
+      document.getElementById("jd-description").innerHTML = highlightDescription(job);
+      const link = document.getElementById("jd-url");
+      link.href = job.Job_URL;
+      const dialog = document.getElementById("jd-dialog");
+      if (typeof dialog.showModal === "function") dialog.showModal();
+      else dialog.setAttribute("open", "");
+    }
+
+    document.getElementById("sidebar").addEventListener("click", (event) => {
+      const trigger = event.target.closest(".multi-trigger");
+      if (trigger) {
+        const parent = trigger.closest(".multi-select");
+        document.querySelectorAll(".multi-select.open").forEach((element) => {
+          if (element !== parent) {
+            element.classList.remove("open");
+            element.querySelector(".multi-trigger").setAttribute("aria-expanded", "false");
+          }
+        });
+        const isOpen = parent.classList.toggle("open");
+        trigger.setAttribute("aria-expanded", String(isOpen));
+        return;
+      }
+
+      const removeButton = event.target.closest("[data-remove-filter]");
+      if (removeButton) {
+        const group = removeButton.dataset.removeFilter;
+        const value = removeButton.dataset.removeValue;
+        if (group === "keyword") state.keyword = "";
+        else if (group === "selectedSkill") state.selectedSkill = "";
+        else if (state[group]) state[group].delete(value);
+        renderSidebar();
+        renderMain();
+        return;
+      }
+
+      const action = event.target.closest("[data-action]");
+      if (action?.dataset.action === "clear") {
+        resetFilters();
+        return;
+      }
+
+      if (event.target.closest("#refresh-db")) {
+        resetFilters(true);
+      }
+    });
+
+    document.getElementById("sidebar").addEventListener("change", (event) => {
+      const filterInput = event.target.closest("input[data-filter]");
+      if (filterInput) {
+        const selected = state[filterInput.dataset.filter];
+        if (filterInput.checked) selected.add(filterInput.value);
+        else selected.delete(filterInput.value);
+        renderSidebar();
+        renderMain();
+        return;
+      }
+      if (event.target.id === "dedupe-toggle") {
+        state.dedupe = event.target.checked;
+        renderActiveSummary();
+        renderMain();
+      }
+    });
+
+    document.getElementById("sidebar").addEventListener("input", (event) => {
+      if (event.target.id === "keyword-filter") {
+        state.keyword = event.target.value;
+        renderActiveSummary();
+        renderMain();
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      const tabButton = event.target.closest("[data-tab]");
+      if (tabButton) {
+        setActiveTab(tabButton.dataset.tab);
+        return;
+      }
+      const locationButton = event.target.closest("[data-location-filter]");
+      if (locationButton) {
+        const location = locationButton.dataset.locationFilter;
+        if (state.locations.has(location)) state.locations.delete(location);
+        else state.locations.add(location);
+        renderSidebar();
+        renderMain();
+        return;
+      }
+      const skillButton = event.target.closest("[data-skill-filter]");
+      if (skillButton) {
+        const skill = skillButton.dataset.skillFilter;
+        state.selectedSkill = state.selectedSkill === skill ? "" : skill;
+        renderSidebar();
+        renderMain();
+        return;
+      }
+      if (event.target.closest('[data-action="clear-skill"]')) {
+        state.selectedSkill = "";
+        renderSidebar();
+        renderMain();
+        return;
+      }
+      const viewButton = event.target.closest("[data-view-jd]");
+      if (viewButton) openJobDescription(viewButton.dataset.viewJd);
+    });
+
+    document.getElementById("market-content").addEventListener("input", (event) => {
+      if (event.target.id === "explorer-search") {
+        state.explorerSearch = event.target.value;
+        renderExplorerTable(getFilteredJobs());
+      }
+    });
+
+    document.getElementById("sidebar-toggle").addEventListener("click", () => {
+      state.sidebarCollapsed = !state.sidebarCollapsed;
+      document.getElementById("dashboard-body").classList.toggle("sidebar-collapsed", state.sidebarCollapsed);
+      const button = document.getElementById("sidebar-toggle");
+      button.setAttribute("aria-expanded", String(!state.sidebarCollapsed));
+      button.querySelector("span:last-child").textContent = state.sidebarCollapsed ? "Show filters" : "Hide filters";
+    });
+
+    document.getElementById("browser-reload").addEventListener("click", () => window.location.reload());
+    document.getElementById("jd-close").addEventListener("click", () => document.getElementById("jd-dialog").close());
+    document.getElementById("jd-dialog").addEventListener("click", (event) => {
+      if (event.target === event.currentTarget) event.currentTarget.close();
+    });
+
+    renderDashboard();
+  </script>
+</body>
+</html>
